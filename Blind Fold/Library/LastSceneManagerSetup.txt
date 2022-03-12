@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/\uC52C/SampleScene.unity"
+- path: "Assets/\uC52C/TutorialScene.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
