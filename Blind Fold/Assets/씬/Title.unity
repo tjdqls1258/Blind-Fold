@@ -644,7 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SettingPanel: {fileID: 1626992888}
   Play_btn: {fileID: 1151122598}
-  Help_btn: {fileID: 889223845}
+  Tutorial_btn: {fileID: 0}
   Setting_btn: {fileID: 1270068944}
   Exit_btn: {fileID: 1391125686}
 --- !u!1 &625626588
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 889223848}
   - component: {fileID: 889223847}
   m_Layer: 5
-  m_Name: Help_btn
+  m_Name: Tutorial_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1207,7 +1207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 889223848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 605649237}
+        m_TargetAssemblyTypeName: Title_UI, Assembly-CSharp
+        m_MethodName: TutorialEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &889223848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2835,7 +2847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Help
+  m_Text: Tutorial
 --- !u!222 &1678428940
 CanvasRenderer:
   m_ObjectHideFlags: 0
