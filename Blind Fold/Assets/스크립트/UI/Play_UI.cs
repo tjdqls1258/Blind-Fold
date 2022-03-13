@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Play_UI : MonoBehaviour
 {
     public static bool IsPause = false;
     public GameObject SettingPanel;
+    public GameObject WarningPanel;
 
     void Update()
     {
@@ -40,6 +42,13 @@ public class Play_UI : MonoBehaviour
 
     public void MainMenu()
     {
-        //MainMenu버튼 누를 시 바로 갈지, 경고창을 한번 더 띄울지 결정후 작성
+        //MainMenu버튼을 누르면 경고창이 나옴
+        WarningPanel.SetActive(true);
+    }
+
+    public void BacktoMainMenu()
+    {
+        //경고창에서 yes버튼 누르면 메인메뉴로
+        SceneManager.LoadScene("Title");
     }
 }
