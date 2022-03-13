@@ -7,10 +7,6 @@ using UnityEngine.UI;
 public class Title_UI : MonoBehaviour
 {
     public GameObject SettingPanel;
-    public GameObject Play_btn;
-    public GameObject Tutorial_btn;
-    public GameObject Setting_btn;
-    public GameObject Exit_btn;
 
     public void PlayEnter()
     {
