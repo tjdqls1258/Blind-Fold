@@ -51,4 +51,9 @@ public class Play_UI : MonoBehaviour
         //경고창에서 yes버튼 누르면 메인메뉴로
         SceneManager.LoadScene("Title");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
