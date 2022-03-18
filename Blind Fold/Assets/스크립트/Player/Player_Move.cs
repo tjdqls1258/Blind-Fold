@@ -7,8 +7,7 @@ public class Player_Move : MonoBehaviour
     public float Move_Speed = 5;
     Rigidbody rigid;
     Relay_Sound relay;
-    public GameObject Enemy;
-    // Start is called before the first frame update
+
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();

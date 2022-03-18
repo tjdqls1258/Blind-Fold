@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interplay_Object : MonoBehaviour
 {
     private RaycastHit hit;
     private Ray ray;
-    public float Ray_distance;
+    [SerializeField] private float Ray_distance;
+    [SerializeField] private Text exposition_text;
 
     void Update()
     {
@@ -39,15 +41,23 @@ public class Interplay_Object : MonoBehaviour
             {
                 Interplay_machice interplay = hit.transform.gameObject.GetComponent<Interplay_machice>();
                 //설명 보이기
-
+                Debug.Log(interplay.Exposition);
+                exposition_text.text = interplay.Exposition;
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log(hit.transform.gameObject.name);
                     interplay.Interplay();
                     //각 상호작용마다 Interplay_machice.cs가 필요함
                     //각 오브젝트의 상호작용 효과 기능은 I_Interplay_effect를 상속받음.
                 }
             }
+            else
+            {
+                exposition_text.text = "";
+            }
+        }
+        else
+        {
+            exposition_text.text = "";
         }
     }
 }

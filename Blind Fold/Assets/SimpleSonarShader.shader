@@ -14,7 +14,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		_RingIntensityScale("Ring Range", float) = 1
 		_RingTex("Ring Texture", 2D) = "white" {}
 
-		_BumpTex("Normal Map", 2D) = "white" {}
+		_BumpTex("Normal Map", 2D) = "bump" {}
 		_OcclTex("Occlusion Map", 2D) = "white" {}
 	}
 		SubShader{
@@ -60,9 +60,11 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 	{
 		fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
 		float3 n = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
-		fixed4 oc = tex2D(_OcclTex, IN.uv_OcclTex);
+		fixed4 oc = tex2D(_OcclTex, IN.uv_MainTex);
 
 		o.Albedo = c.rgb;
+		o.Normal = n;
+		o.Occlusion = oc.g;
 		half DiffFromRingCol = abs(o.Albedo.r - _RingColor.r) + abs(o.Albedo.b - _RingColor.b) + abs(o.Albedo.g - _RingColor.g);
 
 		// Check every point in the array
@@ -95,8 +97,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 				}
 			}
 		}
-		o.Normal = n;
-		o.Occlusion = oc.r;
+
 		o.Metallic = _Metallic;
 		o.Smoothness = _Glossiness;
 	}
