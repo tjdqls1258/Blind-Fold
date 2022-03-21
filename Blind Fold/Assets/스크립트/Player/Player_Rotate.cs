@@ -7,6 +7,7 @@ public class Player_Rotate : MonoBehaviour
     float Rotate_X;
     float Rotate_Y;
     public float rotspeed = 200;
+    [SerializeField] private GameObject parent;
 
     void Update()
     {
@@ -24,5 +25,6 @@ public class Player_Rotate : MonoBehaviour
         Rotate_X = Mathf.Clamp(Rotate_X, -80, 80);
 
         transform.eulerAngles = new Vector3(-Rotate_X, Rotate_Y, 0);
+        parent.transform.eulerAngles = new Vector3(0, Rotate_Y, 0);
     }
 }

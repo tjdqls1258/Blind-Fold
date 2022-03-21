@@ -7,11 +7,12 @@ public class Player_Move : MonoBehaviour
     public float Move_Speed = 5;
     Rigidbody rigid;
     Relay_Sound relay;
-
+    Animator foot;
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
         relay = GetComponent<Relay_Sound>();
+        foot = GameObject.Find("Foot").GetComponent<Animator>();
     }
 
     private void Update()
@@ -30,6 +31,19 @@ public class Player_Move : MonoBehaviour
         dirset.Normalize(); //방향 구함. 
         dirset.y = 0;
         rigid.MovePosition(transform.position + dirset * Move_Speed * Time.deltaTime);
+
+        if (foot != null)
+        {
+            if (horizontal + vertical == 0)
+            {
+                foot.Play(0);
+            }
+            else
+            {
+                foot.Play(1);
+            }
+        }
+
         if (rigid.velocity != Vector3.zero)
         {
             rigid.velocity = Vector3.zero;
