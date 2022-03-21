@@ -30,5 +30,9 @@ public class Player_Move : MonoBehaviour
         dirset.Normalize(); //방향 구함. 
         dirset.y = 0;
         rigid.MovePosition(transform.position + dirset * Move_Speed * Time.deltaTime);
+        if (rigid.velocity != Vector3.zero)
+        {
+            rigid.velocity = Vector3.zero;
+        }
     }
 }
