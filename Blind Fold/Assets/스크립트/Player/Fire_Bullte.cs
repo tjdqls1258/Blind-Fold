@@ -16,9 +16,9 @@ public class Fire_Bullte : MonoBehaviour
     {
         //다항 조건문인데 더 효율적인거 없을까.
         //일단 설명 마우스 좌클릭을 했고 총을 쏠수 있는 상황이며, 총알이 있을경우.
-        if(Input.GetMouseButtonDown(0) && Can_Fire && Count_Bullte > 0) 
+        if (Input.GetMouseButtonDown(0) && Can_Fire && Count_Bullte > 0)
         {
-            Instantiate(Bullte, fir_Pos.transform.position , fir_Pos.transform.rotation);
+            Instantiate(Bullte, fir_Pos.transform.position, fir_Pos.transform.rotation);
             Can_Fire = false;
             Count_Bullte -= 1;
             StartCoroutine(Change_Fire_Bullte());
