@@ -15,11 +15,11 @@ C:/Users/tjdql/Desktop/Blind-Fold/Blind Fold
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49763
+65301
 Successfully changed project path to: C:/Users/tjdql/Desktop/Blind-Fold/Blind Fold
 C:/Users/tjdql/Desktop/Blind-Fold/Blind Fold
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path D:/unity/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -35,75 +35,75 @@ Initialize mono
 Mono path[0] = 'D:/unity/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/unity/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/unity/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000817 seconds.
+Registered in 0.000818 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 39.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.06 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.115 seconds
+- Completed reload, in  1.083 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1115ms)
-		BeginReloadAssembly (39ms)
+	ReloadAssembly (1083ms)
+		BeginReloadAssembly (37ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (336ms)
-			LoadAssemblies (38ms)
+		EndReloadAssembly (324ms)
+			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (120ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (139ms)
+			SetupLoadedEditorAssemblies (133ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (40ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (60ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (38ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (58ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002155 seconds.
+Registered in 0.002192 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.756 seconds
+- Completed reload, in  0.737 seconds
 Domain Reload Profiling:
-	ReloadAssembly (757ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (737ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (602ms)
-			LoadAssemblies (62ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
+			SetupTypeCache (201ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (224ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (221ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (157ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (156ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,14 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1453 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.6 MB.
+System memory in use before: 78.5 MB.
 System memory in use after: 78.3 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1894.
-Total: 2.202400 ms (FindLiveObjects: 0.125600 ms CreateObjectMapping: 0.043900 ms MarkObjects: 1.896500 ms  DeleteObjects: 0.135500 ms)
+Total: 2.275800 ms (FindLiveObjects: 0.136800 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.962200 ms  DeleteObjects: 0.133100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,103 +134,225 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Animation/Open_Door_Animation.anim
-  artifactKey: Guid(038028e4ed16605479fc1bf9ba55cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Open_Door_Animation.anim using Guid(038028e4ed16605479fc1bf9ba55cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a96ecd0d2a7d57977fc142691a558e') in 0.027659 seconds 
-  Import took 0.029523 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.21 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 48.9 MB.
-System memory in use after: 48.6 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1894.
-Total: 2.348000 ms (FindLiveObjects: 0.128400 ms CreateObjectMapping: 0.038600 ms MarkObjects: 2.064800 ms  DeleteObjects: 0.115600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 214.840732 seconds.
-  path: Assets/Animation/Door_Animator.controller
-  artifactKey: Guid(e4b3cfef71c805b4da7cb9f23985972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Door_Animator.controller using Guid(e4b3cfef71c805b4da7cb9f23985972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb10ef58654b54ddcf54929efbc29db9') in 0.009378 seconds 
-  Import took 0.011658 seconds .
+  path: Assets/스크립트/AI
+  artifactKey: Guid(567d007d1c514c44e879bf5f9e22244a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/스크립트/AI using Guid(567d007d1c514c44e879bf5f9e22244a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331d21019ee7c0a6a5abc71515646a2b') in 0.005932 seconds 
+  Import took 0.007997 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000665 seconds.
-  path: Assets/Animation/Door_Animator.controller
-  artifactKey: Guid(e4b3cfef71c805b4da7cb9f23985972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Door_Animator.controller using Guid(e4b3cfef71c805b4da7cb9f23985972b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb10ef58654b54ddcf54929efbc29db9') in 0.002471 seconds 
-  Import took 0.004431 seconds .
+  Time since last request: 257.938878 seconds.
+  path: Assets/MT_AI.mat
+  artifactKey: Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MT_AI.mat using Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4d3076e9cc927aa6de8a5ea4f483f1') in 0.083548 seconds 
+  Import took 0.085857 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002864 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
-Domain Reload Profiling:
-	ReloadAssembly (735ms)
-		BeginReloadAssembly (87ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (601ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (204ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (52ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1434 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.2 MB.
-System memory in use after: 77.0 MB.
+Received Import Request.
+  Time since last request: 41.619859 seconds.
+  path: Assets/Materia/MT_AI.mat
+  artifactKey: Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materia/MT_AI.mat using Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60bf41747345e9191c438d4ab0e402ef') in 0.008281 seconds 
+  Import took 0.010344 seconds .
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1896.
-Total: 2.198500 ms (FindLiveObjects: 0.140900 ms CreateObjectMapping: 0.048700 ms MarkObjects: 1.887300 ms  DeleteObjects: 0.120900 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.007831 seconds.
+  path: Assets/Materia/MT_AI.mat
+  artifactKey: Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materia/MT_AI.mat using Guid(d279ffb4da322bb47bb32794b76d4c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60bf41747345e9191c438d4ab0e402ef') in 0.028300 seconds 
+  Import took 0.030345 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 102.876374 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Models/Zombie Nerd.FBX
+  artifactKey: Guid(fdd3ad8b8c10fb94fb5dbfb9a5e2dab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Models/Zombie Nerd.FBX using Guid(fdd3ad8b8c10fb94fb5dbfb9a5e2dab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e2f3a080af8cf653b0df68cffdc656') in 0.502772 seconds 
+  Import took 0.514805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Zombie/Zombie Collection/Weapons/Models/Weapons.fbx
+  artifactKey: Guid(7acd5fdec6d61cf408f57f85963de49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Weapons/Models/Weapons.fbx using Guid(7acd5fdec6d61cf408f57f85963de49d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88813c84f593435badbef9176c0dbafe') in 0.175600 seconds 
+  Import took 0.182651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Models/Zombie Nerd.FBX
+  artifactKey: Guid(fdd3ad8b8c10fb94fb5dbfb9a5e2dab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Models/Zombie Nerd.FBX using Guid(fdd3ad8b8c10fb94fb5dbfb9a5e2dab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e2f3a080af8cf653b0df68cffdc656') in 0.234338 seconds 
+  Import took 0.246032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.315879 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_LookAround.FBX
+  artifactKey: Guid(ce705f42222c49b479d518de99fb8219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_LookAround.FBX using Guid(ce705f42222c49b479d518de99fb8219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7505ee2ac7b4e2da37b72d0b87ee92e8') in 0.068522 seconds 
+  Import took 0.070961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Attack_2.FBX
+  artifactKey: Guid(6e1d6faa8c81a76499b0347b3e389f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Attack_2.FBX using Guid(6e1d6faa8c81a76499b0347b3e389f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080dc557c2dff7314e0a52d592b20afe') in 0.052732 seconds 
+  Import took 0.055077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Scream.FBX
+  artifactKey: Guid(34a5971c74c0e7d4bbf61d805ecd82b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Scream.FBX using Guid(34a5971c74c0e7d4bbf61d805ecd82b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0172ed637331dda81562f207b20907f') in 0.056301 seconds 
+  Import took 0.058656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Idle.FBX
+  artifactKey: Guid(0cfbdc419a1a9dd49afe7719467587ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Idle.FBX using Guid(0cfbdc419a1a9dd49afe7719467587ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e1680584da9878c0ce52506837a170') in 0.075927 seconds 
+  Import took 0.078655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Dodge.FBX
+  artifactKey: Guid(0542f3748f8f89f40a3c77fbb979749d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Dodge.FBX using Guid(0542f3748f8f89f40a3c77fbb979749d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6089cb6eb101865c99984f4cf8c435f0') in 0.064021 seconds 
+  Import took 0.066982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Death.FBX
+  artifactKey: Guid(d26077130feeae744bc3c956ee753c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Death.FBX using Guid(d26077130feeae744bc3c956ee753c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408c2d45bf0858b152ffd9cd8588ecaa') in 0.059124 seconds 
+  Import took 0.061873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Run.FBX
+  artifactKey: Guid(36adcb6b7bb72e641a03f5d88361d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Run.FBX using Guid(36adcb6b7bb72e641a03f5d88361d7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85ac74aafdca239a5e292c4240a1527') in 0.060422 seconds 
+  Import took 0.062893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Attack_1.FBX
+  artifactKey: Guid(67339f1ef389e0f4a85efa6749309ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Attack_1.FBX using Guid(67339f1ef389e0f4a85efa6749309ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac0eed6fbcf43cfd3bce763d90d08fa') in 0.050876 seconds 
+  Import took 0.053299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Damage.FBX
+  artifactKey: Guid(ff1081dfebca675479eb8f7743edc5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Damage.FBX using Guid(ff1081dfebca675479eb8f7743edc5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c6bc6873b649c8f58e4e56845aa0a5') in 0.052276 seconds 
+  Import took 0.054536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_LookAround.FBX
+  artifactKey: Guid(57273880eab8408488a837b616dfb0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_LookAround.FBX using Guid(57273880eab8408488a837b616dfb0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd68f47e4392133e2dc61d4fd5a3a17b') in 0.054111 seconds 
+  Import took 0.056375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Scream.FBX
+  artifactKey: Guid(488fbb7aa5514f54dbd1a22d6b0d13cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Scream.FBX using Guid(488fbb7aa5514f54dbd1a22d6b0d13cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f4225d284ae737aed5e1c6fdb043d77') in 0.052810 seconds 
+  Import took 0.055526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Attack_2.FBX
+  artifactKey: Guid(c8bc006e8681bdb4a965efdf0837751a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Attack_2.FBX using Guid(c8bc006e8681bdb4a965efdf0837751a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b72a70d8a1c41a72410ea78c71f1ab') in 0.055337 seconds 
+  Import took 0.057587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Dodge.FBX
+  artifactKey: Guid(72b9815afdd530540822fd74a06b6517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Dodge.FBX using Guid(72b9815afdd530540822fd74a06b6517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80d2197bf3103282f5f1862cfbf3b3a') in 0.050256 seconds 
+  Import took 0.052486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Walk.FBX
+  artifactKey: Guid(ddc819ea7b520a346a981af570112d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Walk.FBX using Guid(ddc819ea7b520a346a981af570112d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27556e4c52b793c543c0728d4684bca') in 0.055963 seconds 
+  Import took 0.058204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Death.FBX
+  artifactKey: Guid(355101d8c358d1a4081fed72200ec276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Death.FBX using Guid(355101d8c358d1a4081fed72200ec276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faba3a17e9fe8fb189dc41fe9c4f10a4') in 0.056601 seconds 
+  Import took 0.058850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Walk.FBX
+  artifactKey: Guid(f5faee16109fa6a4192fe2721500cfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Walk.FBX using Guid(f5faee16109fa6a4192fe2721500cfea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f736373fb948ba71907467faabbf3e3') in 0.051225 seconds 
+  Import took 0.053953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Attack_1.FBX
+  artifactKey: Guid(c3e1b34c38b966b43bbdfcd4f5e900b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Attack_1.FBX using Guid(c3e1b34c38b966b43bbdfcd4f5e900b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b1319e855e0a4524980e35cfd6c351') in 0.053528 seconds 
+  Import took 0.055780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Idle.FBX
+  artifactKey: Guid(b2a4e5422747443438c9cc81bfd0ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Idle.FBX using Guid(b2a4e5422747443438c9cc81bfd0ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2a86550afc720ef39c580734a6631d') in 0.047689 seconds 
+  Import took 0.049827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Damage.FBX
+  artifactKey: Guid(658b264861b1ed54c913b22a48dd5f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/Torch/ZombieNerd_Torch_Damage.FBX using Guid(658b264861b1ed54c913b22a48dd5f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5326172a8a895a973f2af6dba331105') in 0.049365 seconds 
+  Import took 0.051470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Run.FBX
+  artifactKey: Guid(deeb6b48e84e7764187ed4386ecaa726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Zombie/Zombie Collection/Zombie Nerd/Animations/OneHanded/ZombieNerd_OneHanded_Run.FBX using Guid(deeb6b48e84e7764187ed4386ecaa726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a557de2e741c4ed01a0365a71e7b3d') in 0.051742 seconds 
+  Import took 0.054045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.407843 seconds.
+  path: Assets/Map/Flooded_Grounds/Content/Meshes/mBackgrounds/WaterPlane.fbx
+  artifactKey: Guid(c292a97ca5b44af428ac393c78fd8b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Map/Flooded_Grounds/Content/Meshes/mBackgrounds/WaterPlane.fbx using Guid(c292a97ca5b44af428ac393c78fd8b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f1afc5d2e3e6a44614a98d95458128') in 0.013841 seconds 
+  Import took 0.016148 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
