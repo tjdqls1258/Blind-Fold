@@ -20,7 +20,6 @@ public class I_SeekSound : IState
     {
         navMesh.isStopped = false;
         navMesh.SetDestination(Target_Point);
-        State_AI.GetComponent<SphereCollider>().enabled = false ;
     }
 
     public void Excute()
@@ -42,7 +41,6 @@ public class I_SeekSound : IState
     private void Serch_Around()//주위를 탐색함
     {
         //타겟을 못 찾을 경우
-        State_AI.GetComponent<SphereCollider>().enabled = true;
         State_AI.GetComponent<EnemyAI>().Repeating_Patrol();
     }
 }
