@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Play_UI : MonoBehaviour
 {
     public static bool IsPause = false;
     public GameObject SettingPanel;
     public GameObject WarningPanel;
+    public Image stamina;
+    public Image charge;
 
     void Update()
     {
@@ -22,6 +25,12 @@ public class Play_UI : MonoBehaviour
                 PauseEnter();
             }
         }
+
+        /*
+         * 스태미너 및 파동 차징 함수 들어 갈 곳
+         * stamina.fillAmount = 현재 스태미나(기본 최대, 점점소모됨) / 전체 스태미나(최대치);
+         * charge.fillAmount = 현재 차징(기본 0, 점점 차오름) / 전체 차징(최대치);
+         */
     }
 
     public void PauseEnter()
