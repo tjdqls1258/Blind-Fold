@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class I_SeekPlayer : IState
+public class I_SeekPlayer : MonoBehaviour ,IState
 {
     NavMeshAgent navMesh = null;
 
@@ -18,13 +18,20 @@ public class I_SeekPlayer : IState
     {
         navMesh.isStopped = false;
     }
+
     public void Excute()
     {
         navMesh.SetDestination(Target.position);
     }
+
     public void End_State()
     { 
         Target = null;
         navMesh.isStopped = true;
+    }
+
+    public AI_State Get_State()
+    {
+        return AI_State.Seek_Player;
     }
 }

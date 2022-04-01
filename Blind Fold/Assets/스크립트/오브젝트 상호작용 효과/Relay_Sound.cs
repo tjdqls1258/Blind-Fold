@@ -23,6 +23,11 @@ public class Relay_Sound : MonoBehaviour
     }
     private void Relay_Target(float Sound_Power, GameObject Target)
     {
+        //Debug.Log(Target.GetComponent<State_Machine>().ToString());
+        //if (Target.GetComponent<State_Machine>().aI_State == AI_State.Seek_Player)
+        //{
+        //    return;
+        //}
         //가청거리보다 멀경우
         if (Vector3.SqrMagnitude(transform.position - Target.transform.position) >= (Audible_Distance * Audible_Distance)) 
         {
@@ -46,6 +51,10 @@ public class Relay_Sound : MonoBehaviour
             //소리를 들었을 경우
             if (Target.GetComponent<State_Machine>())
             {
+                if (Target.GetComponent<State_Machine>().aI_State == AI_State.Seek_Player)
+                {
+                    return;
+                }
                 Target.GetComponent<State_Machine>().Change_State(new I_SeekSound(transform.position, Target));
             }
         }

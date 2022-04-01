@@ -11,6 +11,7 @@ public class I_PatState : IState
     int m_count = 0;
     float time = 0.0f;
     public float wait_time = 2.0f;
+
     public I_PatState(Transform[] transforms, NavMeshAgent nav)
     {
         navMesh = nav;
@@ -22,6 +23,7 @@ public class I_PatState : IState
         navMesh.isStopped = false;
         //InvokeRepeating("Enemy_Patrol",0.0f,2.0f);
     }
+
     public void Excute()
     {
         time += Time.deltaTime;
@@ -40,17 +42,25 @@ public class I_PatState : IState
             time = 0;
         }
     }
+
     void Enemy_Patrol()
     {
         
     }
+
     public void End_State()
     {
         //CancelInvoke("Enemy_Patrol");
         navMesh.isStopped = true;
     }
+
     private void Serch_Around()//주위를 둘러봄
     {
 
+    }
+
+    public AI_State Get_State()
+    {
+        return AI_State.Pat_State;
     }
 }

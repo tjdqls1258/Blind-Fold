@@ -30,17 +30,25 @@ public class I_SeekSound : IState
         }
         Debug.Log("sound");
     }
+
     void Enemy_Patrol()
     {
 
     }
+
     public void End_State()
     {
         navMesh.isStopped = true;
     }
+
     private void Serch_Around()//주위를 탐색함
     {
         //타겟을 못 찾을 경우
         State_AI.GetComponent<EnemyAI>().Repeating_Patrol();
+    }
+
+    public AI_State Get_State()
+    { 
+        return AI_State.Seek_Echo;
     }
 }
