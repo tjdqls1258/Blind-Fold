@@ -848,10 +848,11 @@ GameObject:
   - component: {fileID: 175457293}
   - component: {fileID: 175457292}
   - component: {fileID: 175457291}
+  - component: {fileID: 175457296}
   - component: {fileID: 175457290}
   m_Layer: 3
   m_Name: AI
-  m_TagString: Untagged
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -948,6 +949,22 @@ Transform:
   m_Father: {fileID: 451952150}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &175457296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175457289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0efaabb51cd348428b9b15fdfafa857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map_parent: {fileID: 451952149}
+  Delay_Time: 2
+  Echo_Power: 10
+  _Time: 0
 --- !u!1 &211773965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217360403}
   - component: {fileID: 217360404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,6 +2279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0469060ac50970947a4c34cd67e0d41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ring_Speed: 3
+  Ring_Range: 1
 --- !u!1 &504038772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4784,10 +4803,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 167428550754596375, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 167428551113982221, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: exposition_text
       value: 
       objectReference: {fileID: 2054728499}
+    - target: {fileID: 167428551113982451, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 167428551545392932, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Run_Speed
       value: 1.5
@@ -4853,8 +4880,24 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 167428551545392935, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 167428551545392935, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 389100735820020629, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820143291338608876, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3037722526300633676, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 752619816013335824, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}

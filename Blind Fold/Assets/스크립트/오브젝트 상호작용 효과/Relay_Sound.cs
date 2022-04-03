@@ -38,6 +38,7 @@ public class Relay_Sound : MonoBehaviour
         float Audible_Sound = Sound_Power;
         //레이를 쏴서 벽이랑 충돌했을때 소리를 감소시킴
         Object_hit = Physics.RaycastAll(transform.position, Target.transform.position, Sound_Power);
+        
         for(int hit_count = 0; hit_count < Object_hit.Length; hit_count++)
         {
             if(Object_hit[hit_count].transform.tag == "Walls")
