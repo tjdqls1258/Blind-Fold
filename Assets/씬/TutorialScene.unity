@@ -2168,6 +2168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SettingPanel: {fileID: 1751344732}
   WarningPanel: {fileID: 1827860276}
+  DialogueSystem: {fileID: 0}
   stamina: {fileID: 1512031718}
   charge: {fileID: 1274060296}
 --- !u!114 &385184362
@@ -5997,6 +5998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testtext: {fileID: 1337677788}
   scriptend: 0
+  Player: {fileID: 255884629}
 --- !u!4 &1811179713
 Transform:
   m_ObjectHideFlags: 0

@@ -9,8 +9,11 @@ public class DialogueSystem : MonoBehaviour
     public bool scriptend;
     Queue<string> sentences = new Queue<string>();
 
+    public GameObject Player;
+
     public void Begin(Dialogue info)
     {
+        Player.GetComponent<Fire_Bullte>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         scriptend = false;
@@ -37,6 +40,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void End()
     {
+        Player.GetComponent<Fire_Bullte>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         scriptend = true;
