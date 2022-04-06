@@ -9,6 +9,7 @@ public class Play_UI : MonoBehaviour
     public static bool IsPause = false;
     public GameObject SettingPanel;
     public GameObject WarningPanel;
+    public GameObject DialogueSystem;
     public Image stamina;
     public Image charge;
 
@@ -44,9 +45,17 @@ public class Play_UI : MonoBehaviour
     public void Resume()
     {
         //PauseÃ¢¿¡¼­ ³ª¿È
-        SettingPanel.SetActive(false);
-        Time.timeScale = 1.0f;
+        SettingPanel.SetActive(false);      
         IsPause = false;
+
+        if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == true)
+        {
+            Time.timeScale = 1.0f;
+        }
+        else
+        {
+            Time.timeScale = 0.0f;
+        }
     }
 
     public void MainMenu()

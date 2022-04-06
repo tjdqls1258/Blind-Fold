@@ -489,6 +489,9 @@ ModelImporter:
   - first:
       41386430: 2186277476908879412
     second: ImportLogs
+  - first:
+      74: 1827226128182048838
+    second: Take 001
   externalObjects: {}
   materials:
     materialImportMode: 0

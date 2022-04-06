@@ -10,9 +10,12 @@ public class Interplay_Object : MonoBehaviour
     [SerializeField] private float Ray_distance;
     [SerializeField] private Text exposition_text;
 
-    void Update()
+    void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    void Update()
+    {    
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         //오브젝트의 설명을 보이게 하기 위해서 먼저 레이를 쏴서 
