@@ -7,6 +7,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", 2D) = "white" {}
+		_Metallic_Range_("Metallic (Range)", Range(0,1)) = 0.0
 		_Emission("Emission", float) = 0
 		[HDR] _EmissionColor("EmissionColor", Color) = (0,0,0,0)
 
@@ -51,6 +52,8 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 	half _Intensity[20];
 	half _Glossiness;
 	half _Metallic;
+	half _Metallic_Range_;
+
 	half _RingColorIntensity;
 	half _RingSpeed;
 	half _RingWidth;
@@ -72,7 +75,6 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		o.Normal = n;
 		o.Occlusion = oc.g;
 		o.Emission = c.rgb * tex2D(_MainTex, IN.uv_MainTex).a * _EmissionColor * _Emission;
-		o.Metallic = _Metallic;
 
 		half DiffFromRingCol = abs(o.Albedo.r - _RingColor.r) + abs(o.Albedo.b - _RingColor.b) + abs(o.Albedo.g - _RingColor.g);
 		
@@ -107,7 +109,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 			}
 		}
 
-		o.Metallic = _Metallic;
+		o.Metallic = _Metallic * _Metallic_Range_;
 		o.Smoothness = _Glossiness;
 	}
 
