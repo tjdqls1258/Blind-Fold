@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player_Is_Die : MonoBehaviour
 {
     [SerializeField] private GameObject Player_Head;
+    public GameObject playui;
 
     public void Is_Die()
     {
@@ -12,5 +13,6 @@ public class Player_Is_Die : MonoBehaviour
         GetComponent<Fire_Bullte>().enabled = false;
         GetComponent<Create_Echo>().enabled = false;
         Player_Head.GetComponent<Player_Rotate>().enabled = false;
+        playui.GetComponent<Play_UI>().IsDie();
     }
 }

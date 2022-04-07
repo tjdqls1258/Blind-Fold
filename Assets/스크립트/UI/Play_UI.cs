@@ -10,8 +10,14 @@ public class Play_UI : MonoBehaviour
     public GameObject SettingPanel;
     public GameObject WarningPanel;
     public GameObject DialogueSystem;
+    public GameObject Gameover_panel;
+    public Button Gameover_m_btn;
+    public Button Gameover_r_btn;
+    public Text Gameover_text;
     public Image stamina;
     public Image charge;
+
+    public GameObject Player;
 
     void Update()
     {
@@ -47,14 +53,11 @@ public class Play_UI : MonoBehaviour
         //PauseÃ¢¿¡¼­ ³ª¿È
         SettingPanel.SetActive(false);      
         IsPause = false;
+        Time.timeScale = 1.0f;
 
         if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == false)
         {
             Time.timeScale = 0.0f;
-        }
-        else
-        {
-            Time.timeScale = 1.0f;
         }
     }
 
@@ -73,5 +76,28 @@ public class Play_UI : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void IsDie()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        StartCoroutine(Fadein());
+    }
+
+    IEnumerator Fadein()
+    {
+        float fadecount = 0.0f;
+
+        while (fadecount < 1.0f)
+        {
+            fadecount += 0.1f;
+            Gameover_panel.GetComponent<Image>().color = new Color(0, 0, 0, fadecount);
+            Gameover_m_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
+            Gameover_r_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
+            Gameover_text.color = new Color(255, 0, 0, fadecount);
+            Gameover_panel.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
