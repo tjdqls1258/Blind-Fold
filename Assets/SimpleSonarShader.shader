@@ -7,6 +7,9 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		_MainTex("Albedo (RGB)", 2D) = "white" {}
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", 2D) = "white" {}
+		_Emission("Emission", float) = 0
+		[HDR] _EmissionColor("EmissionColor", Color) = (0,0,0,0)
+
 		_RingColor("Ring Color", Color) = (1,1,1,1)
 		_RingColorIntensity("Ring Color Intensity", float) = 2
 		_RingSpeed("Ring Speed", float) = 1
@@ -16,6 +19,8 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 
 		_BumpTex("Normal Map", 2D) = "bump" {}
 		_OcclTex("Occlusion Map", 2D) = "white" {}
+
+		[HDR]_RingEmission("RingEmission", Color) = (1,1,1,1)
 	}
 		SubShader{
 		Tags{ "RenderType" = "Opaque" }
@@ -24,8 +29,6 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		CGPROGRAM
 		// Physically based Standard lighting model, and enable shadows on all light types
 #pragma surface surf Standard fullforwardshadows
-
-		// Use shader model 3.0 target, to get nicer looking lighting
 #pragma target 3.0
 
 	sampler2D _MainTex;
@@ -46,15 +49,18 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 	half4 _hitPts[20];
 	half _StartTime;
 	half _Intensity[20];
-
 	half _Glossiness;
 	half _Metallic;
-	fixed4 _Color;
-	fixed4 _RingColor;
 	half _RingColorIntensity;
 	half _RingSpeed;
 	half _RingWidth;
 	half _RingIntensityScale;
+	half _Emission;
+
+	fixed4 _RingEmission;
+	fixed4 _EmissionColor;
+	fixed4 _Color;
+	fixed4 _RingColor;
 
 	void surf(Input IN, inout SurfaceOutputStandard o)
 	{
@@ -65,9 +71,11 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		o.Albedo = c.rgb;
 		o.Normal = n;
 		o.Occlusion = oc.g;
+		o.Emission = c.rgb * tex2D(_MainTex, IN.uv_MainTex).a * _EmissionColor * _Emission;
 		o.Metallic = _Metallic;
-		half DiffFromRingCol = abs(o.Albedo.r - _RingColor.r) + abs(o.Albedo.b - _RingColor.b) + abs(o.Albedo.g - _RingColor.g);
 
+		half DiffFromRingCol = abs(o.Albedo.r - _RingColor.r) + abs(o.Albedo.b - _RingColor.b) + abs(o.Albedo.g - _RingColor.g);
+		
 		// Check every point in the array
 		// The goal is to set RGB to highest possible values based on current sonar rings
 		for (int i = 0; i < 20; i++) {
@@ -94,7 +102,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 					o.Albedo.g = tmp.g;
 					o.Albedo.b = tmp.b;
 					o.Albedo.rgb *= _RingColorIntensity;
-					o.Emission = tmp.rgb; //자체적으로 발광.
+					o.Emission = tmp.rgb * _RingEmission; //자체적으로 발광.
 				}
 			}
 		}

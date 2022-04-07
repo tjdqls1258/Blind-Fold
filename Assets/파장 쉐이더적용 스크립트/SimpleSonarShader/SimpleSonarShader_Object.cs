@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class SimpleSonarShader_Object : MonoBehaviour
 {
-
+    [SerializeField] private float Ring_Speed = 3.0f;
+    [SerializeField] private float Ring_Range = 1.0f;
     // All the renderers that will have the sonar data sent to their shaders.
     private Renderer[] ObjectRenderers;
 
@@ -38,7 +39,13 @@ public class SimpleSonarShader_Object : MonoBehaviour
         // Get renderers that will have effect applied to them
         ObjectRenderers = GetComponentsInChildren<Renderer>();
 
-        if(NeedToInitQueues)
+        foreach (Renderer r in ObjectRenderers)
+        {
+            r.material.SetFloat("_RingSpeed", Ring_Speed);
+            r.material.SetFloat("_RingIntensityScale", Ring_Range);
+        }
+
+        if (NeedToInitQueues)
         {
             NeedToInitQueues = false;
             // Fill queues with starting values that are garbage values
@@ -86,6 +93,32 @@ public class SimpleSonarShader_Object : MonoBehaviour
     {
         // Start sonar ring from the contact point
         StartCoroutine(Sonar_agin(collision));
+        StartCoroutine(Serch_Object(collision.gameObject.transform.position, collision.impulse.magnitude / 10.0f));
+    }
+
+    private IEnumerator Serch_Object(Vector4 pos, float Power)
+    {
+        float Timer = 0;
+        float raidus = 0;
+        while (Timer < (Power / 3))
+        {
+            Timer += Time.deltaTime;
+            raidus = Timer * Ring_Speed;
+            if (raidus >= Power)
+            {
+                raidus = Power;
+            }
+            Collider[] Get_Object = Physics.OverlapSphere(pos, raidus);
+
+            for (int count = 0; count < Get_Object.Length; count++)
+            {
+                if (Get_Object[count].gameObject.GetComponent<Interplay_machice>() && !Get_Object[count].gameObject.GetComponent<Interplay_machice>().Is_Emission)
+                {
+                    Get_Object[count].gameObject.GetComponent<Interplay_machice>().Emission_This_Object(3.0f);
+                }
+            }
+            yield return null;
+        }
     }
     IEnumerator Sonar_agin(Collision collision)
     {

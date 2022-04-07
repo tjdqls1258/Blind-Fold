@@ -89,13 +89,13 @@ public class SimpleSonarShader_Parent : MonoBehaviour
             }
             Collider[] Get_Object = Physics.OverlapSphere(pos, raidus);
 
-            //for (int count = 0; count < Get_Object.Length; count++)
-            //{
-            //    if (Get_Object[count].gameObject.GetComponent<Interplay_machice>() && !Get_Object[count].gameObject.GetComponent<Interplay_machice>().Is_Emission)
-            //    {
-            //        Get_Object[count].gameObject.GetComponent<Interplay_machice>().Emission_This_Object(3.0f);
-            //    }
-            //}
+            for (int count = 0; count < Get_Object.Length; count++)
+            {
+                if (Get_Object[count].gameObject.GetComponent<Interplay_machice>() && !Get_Object[count].gameObject.GetComponent<Interplay_machice>().Is_Emission)
+                {
+                    Get_Object[count].gameObject.GetComponent<Interplay_machice>().Emission_This_Object(3.0f);
+                }
+            }
             yield return null;
         }
     }
