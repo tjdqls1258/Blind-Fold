@@ -8,9 +8,11 @@ public class I_SeekPlayer : MonoBehaviour ,IState
     NavMeshAgent navMesh = null;
     Transform Target;
     Animator AI_Run_Ain;
+    GameObject[] Map_Hidding;
 
     public I_SeekPlayer(NavMeshAgent nav, Transform target, GameObject self)
     {
+        Map_Hidding = GameObject.FindGameObjectsWithTag("Hidding");
         AI_Run_Ain = self.GetComponent<Animator>();
         navMesh = nav;
         Target = target;
@@ -18,6 +20,11 @@ public class I_SeekPlayer : MonoBehaviour ,IState
 
     public void Start_State()
     {
+        foreach (GameObject count in Map_Hidding)
+        {
+            count.GetComponent<Hidding_Interplay>().AI_Seek_Player_Now();
+        }
+       
         navMesh.isStopped = false;
         AI_Run_Ain.SetBool("Is_Run", true);
     }
@@ -29,6 +36,11 @@ public class I_SeekPlayer : MonoBehaviour ,IState
 
     public void End_State()
     {
+        foreach (GameObject count in Map_Hidding)
+        {
+            count.GetComponent<Hidding_Interplay>().AI_No_Seek_Player_Now();
+        }
+
         AI_Run_Ain.SetBool("Is_Run", false);
         Target = null;
         navMesh.isStopped = true;

@@ -48,13 +48,13 @@ public class Play_UI : MonoBehaviour
         SettingPanel.SetActive(false);      
         IsPause = false;
 
-        if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == true)
+        if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == false)
         {
-            Time.timeScale = 1.0f;
+            Time.timeScale = 0.0f;
         }
         else
         {
-            Time.timeScale = 0.0f;
+            Time.timeScale = 1.0f;
         }
     }
 

@@ -15,12 +15,18 @@ public class Relay_Sound : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Serch_AI_And_Relay_Sound();
+    }
+
+    public void Serch_AI_And_Relay_Sound()
+    {
         Collider[] AI = Physics.OverlapSphere(gameObject.transform.position, Audible_Distance);
-        for(int ai_count = 0;  ai_count< AI.Length; ai_count++)
+        for (int ai_count = 0; ai_count < AI.Length; ai_count++)
         {
             Relay_Target(100.0f, AI[ai_count].gameObject);
         }
     }
+
     private void Relay_Target(float Sound_Power, GameObject Target)
     {
         //Debug.Log(Target.GetComponent<State_Machine>().ToString());

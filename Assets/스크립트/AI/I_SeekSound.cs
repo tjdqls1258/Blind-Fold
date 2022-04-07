@@ -37,6 +37,7 @@ public class I_SeekSound : IState
     {
         navMesh.isStopped = true;
         Walk_Ain.SetBool("Is_Walk", false);
+        Debug.Log(Walk_Ain.GetBool("Is_Walk"));
     }
 
     private void Serch_Around()//주위를 탐색함

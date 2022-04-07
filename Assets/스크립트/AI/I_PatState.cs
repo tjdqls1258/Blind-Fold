@@ -23,6 +23,7 @@ public class I_PatState : IState
     public void Start_State()
     {
         navMesh.isStopped = false;
+        Walk_Ain.SetBool("Is_Run", false);
         Walk_Ain.SetBool("Is_Walk", true);
         int m_count_copy = Random.Range(0, m_WayPoints.Length);
         navMesh.SetDestination(m_WayPoints[m_count_copy].position);
@@ -40,8 +41,11 @@ public class I_PatState : IState
                 if (m_count_copy != m_count)
                 {
                     navMesh.SetDestination(m_WayPoints[m_count].position);
+                    Debug.Log(m_count);
                     m_count = m_count_copy;
+                    Walk_Ain.SetBool("Is_Walk", true);
                 }
+
             }
             
             time = 0;
