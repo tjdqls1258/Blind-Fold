@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b01f236faa2e8864187087db5745891c, type: 2}
+  - {fileID: 2100000, guid: 1287452804b2dca41b7bf2af1e51108b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Exposition: "\uC90D\uAE30"
+  Is_Emission: 0
 --- !u!114 &6693044000933005651
 MonoBehaviour:
   m_ObjectHideFlags: 0
