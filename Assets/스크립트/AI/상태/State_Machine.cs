@@ -9,6 +9,7 @@ public enum AI_State
     Seek_Player,
     Seek_Echo,
     Pat_State,
+    Atk_State,
     End_State
 };
 
