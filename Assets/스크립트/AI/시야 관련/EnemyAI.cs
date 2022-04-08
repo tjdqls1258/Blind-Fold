@@ -43,23 +43,23 @@ public class EnemyAI : MonoBehaviour
             float angle = Vector3.Angle(_direction, AI_Head.transform.forward);
 
             ////디버그 레이 쏘기.
-            //Vector3 _leftBoundary =
-            //    new Vector3(
-            //        Mathf.Sin((((-View_Angle + 90) * 0.5f) + AI_Head.transform.eulerAngles.y) * Mathf.Deg2Rad),
-            //        0.0f,
-            //    Mathf.Cos((((-View_Angle + 90) * 0.5f) + AI_Head.transform.eulerAngles.y) * Mathf.Deg2Rad));
+            Vector3 _leftBoundary =
+                new Vector3(
+                    Mathf.Sin((((-View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad),
+                    0.0f,
+                Mathf.Cos((((-View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad));
 
-            //Vector3 _rightBoundary =
-            //    new Vector3(
-            //        Mathf.Sin((((View_Angle + 90) * 0.5f) + AI_Head.transform.eulerAngles.y) * Mathf.Deg2Rad),
-            //        0.0f,
-            //    Mathf.Cos((((View_Angle + 90) * 0.5f) + AI_Head.transform.eulerAngles.y) * Mathf.Deg2Rad));
+            Vector3 _rightBoundary =
+                new Vector3(
+                    Mathf.Sin((((View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y+ 90) * Mathf.Deg2Rad),
+                    0.0f,
+                Mathf.Cos((((View_Angle ) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad));
 
-            //Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _leftBoundary * View_Distance, Color.red);
-            //Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _rightBoundary * View_Distance, Color.red);
+            Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _leftBoundary * View_Distance, Color.red);
+            Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _rightBoundary * View_Distance, Color.red);
             //디버그 레이 끝
 
-            if (angle < (View_Angle + 90) * 0.5f)
+            if (angle < (View_Angle) * 0.5f )
             {
                 StopCoroutine(Stop_Seek());
                 //사이에 벽과 같은 장애물이 있는지 여부 판단.
