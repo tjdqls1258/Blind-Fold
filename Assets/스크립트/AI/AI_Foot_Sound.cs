@@ -8,7 +8,7 @@ public class AI_Foot_Sound : MonoBehaviour
     [SerializeField] AudioClip Foot_Sound_Clip;
     // Start is called before the first frame update
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         Foot_Source.PlayOneShot(Foot_Sound_Clip);
         Debug.Log("Sound");
