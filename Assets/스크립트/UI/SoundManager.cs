@@ -13,6 +13,11 @@ public class SoundManager : MonoBehaviour
     private float M_vol_base = 1.0f;
     private float E_vol_base = 1.0f;
 
+    private float tempmusicvol;
+    private float tempeffectvol;
+    private bool m_toggle = true;
+    private bool e_toggle = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +53,35 @@ public class SoundManager : MonoBehaviour
 
         PlayerPrefs.SetFloat("M_vol_base", M_vol_base);
         PlayerPrefs.SetFloat("E_vol_base", E_vol_base);
+    }
+
+    public void musictoggle()
+    {
+        if (m_toggle)
+        {
+            tempmusicvol = MusicVolume.value;
+            MusicVolume.value = 0.0f;
+            m_toggle = false;
+        }
+        else
+        {
+            MusicVolume.value = tempmusicvol;
+            m_toggle = true;
+        }
+    }
+
+    public void effecttoggle()
+    {
+        if (e_toggle)
+        {
+            tempeffectvol = EffectVolume.value;
+            EffectVolume.value = 0.0f;
+            e_toggle = false;
+        }
+        else
+        {
+            EffectVolume.value = tempeffectvol;
+            e_toggle = true;
+        }
     }
 }

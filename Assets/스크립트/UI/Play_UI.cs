@@ -19,9 +19,11 @@ public class Play_UI : MonoBehaviour
 
     public GameObject Player;
 
+    public bool isdie = false;
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !isdie)
         { 
             if(IsPause)
             {
@@ -43,6 +45,9 @@ public class Play_UI : MonoBehaviour
     public void PauseEnter()
     {
         //Pause버튼 클릭
+        Player.GetComponent<Fire_Bullte>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SettingPanel.SetActive(true);
         Time.timeScale = 0.0f;
         IsPause = true;
@@ -51,14 +56,17 @@ public class Play_UI : MonoBehaviour
     public void Resume()
     {
         //Pause창에서 나옴
+        Player.GetComponent<Fire_Bullte>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SettingPanel.SetActive(false);      
         IsPause = false;
         Time.timeScale = 1.0f;
 
-        if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == false)
-        {
-            Time.timeScale = 0.0f;
-        }
+        //if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == false)
+        //{
+        //    Time.timeScale = 0.0f;
+        //}
     }
 
     public void MainMenu()
@@ -83,6 +91,7 @@ public class Play_UI : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         StartCoroutine(Fadein());
+        isdie = true;
     }
 
     IEnumerator Fadein()
