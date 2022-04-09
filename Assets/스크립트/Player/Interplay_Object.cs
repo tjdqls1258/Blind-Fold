@@ -25,7 +25,6 @@ public class Interplay_Object : MonoBehaviour
             {
                 Interplay_machice interplay = hit.transform.gameObject.GetComponent<Interplay_machice>();
                 //설명 보이기
-                Debug.Log(interplay.Exposition);
                 exposition_text.text = interplay.Exposition;
                 if (Input.GetKeyDown(KeyCode.E))
                 {

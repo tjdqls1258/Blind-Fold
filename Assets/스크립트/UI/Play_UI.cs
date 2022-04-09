@@ -96,6 +96,7 @@ public class Play_UI : MonoBehaviour
 
     IEnumerator Fadein()
     {
+        yield return new WaitForSeconds(1.7f);
         float fadecount = 0.0f;
 
         while (fadecount < 1.0f)

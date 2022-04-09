@@ -10,6 +10,5 @@ public class AI_Foot_Sound : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Foot_Source.PlayOneShot(Foot_Sound_Clip);
-        Debug.Log("Sound");
     }
 }

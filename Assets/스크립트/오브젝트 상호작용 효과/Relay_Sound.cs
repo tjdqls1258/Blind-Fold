@@ -10,20 +10,20 @@ public class Relay_Sound : MonoBehaviour
     [SerializeField] 
     [Range(0.01f, 0.99f)] float Decrease_Shame = 0.2f; //벽을 통과 했을 때 소리의 감소정도
 
-    [SerializeField] float Audible_Distance = 10.0f; //최대 가청 거리
+    [SerializeField] float Audible_Distance = 100.0f; //최대 가청 거리
     [SerializeField] float Min_Power = 5.0f; //최소 가청 세기
 
     private void OnCollisionEnter(Collision collision)
     {
-        Serch_AI_And_Relay_Sound();
+        Serch_AI_And_Relay_Sound(100.0f);
     }
 
-    public void Serch_AI_And_Relay_Sound()
+    public void Serch_AI_And_Relay_Sound(float Sound_Power)
     {
         Collider[] AI = Physics.OverlapSphere(gameObject.transform.position, Audible_Distance);
         for (int ai_count = 0; ai_count < AI.Length; ai_count++)
         {
-            Relay_Target(100.0f, AI[ai_count].gameObject);
+            Relay_Target(Sound_Power, AI[ai_count].gameObject);
         }
     }
 

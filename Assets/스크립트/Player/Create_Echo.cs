@@ -15,7 +15,7 @@ public class Create_Echo : MonoBehaviour
     Relay_Sound relay_Sound;
     private void Start()
     {
-        relay_Sound = GetComponent<Relay_Sound>();
+        relay_Sound = gameObject.GetComponent<Relay_Sound>();
     }
 
     private void Update()
@@ -31,10 +31,10 @@ public class Create_Echo : MonoBehaviour
         }
         if(Input.GetKeyUp(KeyCode.Q))
         {
+            relay_Sound.Serch_AI_And_Relay_Sound(1000.0f);
             map_parent.GetComponent<SimpleSonarShader_Parent>().StartSonarRing(transform.position, Echo_Power * Min_Echo_Power);
             Echo_Power = 0;
             Echo_Power_Charge.fillAmount = Echo_Power / Max_Echo_Power;
-            relay_Sound.Serch_AI_And_Relay_Sound();
         }  
     }
 }

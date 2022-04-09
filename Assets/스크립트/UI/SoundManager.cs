@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
         MusicVolume.value = M_vol_base;
         EffectVolume.value = E_vol_base;
 
-        MusicAudio.volume = MusicVolume.value;
+        //MusicAudio.volume = MusicVolume.value;
         for (int i = 0; i < EffectAudio.Length; i++)
         {
             EffectAudio[i].volume = EffectVolume.value;
@@ -42,7 +42,7 @@ public class SoundManager : MonoBehaviour
 
     public void SoundSetting()
     {
-        MusicAudio.volume = MusicVolume.value;
+        //MusicAudio.volume = MusicVolume.value;
         for (int i = 0; i < EffectAudio.Length; i++)
         {
             EffectAudio[i].volume = EffectVolume.value;

@@ -91,9 +91,9 @@ public class SimpleSonarShader_Parent : MonoBehaviour
 
             for (int count = 0; count < Get_Object.Length; count++)
             {
-                if (Get_Object[count].gameObject.GetComponent<Interplay_machice>() && !Get_Object[count].gameObject.GetComponent<Interplay_machice>().Is_Emission)
+                if (Get_Object[count].gameObject.GetComponent<Emission_Effect>() && !Get_Object[count].gameObject.GetComponent<Emission_Effect>().Is_Emission)
                 {
-                    Get_Object[count].gameObject.GetComponent<Interplay_machice>().Emission_This_Object(3.0f);
+                    Get_Object[count].gameObject.GetComponent<Emission_Effect>().Emission_This_Object(3.0f);
                 }
             }
             yield return null;
