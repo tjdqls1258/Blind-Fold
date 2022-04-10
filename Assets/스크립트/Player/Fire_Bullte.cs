@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fire_Bullte : MonoBehaviour
 {
@@ -40,5 +41,10 @@ public class Fire_Bullte : MonoBehaviour
         }
 
         return false;
+    }
+
+    public int get_count_bullet()
+    {
+        return Count_Bullte;
     }
 }

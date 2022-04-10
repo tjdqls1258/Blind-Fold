@@ -6,6 +6,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
 {
     AudioSource Audio;
     float Sound_Value;
+
     private void Awake()
     {
         //해당 컴포넌트를 Interplay_machice에 참조시킨다.
@@ -26,7 +27,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
 
             GameObject.Find("Player").GetComponent<Fire_Bullte>().Bullte = Resources.Load<GameObject>("Rock/" + gameObject.name);
             Debug.Log(gameObject.name);
-              //  Instantiate(this.gameObject, Vector3.zero, Quaternion.identity);
+            //Instantiate(this.gameObject, Vector3.zero, Quaternion.identity);
             Destroy(gameObject);
         }
         
