@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: New game
 --- !u!222 &201085768
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -643,10 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SettingPanel: {fileID: 1626992888}
-  Play_btn: {fileID: 1151122598}
-  Tutorial_btn: {fileID: 0}
-  Setting_btn: {fileID: 1270068944}
-  Exit_btn: {fileID: 1391125686}
+  loadstage_num: 0
 --- !u!1 &625626588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1135,7 @@ GameObject:
   - component: {fileID: 889223848}
   - component: {fileID: 889223847}
   m_Layer: 5
-  m_Name: Tutorial_btn
+  m_Name: Load_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1210,7 +1207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 605649237}
         m_TargetAssemblyTypeName: Title_UI, Assembly-CSharp
-        m_MethodName: TutorialEnter
+        m_MethodName: LoadgameEnter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1233,7 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1497,7 +1494,7 @@ GameObject:
   - component: {fileID: 1151122601}
   - component: {fileID: 1151122600}
   m_Layer: 5
-  m_Name: Play_btn
+  m_Name: Newgame_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1569,7 +1566,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 605649237}
         m_TargetAssemblyTypeName: Title_UI, Assembly-CSharp
-        m_MethodName: PlayEnter
+        m_MethodName: NewgameEnter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2827,7 +2824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2847,7 +2844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tutorial
+  m_Text: Load game
 --- !u!222 &1678428940
 CanvasRenderer:
   m_ObjectHideFlags: 0
