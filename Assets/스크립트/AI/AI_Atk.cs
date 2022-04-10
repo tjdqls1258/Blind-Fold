@@ -6,6 +6,7 @@ public class AI_Atk : MonoBehaviour
 {
     private GameObject Parent;
     [SerializeField] private GameObject Die_Cam;
+    public Emission_Effect Emission_Object;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class AI_Atk : MonoBehaviour
             if (Parent.GetComponent<State_Machine>())
             {
                 collision.transform.gameObject.GetComponent<Player_Is_Die>().Is_Die();
+                Emission_Object.Emission_This_Object(5.0f);
                 Die_Cam.SetActive(true);
                 StartCoroutine(Die_Player());
                 Parent.GetComponent<SphereCollider>().enabled = false;
