@@ -19,7 +19,10 @@ public class EnemyAI : MonoBehaviour
     [Header("State")]
     [SerializeField] private State_Machine state_machine;
 
-    Animator ain;
+    private Animator ain;
+
+    private AudioSource audio;
+    private bool Find_Player = false;
 
     void Awake()
     {
@@ -28,6 +31,7 @@ public class EnemyAI : MonoBehaviour
         state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
         ain = GetComponent<Animator>();
         ain.SetBool("Is_Idle", true);
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -68,8 +72,8 @@ public class EnemyAI : MonoBehaviour
                 {
                     if (_hit.transform.tag == "Player")
                     {
-                        Debug.Log(_hit.transform.tag);                     
-                      
+                        Debug.Log(_hit.transform.tag);
+                        StartCoroutine(Seek_Player(other.gameObject));
                     }
                 }
             }
@@ -79,8 +83,16 @@ public class EnemyAI : MonoBehaviour
     public IEnumerator Seek_Player(GameObject Target)
     {
         //**** 措面 匡何垄绰 家府客 局聪皋捞记 ****
-        yield return new WaitForSeconds(0.5f);
-        state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
+        if (!Find_Player)
+        {
+            audio.PlayOneShot(audio.clip);
+            ain.SetBool("Is_Finder", true);
+            navMesh.isStopped = true;
+            Find_Player = true;
+            yield return new WaitForSeconds(2.0f);
+            ain.SetBool("Is_Finder", false);
+            state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -90,13 +102,14 @@ public class EnemyAI : MonoBehaviour
 
     public void Repeating_Patrol()
     {
+        Find_Player = false;
         state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
         Debug.Log("Repeating");
     }
 
     public IEnumerator Stop_Seek()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(10.0f);
         Repeating_Patrol();
     }
 }
