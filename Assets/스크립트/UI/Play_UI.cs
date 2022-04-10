@@ -11,18 +11,15 @@ public class Play_UI : MonoBehaviour
     public GameObject WarningPanel;
     public GameObject DialogueSystem;
     public GameObject Gameover_panel;
-    public GameObject Bullet;
     public Button Gameover_m_btn;
     public Button Gameover_r_btn;
     public Text Gameover_text;
     public Image stamina;
     public Image charge;
-    public GameObject throw_obj;
 
     public GameObject Player;
 
     public bool isdie = false;
-    private bool throw_ready = false;
 
     void Update()
     {
@@ -110,20 +107,6 @@ public class Play_UI : MonoBehaviour
             Gameover_text.color = new Color(255, 0, 0, fadecount);
             Gameover_panel.SetActive(true);
             yield return new WaitForSeconds(0.1f);
-        }
-    }
-
-    public void Throw_obj()
-    {
-        if (throw_ready)
-        {
-            throw_ready = false;
-            throw_obj.SetActive(false);
-        }
-        else
-        {
-            throw_ready = true;
-            throw_obj.SetActive(true);
         }
     }
 }

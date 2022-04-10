@@ -69,11 +69,18 @@ public class EnemyAI : MonoBehaviour
                     if (_hit.transform.tag == "Player")
                     {
                         Debug.Log(_hit.transform.tag);                     
-                        state_machine.Change_State(new I_SeekPlayer(navMesh, other.transform, this.gameObject));
+                      
                     }
                 }
             }
         }
+    }
+
+    public IEnumerator Seek_Player(GameObject Target)
+    {
+        //**** 措面 匡何垄绰 家府客 局聪皋捞记 ****
+        yield return new WaitForSeconds(0.5f);
+        state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
     }
 
     private void OnTriggerExit(Collider other)
