@@ -12,7 +12,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
         //해당 컴포넌트를 Interplay_machice에 참조시킨다.
         GetComponent<Interplay_machice>().SetInterplay(this);
         Audio = GetComponent<AudioSource>();
-        Sound_Value = PlayerPrefs.GetFloat("E_vol_base");
+        Sound_Value = PlayerPrefs.GetFloat("E_vol_base",1.0f);
     }
 
     public void Effect() 
@@ -37,7 +37,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
     {
         if (collision.gameObject.GetComponent<Object_Sound_Clip>())
         {
-            Audio.PlayOneShot(collision.gameObject.GetComponent<Object_Sound_Clip>().Collider_Sound, 1.0f);
+            Audio.PlayOneShot(collision.gameObject.GetComponent<Object_Sound_Clip>().Collider_Sound, Sound_Value);
         }
     }
     
