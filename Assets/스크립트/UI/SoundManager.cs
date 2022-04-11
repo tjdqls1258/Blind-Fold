@@ -34,12 +34,6 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        SoundSetting();
-    }
-
     public void SoundSetting()
     {
         //MusicAudio.volume = MusicVolume.value;
