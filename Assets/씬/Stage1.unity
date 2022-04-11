@@ -2781,6 +2781,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268896885}
   m_CullTransparentMesh: 1
+--- !u!82 &270928077 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 658670921, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+  m_PrefabInstance: {fileID: 171035452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &288970768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3102,6 +3107,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312175685}
   m_CullTransparentMesh: 1
+--- !u!82 &315147473 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 312199065, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+  m_PrefabInstance: {fileID: 171035452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &321695334
 Mesh:
   m_ObjectHideFlags: 0
@@ -6568,7 +6578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &782224211
 Light:
   m_ObjectHideFlags: 0
@@ -6866,7 +6876,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 504038773}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 100
   m_OnValueChanged:
@@ -8991,7 +9001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 59.02
+      value: 1.76
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9027,7 +9037,7 @@ PrefabInstance:
       objectReference: {fileID: 385184360}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Count_Bullte
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3328462874641346507, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: exposition_text
@@ -15363,7 +15373,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 268896886}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 100
   m_OnValueChanged:
@@ -15853,7 +15863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1935487068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15870,8 +15880,11 @@ MonoBehaviour:
   EffectVolume: {fileID: 1895437322}
   MusicAudio: {fileID: 0}
   EffectAudio:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1741060365}
+  - {fileID: 315147473}
+  - {fileID: 270928077}
+  - {fileID: -1191726729838572160, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
+  - {fileID: -3487310268129906289, guid: aa4a778d02bef8246b3cc6b308a70fb3, type: 3}
 --- !u!4 &1935487069
 Transform:
   m_ObjectHideFlags: 0
