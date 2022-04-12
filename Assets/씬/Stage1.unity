@@ -2044,6 +2044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI
       objectReference: {fileID: 0}
+    - target: {fileID: 609911959637251317, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
 --- !u!1 &189540569 stripped
@@ -17356,6 +17360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0178139b4465d404d8f0aaca85a15002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 665288523}
+  target_num: 5
 --- !u!1 &2081570650
 GameObject:
   m_ObjectHideFlags: 0

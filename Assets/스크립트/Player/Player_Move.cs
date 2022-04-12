@@ -17,11 +17,15 @@ public class Player_Move : MonoBehaviour
     [SerializeField] private Image Stamina_Image;
     private Rigidbody rigid;
     private Relay_Sound relay;
+
+    public int collect_key;
     
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
         relay = GetComponent<Relay_Sound>();
+
+        collect_key = 0;
     }
 
     private void Update()
