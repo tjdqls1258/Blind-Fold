@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Relay_Sound : MonoBehaviour
 {
-    [SerializeField]
-    [Range(0, 1000.0f)] float Sound_Power = 100.0f;
+    [Range(0, 1000.0f)] public float Sound_Power = 100.0f;
 
     [SerializeField] 
     [Range(0.01f, 0.99f)] float Decrease_Shame = 0.2f; //벽을 통과 했을 때 소리의 감소정도
