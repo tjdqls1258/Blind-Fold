@@ -43,10 +43,10 @@ Material:
     - _Emission: 0
     - _Glossiness: 0.5
     - _Metallic_Range_: 0
-    - _RingColorIntensity: 2
+    - _RingColorIntensity: 1
     - _RingIntensityScale: 1
-    - _RingSpeed: 1
-    - _RingWidth: 0.1
+    - _RingSpeed: 5
+    - _RingWidth: 0.05
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 0.5226415, b: 0.5226415, a: 0}

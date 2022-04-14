@@ -85,10 +85,10 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RingColorIntensity: 2
+    - _RingColorIntensity: 1
     - _RingIntensityScale: 1
-    - _RingSpeed: 1
-    - _RingWidth: 0.1
+    - _RingSpeed: 5
+    - _RingWidth: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
