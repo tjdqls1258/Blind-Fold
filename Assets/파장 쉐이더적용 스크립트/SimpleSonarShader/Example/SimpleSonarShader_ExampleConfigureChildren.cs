@@ -7,6 +7,7 @@ using UnityEngine;
 public class SimpleSonarShader_ExampleConfigureChildren : MonoBehaviour {
 
     public Material SonarMaterial;
+    public float power;
 
     private void Start()
     {

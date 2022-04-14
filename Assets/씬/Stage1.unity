@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3370e4a693c853c4aa6325c8055c93ce, type: 2}
+  power: 0
 --- !u!43 &19574849
 Mesh:
   m_ObjectHideFlags: 0
@@ -520,6 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &39447546
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -655,6 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &40513532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -937,6 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &95456728
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1051,7 +1055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.213
+      value: 0.048
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1084,6 +1088,10 @@ PrefabInstance:
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 117.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Sound_Power
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
@@ -1475,6 +1483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &140890603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1555,6 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!1001 &146694067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1740,6 +1750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &154124502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1926,6 +1937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &158111586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2293,6 +2305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &223875643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4233,6 +4246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &388523691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4610,6 +4624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &443963167
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4728,8 +4743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0469060ac50970947a4c34cd67e0d41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ring_Speed: 3.5
+  Ring_Speed: 5
   Ring_Range: 1
+  Ring_Width: 0.05
 --- !u!1 &459259162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,6 +4856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &459259168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5274,6 +5291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &517804088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5411,6 +5429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &517872390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5535,6 +5554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &522385258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6023,6 +6043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &676596032
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6181,6 +6202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &718049668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6895,6 +6917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &784292349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7169,6 +7192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &830481148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7412,6 +7436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &837510601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7982,6 +8007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &888535711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8485,6 +8511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &913857771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8843,6 +8870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 8520a0e548ef88243afc19ad22786fd0, type: 2}
+  power: 0
 --- !u!1 &973813226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 107462, guid: 8280470fa5800964fa583bd96da6eff8, type: 3}
@@ -8972,6 +9000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &976338482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9198,7 +9227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.027
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9231,6 +9260,14 @@ PrefabInstance:
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 117.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Sound_Power
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Audible_Distance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
@@ -9770,6 +9807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1063539505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9918,7 +9956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.239
+      value: 0.041
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9951,6 +9989,14 @@ PrefabInstance:
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 117.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Sound_Power
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Audible_Distance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
@@ -10645,6 +10691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &1221560286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10850,6 +10897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1246978058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11442,7 +11490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.04
+      value: 1.822
       objectReference: {fileID: 0}
     - target: {fileID: 441684, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11490,6 +11538,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1849493327255061781, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951723689098449214, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
+      propertyPath: Sound_Power
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5880447245003826707, guid: 71a5880545553674a9f302b0d6db4fec, type: 3}
@@ -11547,6 +11599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &1287250943
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11777,6 +11830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1312073888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12580,6 +12634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &1413169542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12834,6 +12889,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7222646166698029847, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
+      propertyPath: Sound_Power
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8086463717826533183, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
       propertyPath: m_Name
       value: Rock_001
@@ -15546,6 +15605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1883426569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16290,6 +16350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1936276847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16419,6 +16480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!114 &1950573445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16515,6 +16577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!65 &1952320203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17180,6 +17243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SonarMaterial: {fileID: 2100000, guid: 3d8cb6b729acb5d4a91a7e91e0df2b78, type: 2}
+  power: 0
 --- !u!64 &2054265238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17747,6 +17811,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 462614410}
     m_Modifications:
+    - target: {fileID: -7222646166698029847, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
+      propertyPath: Sound_Power
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1191726729838572160, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
       propertyPath: rolloffMode
       value: 1
@@ -17793,7 +17861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8086463717826805749, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.96
+      value: 1.694
       objectReference: {fileID: 0}
     - target: {fileID: 8086463717826805749, guid: b234012bdac5e7e4ca0d4750eacdc0fc, type: 3}
       propertyPath: m_LocalPosition.z

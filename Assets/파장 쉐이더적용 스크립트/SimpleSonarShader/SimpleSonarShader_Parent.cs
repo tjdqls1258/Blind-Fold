@@ -9,6 +9,7 @@ public class SimpleSonarShader_Parent : MonoBehaviour
     [Header("Ring Setting")]
     [SerializeField] private float Ring_Speed = 3.0f;
     [SerializeField] private float Ring_Range = 1.0f;
+    [SerializeField] private float Ring_Width = 0.05f;
     // All the renderers that will have the sonar data sent to their shaders.
     private Renderer[] ObjectRenderers;
 
@@ -32,20 +33,22 @@ public class SimpleSonarShader_Parent : MonoBehaviour
 
     private void Start()
     {
-        //효과를 적용할 렌더러 가져오기
-        ObjectRenderers = GetComponentsInChildren<Renderer>();
-
-        // Fill queues with starting values that are garbage values //큐 초기화
-        foreach (Renderer r in ObjectRenderers)
-        {
-            r.material.SetFloat("_RingSpeed", Ring_Speed);
-            r.material.SetFloat("_RingIntensityScale", Ring_Range);
-        }
-
         for (int i = 0; i < QueueSize; i++)
         {
             positionsQueue.Enqueue(GarbagePosition);
             intensityQueue.Enqueue(-5000f);
+        }
+    }
+
+    private void Awake()
+    {
+        ObjectRenderers = GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer r in ObjectRenderers)
+        {
+            r.sharedMaterial.SetFloat("_RingSpeed", Ring_Speed);
+            r.sharedMaterial.SetFloat("_RingIntensityScale", Ring_Range);
+            r.sharedMaterial.SetFloat("_RingWidth", Ring_Width);
         }
     }
 
@@ -67,7 +70,6 @@ public class SimpleSonarShader_Parent : MonoBehaviour
         {
             if (r)
             {
-                //r.material.SetVectorArray("_ObjectPos", positionsQueue.ToArray());
                 r.material.SetVectorArray("_hitPts", positionsQueue.ToArray());
                 r.material.SetFloatArray("_Intensity", intensityQueue.ToArray());
             }
