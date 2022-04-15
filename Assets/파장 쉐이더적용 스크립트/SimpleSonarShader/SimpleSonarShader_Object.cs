@@ -16,7 +16,7 @@ public class SimpleSonarShader_Object : MonoBehaviour
 
     // The number of rings that can be rendered at once.
     // Must be the samve value as the array size in the shader.
-    private static int QueueSize = 20;
+    private static int QueueSize = 5;
 
     // Queue of start positions of sonar rings.
     // The xyz values hold the xyz of position.

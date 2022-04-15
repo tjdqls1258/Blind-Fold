@@ -47,9 +47,9 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 
 	// The size of these arrays is the number of rings that can be rendered at once.
 	// If you want to change this, you must also change QueueSize in SimpleSonarShader_Parent.cs
-	half4 _hitPts[20];
+	half4 _hitPts[5];
 	half _StartTime;
-	half _Intensity[20];
+	half _Intensity[5];
 	half _Glossiness;
 	half _Metallic;
 	half _Metallic_Range_;
@@ -80,7 +80,7 @@ Shader "MadeByProfessorOakie/SimpleSonarShader" {
 		
 		// Check every point in the array
 		// The goal is to set RGB to highest possible values based on current sonar rings
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 5; i++) {
 
 			half d = distance(_hitPts[i], IN.worldPos);
 			half intensity = _Intensity[i] * _RingIntensityScale;

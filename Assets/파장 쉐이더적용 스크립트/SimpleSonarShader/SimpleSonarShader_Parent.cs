@@ -20,7 +20,7 @@ public class SimpleSonarShader_Parent : MonoBehaviour
     // The xyz values hold the xyz of position.
     // The w value holds the time that position was started.be rendered at once.
     // Must be the samve value as the array size in the shader.
-    private static int QueueSize = 20;  //파장의 반지름(유지 시간) 
+    private static int QueueSize = 5; 
 
     // 파동의 시작 위치 대기열.
     // xyz 값은 위치의 xyz를 유지합니다.

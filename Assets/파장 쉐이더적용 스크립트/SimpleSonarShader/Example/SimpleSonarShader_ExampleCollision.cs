@@ -28,7 +28,6 @@ public class SimpleSonarShader_ExampleCollision : MonoBehaviour
         SimpleSonarShader_Parent parent = GetComponentInParent<SimpleSonarShader_Parent>();
         for (int currnet = 0; currnet < Count_Cycle; currnet++)
         {
-            Debug.Log(currnet);
             if (parent) parent.StartSonarRing(pos, power);
             yield return new WaitForSeconds(0.2f);
         }
