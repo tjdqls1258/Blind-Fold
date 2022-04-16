@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class Title_UI : MonoBehaviour
 {
-    public GameObject SettingPanel;
-    public int loadstage_num;
+    [SerializeField] GameObject SettingPanel;
+    private int loadstage_num;
 
     //public Button Loadgame;
     //public Text Load_text;

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
 {
-    public int questnum;
-    public GameObject trigger;
-    public GameObject dialoguesystem;
-    public GameObject explanation;
+    [SerializeField] int questnum;
+    [SerializeField] GameObject trigger;
+    [SerializeField] GameObject dialoguesystem;
+    [SerializeField] GameObject explanation;
     // Start is called before the first frame update
     void Start()
     {

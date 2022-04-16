@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue info;
-    public Dialoguegroup groupinfo;
+    private Dialogue info;
+    private Dialoguegroup groupinfo;
 
     private void Start()
     {

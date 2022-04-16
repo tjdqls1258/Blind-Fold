@@ -6,20 +6,20 @@ using UnityEngine.UI;
 
 public class Play_UI : MonoBehaviour
 {
-    public static bool IsPause = false;
-    public GameObject SettingPanel;
-    public GameObject WarningPanel;
-    public GameObject DialogueSystem;
-    public GameObject Gameover_panel;
-    public Button Gameover_m_btn;
-    public Button Gameover_r_btn;
-    public Text Gameover_text;
-    public Image stamina;
-    public Image charge;
+    [SerializeField] static bool IsPause = false;
+    [SerializeField] GameObject SettingPanel;
+    [SerializeField] GameObject WarningPanel;
+    [SerializeField] GameObject DialogueSystem;
+    [SerializeField] GameObject Gameover_panel;
+    [SerializeField] Button Gameover_m_btn;
+    [SerializeField] Button Gameover_r_btn;
+    [SerializeField] Text Gameover_text;
+    [SerializeField] Image stamina;
+    [SerializeField] Image charge;
 
-    public GameObject Player;
+    [SerializeField] GameObject Player;
 
-    public bool isdie = false;
+    [SerializeField] bool isdie = false;
 
     void Update()
     {

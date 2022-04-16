@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public Text testtext;
+    [SerializeField] Text testtext;
     public bool scriptend;
     Queue<string> sentences = new Queue<string>();
 
