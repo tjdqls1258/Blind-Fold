@@ -8,10 +8,8 @@ public class Create_Echo : MonoBehaviour
 {
     [SerializeField] private GameObject map_parent;
     [SerializeField] private float Echo_Power = 0.0f;
-    //[SerializeField] private float Min_Echo_Power = 3.0f;
-    //[SerializeField] private float Max_Echo_Power = 90.0f;
+    //[SerializeField] private uint Count_Cycle = 1;
 
-    //[SerializeField] private Image Echo_Power_Charge;
     Relay_Sound relay_Sound;
     private void Start()
     {
@@ -24,6 +22,17 @@ public class Create_Echo : MonoBehaviour
         {
             relay_Sound.Serch_AI_And_Relay_Sound(1000.0f);
             map_parent.GetComponent<SimpleSonarShader_Parent>().StartSonarRing(transform.position, Echo_Power);
+           // StartCoroutine(Sonar_agin(transform.position, Echo_Power));
         }
     }
+
+    //IEnumerator Sonar_agin(Vector3 pos, float power)
+    //{
+    //    SimpleSonarShader_Parent parent = GetComponentInParent<SimpleSonarShader_Parent>();
+    //    for (int currnet = 0; currnet < Count_Cycle; currnet++)
+    //    {
+    //        if (parent) parent.StartSonarRing(pos, power);
+    //        yield return new WaitForSeconds(0.2f);
+    //    }
+    //}
 }
