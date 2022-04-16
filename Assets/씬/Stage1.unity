@@ -1994,7 +1994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: View_Angle
-      value: 130
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: View_Distance
@@ -2018,6 +2018,10 @@ PrefabInstance:
       objectReference: {fileID: 2005940284}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_WayPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1511496321}
+    - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_WayPoints.Array.data[4]
       value: 
       objectReference: {fileID: 1511496321}
     - target: {fileID: 609911959637251315, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
@@ -6716,7 +6720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &782224211
 Light:
   m_ObjectHideFlags: 0
@@ -9113,9 +9117,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Echo_Power
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: map_parent
       value: 
       objectReference: {fileID: 451952149}
+    - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Count_Cycle
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Echo_Power_Charge
       value: 
@@ -9192,6 +9204,14 @@ PrefabInstance:
       propertyPath: Count_Bullte
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Max_Throw_Power
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Throw_Power_Charge
+      value: 
+      objectReference: {fileID: 1274060296}
     - target: {fileID: 3328462874641346507, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: exposition_text
       value: 
@@ -14005,10 +14025,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
+  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   m_Intensity: 1
   m_Range: 10
-  m_SpotAngle: 130
+  m_SpotAngle: 140
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -17349,7 +17369,7 @@ GameObject:
   - component: {fileID: 2054728500}
   - component: {fileID: 2054728499}
   m_Layer: 5
-  m_Name: Test_Text
+  m_Name: Interplay_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17387,7 +17407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

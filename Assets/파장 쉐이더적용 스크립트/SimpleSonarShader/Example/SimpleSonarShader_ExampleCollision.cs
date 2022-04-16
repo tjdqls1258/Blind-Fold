@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class SimpleSonarShader_ExampleCollision : MonoBehaviour
 {
-    [SerializeField] private uint Count_Cycle = 4;
+    [SerializeField] private uint Count_Cycle = 3;
     [SerializeField] private float power = 10;
+    [SerializeField] private float tick = 0.5f;
     void OnCollisionEnter(Collision collision)
     {
         if(collision.transform.tag == "Player")
@@ -29,7 +30,7 @@ public class SimpleSonarShader_ExampleCollision : MonoBehaviour
         for (int currnet = 0; currnet < Count_Cycle; currnet++)
         {
             if (parent) parent.StartSonarRing(pos, power);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(tick);
         }
     }
 }

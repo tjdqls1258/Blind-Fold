@@ -32,7 +32,7 @@ public class Fire_Bullte : MonoBehaviour
             {
                 Throw_Power = Min_Throw_Power;
             }
-            Throw_Power += Time.deltaTime * 3.0f;
+            Throw_Power += Time.deltaTime * 10.0f;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
         }
         else if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
