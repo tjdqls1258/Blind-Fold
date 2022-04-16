@@ -11,7 +11,6 @@ public class AI_Atk : MonoBehaviour
     private void Start()
     {
         Parent = gameObject.transform.parent.gameObject;
-        Debug.Log(Parent.ToString());
     }
 
     private void OnCollisionEnter(Collision collision)

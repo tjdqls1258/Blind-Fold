@@ -52,11 +52,6 @@ public class I_PatState : IState
         }
     }
 
-    void Enemy_Patrol()
-    {
-        
-    }
-
     public void End_State()
     {
         Walk_Ain.SetBool("Is_Walk", false);

@@ -9,6 +9,7 @@ public class Create_Echo : MonoBehaviour
     [SerializeField] private GameObject map_parent;
     [SerializeField] private float Echo_Power = 0.0f;
     [SerializeField] private uint Count_Cycle = 1;
+    private bool Sonar_Is_Start = false;
 
     Relay_Sound relay_Sound;
     private void Start()
@@ -28,11 +29,16 @@ public class Create_Echo : MonoBehaviour
 
     IEnumerator Sonar_agin(Vector3 pos, float power)
     {
-        SimpleSonarShader_Parent parent = map_parent.GetComponentInParent<SimpleSonarShader_Parent>();
-        for (int currnet = 0; currnet < Count_Cycle; currnet++)
+        if (!Sonar_Is_Start)
         {
-            if (parent) parent.StartSonarRing(pos, power);
-            yield return new WaitForSeconds(0.5f);
+            Sonar_Is_Start = true;
+            SimpleSonarShader_Parent parent = map_parent.GetComponentInParent<SimpleSonarShader_Parent>();
+            for (int currnet = 0; currnet < Count_Cycle; currnet++)
+            {
+                if (parent) parent.StartSonarRing(pos, power);
+                yield return new WaitForSeconds(0.5f);
+            }
+            Sonar_Is_Start = false;
         }
     }
 }

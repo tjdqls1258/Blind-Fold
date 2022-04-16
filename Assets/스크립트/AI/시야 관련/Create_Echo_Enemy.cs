@@ -8,7 +8,6 @@ public class Create_Echo_Enemy : MonoBehaviour
     [SerializeField] private float Delay_Time = 2;
     [SerializeField] private float Echo_Power;
     [SerializeField] private float _Time = 0;
-
     void Update()
     {
         _Time += Time.deltaTime;
