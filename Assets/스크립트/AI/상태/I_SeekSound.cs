@@ -42,7 +42,7 @@ public class I_SeekSound : IState
 
     private void Serch_Around()//주위를 탐색함
     {
-        State_AI.GetComponent<EnemyAI>().Repeating_Patrol();
+        State_AI.GetComponent<EnemyAI>().Repeating_Patrol(0.5f);
         Debug.Log("Enemy Patrol");
     }
 

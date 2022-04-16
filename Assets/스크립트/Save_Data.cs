@@ -72,7 +72,7 @@ public class Save_Data : MonoBehaviour
 
         AI.position = saveData.Enemy_Pos;
         AI.rotation = saveData.Enemy_Rotate;
-        AI.GetComponent<EnemyAI>().Repeating_Patrol();
+        AI.GetComponent<EnemyAI>().Repeating_Patrol(0);
         Debug.Log("로드 완료.");
     }
 }
