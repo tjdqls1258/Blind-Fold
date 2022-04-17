@@ -34,6 +34,9 @@ public class SimpleSonarShader_Object : MonoBehaviour
     private delegate void Delegate();
     private static Delegate RingDelegate;
 
+    private Collider[] Get_Object;
+    private float Timer = 0;
+    private float raidus = 0;
     private void Start()
     {
         // Get renderers that will have effect applied to them
@@ -102,18 +105,18 @@ public class SimpleSonarShader_Object : MonoBehaviour
 
     private IEnumerator Serch_Object(Vector4 pos, float Power)
     {
-        float Timer = 0;
-        float raidus = 0;
+        Debug.Log(pos);
+        Timer = 0;
+        raidus = 0;
         while (Timer < (Power / 3))
         {
-            Timer += Time.deltaTime;
+            Timer += 0.1f;
             raidus = Timer * Ring_Speed;
             if (raidus >= Power)
             {
                 raidus = Power;
             }
-            Collider[] Get_Object = Physics.OverlapSphere(pos, raidus);
-
+            Get_Object = Physics.OverlapSphere(pos, raidus);
             for (int count = 0; count < Get_Object.Length; count++)
             {
                 if (Get_Object[count].gameObject.GetComponent<Emission_Effect>() && !Get_Object[count].gameObject.GetComponent<Emission_Effect>().Is_Emission)
@@ -122,6 +125,7 @@ public class SimpleSonarShader_Object : MonoBehaviour
                 }
             }
             yield return null;
+            //yield return new WaitForSeconds(0.1f);
         }
     }
     IEnumerator Sonar_agin(Collision collision)

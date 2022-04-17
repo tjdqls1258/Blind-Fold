@@ -32,6 +32,9 @@ public class SimpleSonarShader_Parent : MonoBehaviour
 
     private Collider[] Get_Object;
 
+    float Timer = 0;
+    float raidus = 0;
+
     private void Start()
     {
         for (int i = 0; i < QueueSize; i++)
@@ -80,18 +83,18 @@ public class SimpleSonarShader_Parent : MonoBehaviour
 
     private IEnumerator Serch_Object(Vector4 pos, float Power)
     {
-        float Timer = 0;
-        float raidus = 0;
+        Debug.Log(pos);
+        Timer = 0;
+        raidus = 0;
         while (Timer < (Power / 3))
         {
-            Timer += Time.deltaTime;
+            Timer += 0.1f;
             raidus = Timer * Ring_Speed;
             if (raidus >= Power)
             {
                 raidus = Power;
             }
             Get_Object = Physics.OverlapSphere(pos, raidus);
-
             for (int count = 0; count < Get_Object.Length; count++)
             {
                 if (Get_Object[count].gameObject.GetComponent<Emission_Effect>() && !Get_Object[count].gameObject.GetComponent<Emission_Effect>().Is_Emission)
@@ -100,6 +103,7 @@ public class SimpleSonarShader_Parent : MonoBehaviour
                 }
             }
             yield return null;
+            //yield return new WaitForSeconds(0.1f);
         }
     }
 }

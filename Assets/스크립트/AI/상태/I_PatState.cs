@@ -43,7 +43,6 @@ public class I_PatState : IState
                 if (m_count_copy != m_count)
                 {
                     navMesh.SetDestination(m_WayPoints[m_count_copy].position);
-                    Debug.Log(m_count);
                     m_count = m_count_copy;
                     Walk_Ain.SetBool("Is_Walk", true);
                 }

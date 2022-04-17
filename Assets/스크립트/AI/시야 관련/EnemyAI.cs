@@ -107,7 +107,6 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(Wait_Time);
         Find_Player = false;
-        Debug.Log("Is_Working");
         state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
     }
 }

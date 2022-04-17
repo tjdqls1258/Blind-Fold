@@ -61,12 +61,10 @@ public class Relay_Sound : MonoBehaviour
                 {
                     return;
                 }
-                Debug.Log(gameObject.transform.position);
 
                 NavMeshHit hit;
                 if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
                 {
-                    Debug.Log("Move");
                     Target.GetComponent<State_Machine>().Change_State(new I_SeekSound(gameObject.transform.position, Target));
                 }
             }

@@ -9,7 +9,6 @@ public class SimpleSonarShader_ExampleCollision : MonoBehaviour
     [SerializeField] private float power = 10;
     [SerializeField] private float tick = 0.5f;
     private bool Sonar_Is_Start = false;
-
     void OnCollisionEnter(Collision collision)
     {
         if(collision.transform.tag == "Player" || collision.transform.tag == "AI")

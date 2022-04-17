@@ -354,8 +354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5750b0d8d65e2f045a112d7afaddc783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Throwing_Power_X: 1500
-  Throwing_Power_Y: 1000
+  Throwing_Power_X: 150
+  Throwing_Power_Y: 100
 --- !u!114 &-1979732174289572054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c874b92bc1d4964428a01d168eefa9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sound_Power: 10
+  Sound_Power: 100
   Decrease_Shame: 0.2
   Audible_Distance: 50
   Min_Power: 5

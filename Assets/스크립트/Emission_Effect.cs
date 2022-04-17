@@ -7,9 +7,25 @@ public class Emission_Effect : MonoBehaviour
     public bool Is_Emission = false;
     private Renderer[] ObjectRenderers;
 
+    private void Awake()
+    {
+        Is_Emission = false;
+        ObjectRenderers = GetComponentsInChildren<Renderer>();
+
+        if (GetComponent<Renderer>())
+        {
+            GetComponent<Renderer>().material.SetFloat("_Emission", 0.0f);
+        }
+        else
+        {
+            foreach (Renderer r in ObjectRenderers)
+            {
+                r.material.SetFloat("_Emission", 0.0f);
+            }
+        }
+    }
     public void Emission_This_Object(float Wait_Time)
     {
-        ObjectRenderers = GetComponentsInChildren<Renderer>();
         Is_Emission = true;
 
         foreach (Renderer r in ObjectRenderers)
@@ -42,10 +58,9 @@ public class Emission_Effect : MonoBehaviour
             }
             else
             {
-                //GetComponentInChildren<Renderer>().material.SetFloat("_Emission", Fade_Out);
                 foreach (Renderer r in ObjectRenderers)
                 {
-                    r.material.SetFloat("_Emission", 0.5f);
+                    r.material.SetFloat("_Emission", Fade_Out);
                 }
             }
 
@@ -62,7 +77,6 @@ public class Emission_Effect : MonoBehaviour
             {
                 r.material.SetFloat("_Emission", 0.0f);
             }
-            //GetComponentInChildren<Renderer>().material.SetFloat("_Emission", 0.0f);
         }
         Is_Emission = false;
     }

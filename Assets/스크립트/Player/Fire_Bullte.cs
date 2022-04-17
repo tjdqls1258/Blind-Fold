@@ -35,7 +35,7 @@ public class Fire_Bullte : MonoBehaviour
             Throw_Power += Time.deltaTime * 10.0f;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
         }
-        else if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
+        if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
         {
             Instantiate(Bullte, fir_Pos.transform.position, fir_Pos.transform.rotation);
             GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(false);
