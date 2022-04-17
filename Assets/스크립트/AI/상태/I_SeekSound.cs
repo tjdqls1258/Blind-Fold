@@ -9,32 +9,38 @@ public class I_SeekSound : IState
     Vector3 Target_Point;
     GameObject State_AI;
     Animator Walk_Ain;
+    float time = 0;
+    NavMeshHit hit;
 
-    public I_SeekSound(Transform target, GameObject AI)
+    bool Is_Arrive = false;
+    public I_SeekSound(Vector3 target, GameObject AI)
     {
+        Is_Arrive = false;
         State_AI = AI;
-        Target_Point = new Vector3(target.position.x, AI.transform.position.y, target.position.z);
         navMesh = AI.GetComponent<NavMeshAgent>();
+        Target_Point = target;
         Walk_Ain = AI.GetComponent<Animator>();
     }
 
     public void Start_State()
     {
-        navMesh.isStopped = false;
         navMesh.destination = Target_Point;
+        navMesh.isStopped = false;
         Walk_Ain.SetBool("Is_Walk", true);
     }
 
     public void Excute()
-    { 
-        if (navMesh.velocity == Vector3.zero)
+    {
+        if (navMesh.velocity == Vector3.zero && !Is_Arrive)
         {
+            Is_Arrive = true;
             Serch_Around();
         }
     }
 
     public void End_State()
     {
+        navMesh.ResetPath();
         navMesh.isStopped = true;
         Walk_Ain.SetBool("Is_Walk", false);
     }

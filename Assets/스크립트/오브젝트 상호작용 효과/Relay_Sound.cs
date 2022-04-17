@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Relay_Sound : MonoBehaviour
 {
@@ -14,12 +15,16 @@ public class Relay_Sound : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Serch_AI_And_Relay_Sound(100.0f);
+        if (transform.tag != "Player")
+        {
+            Serch_AI_And_Relay_Sound(Sound_Power);
+        }
     }
 
     public void Serch_AI_And_Relay_Sound(float Sound_Power)
     {
         Collider[] AI = Physics.OverlapSphere(gameObject.transform.position, Audible_Distance);
+        
         for (int ai_count = 0; ai_count < AI.Length; ai_count++)
         {
             Relay_Target(Sound_Power, AI[ai_count].gameObject);
@@ -28,13 +33,8 @@ public class Relay_Sound : MonoBehaviour
 
     private void Relay_Target(float Sound_Power, GameObject Target)
     {
-        //Debug.Log(Target.GetComponent<State_Machine>().ToString());
-        //if (Target.GetComponent<State_Machine>().aI_State == AI_State.Seek_Player)
-        //{
-        //    return;
-        //}
         //가청거리보다 멀경우
-        if (Vector3.SqrMagnitude(transform.position - Target.transform.position) >= (Audible_Distance * Audible_Distance)) 
+        if (Vector3.SqrMagnitude(gameObject.transform.position - Target.transform.position) >= (Audible_Distance * Audible_Distance)) 
         {
             return;
         }
@@ -42,7 +42,7 @@ public class Relay_Sound : MonoBehaviour
         RaycastHit[] Object_hit;
         float Audible_Sound = Sound_Power;
         //레이를 쏴서 벽이랑 충돌했을때 소리를 감소시킴
-        Object_hit = Physics.RaycastAll(transform.position, Target.transform.position, Sound_Power);
+        Object_hit = Physics.RaycastAll(gameObject.transform.position, Target.transform.position, Sound_Power);
         
         for(int hit_count = 0; hit_count < Object_hit.Length; hit_count++)
         {
@@ -52,7 +52,7 @@ public class Relay_Sound : MonoBehaviour
             }
         }
         //소리를 거리로 나눔.
-        if (Audible_Sound - Vector3.Distance(transform.position, Target.transform.position) > Min_Power)
+        if (Audible_Sound - Vector3.Distance(gameObject.transform.position, Target.transform.position) > Min_Power)
         {
             //소리를 들었을 경우
             if (Target.GetComponent<State_Machine>())
@@ -61,7 +61,14 @@ public class Relay_Sound : MonoBehaviour
                 {
                     return;
                 }
-                Target.GetComponent<State_Machine>().Change_State(new I_SeekSound(transform, Target));
+                Debug.Log(gameObject.transform.position);
+
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
+                {
+                    Debug.Log("Move");
+                    Target.GetComponent<State_Machine>().Change_State(new I_SeekSound(gameObject.transform.position, Target));
+                }
             }
         }
     }

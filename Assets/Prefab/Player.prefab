@@ -155,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3328462873740829153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10185477, y: 0.35, z: -19.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3328462874641346504}
@@ -181,6 +181,7 @@ MonoBehaviour:
   Min_Stamina_Gage: 3
   Stamina_Gage: 5
   Stamina_Image: {fileID: 0}
+  collect_key: 0
 --- !u!54 &3328462873740829156
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -213,6 +214,10 @@ MonoBehaviour:
   fir_Pos: {fileID: 3328462872937666770}
   Count_Bullte: 5
   Delay: 1
+  Throw_Power: 0
+  Min_Throw_Power: 1
+  Max_Throw_Power: 10
+  Throw_Power_Charge: {fileID: 0}
 --- !u!136 &3198611507755258780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -241,9 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map_parent: {fileID: 0}
   Echo_Power: 0
-  Min_Echo_Power: 3
-  Max_Echo_Power: 5
-  Echo_Power_Charge: {fileID: 0}
+  Echo_Hear_Distance_Power: 50
+  Count_Cycle: 1
 --- !u!114 &386846339652383134
 MonoBehaviour:
   m_ObjectHideFlags: 0

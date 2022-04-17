@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4097195505043946274}
   - component: {fileID: 6815810974549533618}
   - component: {fileID: 5535685882472746525}
+  - component: {fileID: 3785231902368665190}
   m_Layer: 0
   m_Name: rust_key
   m_TagString: Untagged
@@ -123,3 +124,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2669b4052517ef4ba4da036424d202c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3785231902368665190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374289202576707483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba867cc245d8ba46befb72e4a402714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Is_Emission: 0

@@ -8,6 +8,7 @@ public class Create_Echo : MonoBehaviour
 {
     [SerializeField] private GameObject map_parent;
     [SerializeField] private float Echo_Power = 0.0f;
+    [SerializeField] private float Echo_Hear_Distance_Power = 50.0f;
     [SerializeField] private uint Count_Cycle = 1;
     private bool Sonar_Is_Start = false;
 
@@ -21,7 +22,7 @@ public class Create_Echo : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            relay_Sound.Serch_AI_And_Relay_Sound(1000.0f);
+            relay_Sound.Serch_AI_And_Relay_Sound(Echo_Hear_Distance_Power);
             //map_parent.GetComponent<SimpleSonarShader_Parent>().StartSonarRing(transform.position, Echo_Power);
             StartCoroutine(Sonar_agin(transform.position, Echo_Power));
         }

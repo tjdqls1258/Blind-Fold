@@ -92,6 +92,10 @@ public class SimpleSonarShader_Object : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         // Start sonar ring from the contact point
+        if(collision.transform.tag == "Player" || collision.transform.tag == "AI" || transform.tag == "AI")
+        {
+            return;
+        }
         StartCoroutine(Sonar_agin(collision));
         StartCoroutine(Serch_Object(collision.gameObject.transform.position, collision.impulse.magnitude / 10.0f));
     }

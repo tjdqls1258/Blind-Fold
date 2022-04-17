@@ -395,7 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sound_Power: 10
   Decrease_Shame: 0.2
-  Audible_Distance: 100
+  Audible_Distance: 50
   Min_Power: 5
 --- !u!114 &-6966841752174506032
 MonoBehaviour:

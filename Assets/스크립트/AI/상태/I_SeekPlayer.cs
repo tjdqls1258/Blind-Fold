@@ -43,6 +43,7 @@ public class I_SeekPlayer : MonoBehaviour ,IState
 
         AI_Run_Ain.SetBool("Is_Run", false);
         Target = null;
+        navMesh.ResetPath();
         navMesh.isStopped = true;
     }
 

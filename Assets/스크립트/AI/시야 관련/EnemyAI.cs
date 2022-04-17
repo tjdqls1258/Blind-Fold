@@ -65,14 +65,12 @@ public class EnemyAI : MonoBehaviour
 
             if (angle < (View_Angle) * 0.5f )
             {
-                StopCoroutine(Stop_Seek(10.0f));
                 //사이에 벽과 같은 장애물이 있는지 여부 판단.
                 RaycastHit _hit;
                 if (Physics.Raycast(AI_Head.transform.position, _direction, out _hit, View_Distance))
                 {
                     if (_hit.transform.tag == "Player")
                     {
-                        Debug.Log(_hit.transform.tag);
                         StartCoroutine(Seek_Player(other.gameObject));
                     }
                 }
@@ -97,18 +95,19 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        StartCoroutine("Stop_Seek");
+        StartCoroutine(Stop_Seek(10.0f));
     }
 
     public void Repeating_Patrol(float Wait_Time)
     {
-        StopCoroutine(Stop_Seek(Wait_Time));
+        StartCoroutine(Stop_Seek(Wait_Time));
     }
 
     public IEnumerator Stop_Seek(float Wait_Time)
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(Wait_Time);
         Find_Player = false;
+        Debug.Log("Is_Working");
         state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
     }
 }
