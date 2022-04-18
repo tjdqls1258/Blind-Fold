@@ -16,6 +16,7 @@ public class Play_UI : MonoBehaviour
     [SerializeField] Text Gameover_text;
     [SerializeField] Image stamina;
     [SerializeField] Image charge;
+    [SerializeField] Text Key_count;
 
     [SerializeField] GameObject Player;
 
@@ -39,6 +40,8 @@ public class Play_UI : MonoBehaviour
          * stamina.fillAmount = 현재 스태미나(기본 최대, 점점소모됨) / 전체 스태미나(최대치);
          * charge.fillAmount = 현재 차징(기본 0, 점점 차오름) / 전체 차징(최대치);
          */
+
+        Key_count.text = " x " + Player.GetComponent<Player_Move>().collect_key;
     }
 
     public void PauseEnter()
