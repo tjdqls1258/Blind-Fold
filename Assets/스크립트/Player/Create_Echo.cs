@@ -6,11 +6,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Relay_Sound))]
 public class Create_Echo : MonoBehaviour
 {
+    [Header("최상위 맵 오브젝트")]
     [SerializeField] private GameObject map_parent;
+    [Header("Echo 파워 관련")]
     [SerializeField] private float Echo_Power = 0.0f;
     [SerializeField] private float Echo_Hear_Distance_Power = 50.0f;
+    [Header("반복 횟수")]
     [SerializeField] private uint Count_Cycle = 1;
-    [SerializeField] private bool Sonar_Is_Start = false;
+    private bool Sonar_Is_Start = false;
     Relay_Sound relay_Sound;
     private void Start()
     {

@@ -8,11 +8,13 @@ public class Fire_Bullte : MonoBehaviour
     [Header("Bullte Setting")]
     public GameObject Bullte;
     [SerializeField] private Transform fir_Pos;
+
     [Header("InGame Shotting Setting")]
     [SerializeField] private int Count_Bullte = 0;
     [SerializeField] private float Delay = 1.0f;
     private bool Can_Fire = true;
 
+    [Header("돌 던지는 파워정도")]
     [SerializeField] private float Throw_Power = 0.0f;
     [SerializeField] private float Min_Throw_Power = 1.0f;
     [SerializeField] private float Max_Throw_Power = 10.0f;

@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class Player_Move : MonoBehaviour
 {
+    [Header("이동 속도 관련")]
     [SerializeField] private float Run_Speed = 1.5f;
     [SerializeField] private float Move_Speed = 5;
+    [Header("스테미나 관련")]
     [SerializeField] private float Max_Stamina_Gage = 5.0f;
     [SerializeField] private float Min_Stamina_Gage = 1.0f;
     [SerializeField] private float Stamina_Gage = 5.0f;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Hidding_ReturnPlayer : MonoBehaviour
 {
+    [Header("*필수 해당 오브젝트 내부 카메라, 플레이어, UI텍스트 설정")]
     public GameObject Player;
     [SerializeField] private GameObject Cam;
     [SerializeField] private Text Say_GetOut;

@@ -5,13 +5,16 @@ using UnityEngine.AI;
 
 public class Relay_Sound : MonoBehaviour
 {
+    [Header("소리의 강약")]
     [Range(0, 1000.0f)] public float Sound_Power = 100.0f;
 
+    [Header("소리의 감소 정도")]
     [SerializeField] 
-    [Range(0.01f, 0.99f)] float Decrease_Shame = 0.2f; //벽을 통과 했을 때 소리의 감소정도
+    [Range(0.01f, 0.99f)] private float Decrease_Shame = 0.2f; //벽을 통과 했을 때 소리의 감소정도
 
-    [SerializeField] float Audible_Distance = 100.0f; //최대 가청 거리
-    [SerializeField] float Min_Power = 5.0f; //최소 가청 세기
+    [Header("가청 거리")]
+    [SerializeField] private float Audible_Distance = 100.0f; //최대 가청 거리
+    [SerializeField] private float Min_Power = 5.0f; //최소 가청 세기
 
     private void OnCollisionEnter(Collision collision)
     {

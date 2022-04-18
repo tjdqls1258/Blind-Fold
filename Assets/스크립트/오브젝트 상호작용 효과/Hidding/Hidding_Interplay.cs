@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
 {
+    [Header("*필수 내부 카메라 설정")]
     [SerializeField] private GameObject cam;
     private Animator ain;
     private bool Is_Seeking = false;

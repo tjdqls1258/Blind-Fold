@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullte_Move : MonoBehaviour
 {
+    [Header("ด๘ม๖ดย ศ๛")]
     [SerializeField] float Throwing_Power_X = 1000.0f;
     [SerializeField] float Throwing_Power_Y = 1000.0f;
     Rigidbody rigid;

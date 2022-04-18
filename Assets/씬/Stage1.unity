@@ -8956,6 +8956,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386846339652383134, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Decrease_Shame
+      value: 0.333
+      objectReference: {fileID: 0}
     - target: {fileID: 2775551461060706587, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Playui
       value: 
@@ -9002,7 +9006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Run_Speed
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Move_Speed
