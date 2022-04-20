@@ -4132,6 +4132,7 @@ MonoBehaviour:
   Gameover_text: {fileID: 131726837}
   stamina: {fileID: 1512031718}
   charge: {fileID: 1274060296}
+  Key_count: {fileID: 1636242641}
   Player: {fileID: 665288523}
   isdie: 0
 --- !u!114 &385184362
@@ -14518,7 +14519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1821486454
 RectTransform:
   m_ObjectHideFlags: 0

@@ -108,9 +108,9 @@ public class SimpleSonarShader_Object : MonoBehaviour
         Debug.Log(pos);
         Timer = 0;
         raidus = 0;
-        while (Timer < (Power / 3))
+        while (Timer <3.0f)
         {
-            Timer += 0.1f;
+            Timer += Time.deltaTime;
             raidus = Timer * Ring_Speed;
             if (raidus >= Power)
             {
@@ -121,7 +121,7 @@ public class SimpleSonarShader_Object : MonoBehaviour
             {
                 if (Get_Object[count].gameObject.GetComponent<Emission_Effect>() && !Get_Object[count].gameObject.GetComponent<Emission_Effect>().Is_Emission)
                 {
-                    Get_Object[count].gameObject.GetComponent<Emission_Effect>().Emission_This_Object(3.0f);
+                    Get_Object[count].gameObject.GetComponent<Emission_Effect>().Emission_This_Object(4.0f);
                 }
             }
             yield return null;
