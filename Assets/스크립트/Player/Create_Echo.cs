@@ -20,6 +20,15 @@ public class Create_Echo : MonoBehaviour
         relay_Sound = gameObject.GetComponent<Relay_Sound>();
     }
 
+    private void Awake()
+    {
+        Sonar_Is_Start = false;
+    }
+    private void OnEnable()
+    {
+        Sonar_Is_Start = false;
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Q))

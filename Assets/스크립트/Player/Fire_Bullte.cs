@@ -20,6 +20,12 @@ public class Fire_Bullte : MonoBehaviour
     [SerializeField] private float Max_Throw_Power = 10.0f;
     public Image Throw_Power_Charge;
     //총알 발사
+
+    private void OnEnable()
+    {
+        Can_Fire = true;
+    }
+
     private void Update()
     {
         //다항 조건문인데 더 효율적인거 없을까.

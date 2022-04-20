@@ -29,7 +29,6 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     private void Update()
     {
         Say_GetOut.text = "³ª°¡±â";
-        Debug.Log(ani.GetCurrentAnimatorStateInfo(0).normalizedTime);
         if ((Input.GetKeyDown(KeyCode.E)) && (ani.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f) && Player_Hidding)
         {
             ani.SetTrigger("Out");

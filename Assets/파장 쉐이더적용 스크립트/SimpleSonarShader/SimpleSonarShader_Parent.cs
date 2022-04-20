@@ -84,7 +84,6 @@ public class SimpleSonarShader_Parent : MonoBehaviour
 
     private IEnumerator Serch_Object(Vector4 pos, float Power)
     {
-        Debug.Log(pos);
         Timer = 0;
         raidus = 0;
         while (Timer < 3)
