@@ -10,6 +10,7 @@ public class SimpleSonarShader_Parent : MonoBehaviour
     [SerializeField] private float Ring_Speed = 3.0f;
     [SerializeField] private float Ring_Range = 1.0f;
     [SerializeField] private float Ring_Width = 0.05f;
+    [SerializeField] private float Fixed_Speed = 0.05f;
     // All the renderers that will have the sonar data sent to their shaders.
     private Renderer[] ObjectRenderers;
 
@@ -89,7 +90,7 @@ public class SimpleSonarShader_Parent : MonoBehaviour
         while (Timer < 3)
         {
             Timer += Time.deltaTime;
-            raidus = Timer * Ring_Speed;
+            raidus = Timer * Ring_Speed + Fixed_Speed;
             if (raidus >= Power)
             {
                 raidus = Power;

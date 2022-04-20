@@ -8,6 +8,8 @@ public class SimpleSonarShader_Object : MonoBehaviour
 {
     [SerializeField] private float Ring_Speed = 3.0f;
     [SerializeField] private float Ring_Range = 1.0f;
+    [SerializeField] private float Ring_Width = 0.05f;
+    [SerializeField] private float Fixed_Speed = 0.05f;
     // All the renderers that will have the sonar data sent to their shaders.
     private Renderer[] ObjectRenderers;
 
@@ -105,13 +107,12 @@ public class SimpleSonarShader_Object : MonoBehaviour
 
     private IEnumerator Serch_Object(Vector4 pos, float Power)
     {
-        Debug.Log(pos);
         Timer = 0;
         raidus = 0;
         while (Timer <3.0f)
         {
             Timer += Time.deltaTime;
-            raidus = Timer * Ring_Speed;
+            raidus = Timer * Ring_Speed + Fixed_Speed;
             if (raidus >= Power)
             {
                 raidus = Power;
