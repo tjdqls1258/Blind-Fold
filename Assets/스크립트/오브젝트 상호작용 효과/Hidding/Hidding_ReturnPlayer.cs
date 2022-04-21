@@ -8,6 +8,7 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     [Header("*필수 해당 오브젝트 내부 카메라, 플레이어, UI텍스트 설정")]
     public GameObject Player;
     [SerializeField] private GameObject Cam;
+    [SerializeField] private GameObject light;
     [SerializeField] private Text Say_GetOut;
     private Animator ani;
 
@@ -24,6 +25,8 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     {
         yield return null;
         Say_GetOut.text = "나가기";
+        yield return new WaitForSeconds(1.0f);
+        light.SetActive(true);
     }
 
     private void Update()
@@ -39,6 +42,7 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     IEnumerator Wait_For_End_Animation(float End_Time)
     {
         Player_Hidding = false;
+        light.SetActive(false);
         yield return new WaitForSeconds(End_Time);
         ani.ResetTrigger("Out");
         Cam.SetActive(false);

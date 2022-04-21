@@ -29,13 +29,11 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
 
     public void AI_Seek_Player_Now()
     {
-        Debug.Log("추적 중");
         Is_Seeking = true;
     }
 
     public void AI_No_Seek_Player_Now()
     {
-        Debug.Log("추적 종료");
         Is_Seeking = false;
     }
 }
