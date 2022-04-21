@@ -16,7 +16,7 @@ public class 소환술 : MonoBehaviour
 
     IEnumerator Set_Ative_On()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
         따란.SetActive(true);
         Is_Atvie = true;
         StartCoroutine(Set_Ative_OFF());
@@ -24,7 +24,7 @@ public class 소환술 : MonoBehaviour
 
     IEnumerator Set_Ative_OFF()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         따란.SetActive(false);
     }
 }
