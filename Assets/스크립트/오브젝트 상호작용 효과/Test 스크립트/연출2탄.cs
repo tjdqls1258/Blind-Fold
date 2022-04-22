@@ -43,8 +43,7 @@ public class 연출2탄 : MonoBehaviour
             {
                 빛이_있으라.SetActive(false);
             }
-        }
-       
+        } 
     }
 
     IEnumerator Set_Ative_OFF()

@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class Fire_Bullte : MonoBehaviour
 {
     [Header("Bullte Setting")]
-    public GameObject Bullte;
+    
+    public Queue<GameObject> Bullte;
     [SerializeField] private Transform fir_Pos;
 
     [Header("InGame Shotting Setting")]
     [SerializeField] private int Count_Bullte = 0;
+    [SerializeField] private int Max_Count_Bullte = 1;
     [SerializeField] private float Delay = 1.0f;
     private bool Can_Fire = true;
 
@@ -20,6 +22,10 @@ public class Fire_Bullte : MonoBehaviour
     [SerializeField] private float Max_Throw_Power = 10.0f;
     public Image Throw_Power_Charge;
     //ÃÑ¾Ë ¹ß»ç
+    private void Awake()
+    {
+        Bullte = new Queue<GameObject>();
+    }
 
     private void OnEnable()
     {
@@ -45,7 +51,7 @@ public class Fire_Bullte : MonoBehaviour
         }
         if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
         {
-            Instantiate(Bullte, fir_Pos.transform.position, fir_Pos.transform.rotation);
+            Instantiate(Bullte.Dequeue(), fir_Pos.transform.position, fir_Pos.transform.rotation);
             GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(false);
             Can_Fire = false;
             Count_Bullte -= 1;
@@ -63,10 +69,10 @@ public class Fire_Bullte : MonoBehaviour
 
     public bool add_Count_Bullte()
     {
-        if (Count_Bullte == 0)
+        if (Count_Bullte <= Max_Count_Bullte)
         {
             GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(true);
-            Count_Bullte = 1;
+            Count_Bullte += 1;
             return true;
         }
 
