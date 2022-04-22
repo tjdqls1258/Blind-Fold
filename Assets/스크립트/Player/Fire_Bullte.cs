@@ -52,7 +52,7 @@ public class Fire_Bullte : MonoBehaviour
         if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
         {
             Instantiate(Bullte.Dequeue(), fir_Pos.transform.position, fir_Pos.transform.rotation);
-            GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(false);
+            //GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(false);
             Can_Fire = false;
             Count_Bullte -= 1;
             Throw_Power = 0;
@@ -71,7 +71,7 @@ public class Fire_Bullte : MonoBehaviour
     {
         if (Count_Bullte <= Max_Count_Bullte)
         {
-            GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(true);
+            //GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(true);
             Count_Bullte += 1;
             return true;
         }

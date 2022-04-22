@@ -17,6 +17,7 @@ public class Play_UI : MonoBehaviour
     [SerializeField] Image stamina;
     [SerializeField] Image charge;
     [SerializeField] Text Key_count;
+    [SerializeField] Text Stone_count;
 
     [SerializeField] GameObject Player;
 
@@ -42,6 +43,7 @@ public class Play_UI : MonoBehaviour
          */
 
         Key_count.text = " x " + Player.GetComponent<Player_Move>().collect_key;
+        Stone_count.text = " x " + Player.GetComponent<Fire_Bullte>().get_count_bullet();
     }
 
     public void PauseEnter()
