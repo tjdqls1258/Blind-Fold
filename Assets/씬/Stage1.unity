@@ -9727,6 +9727,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Max_Count_Bullte
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Throw_Power_Charge
       value: 
       objectReference: {fileID: 1274060296}

@@ -69,7 +69,7 @@ public class Fire_Bullte : MonoBehaviour
 
     public bool add_Count_Bullte()
     {
-        if (Count_Bullte <= Max_Count_Bullte)
+        if (Count_Bullte < Max_Count_Bullte)
         {
             //GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(true);
             Count_Bullte += 1;
