@@ -42,8 +42,8 @@ public class Play_UI : MonoBehaviour
          * charge.fillAmount = 현재 차징(기본 0, 점점 차오름) / 전체 차징(최대치);
          */
 
-        Key_count.text = " x " + Player.GetComponent<Player_Move>().collect_key;
-        Stone_count.text = " x " + Player.GetComponent<Fire_Bullte>().get_count_bullet();
+        Key_count.text = "x" + Player.GetComponent<Player_Move>().collect_key;
+        Stone_count.text = "x" + Player.GetComponent<Fire_Bullte>().get_count_bullet();
     }
 
     public void PauseEnter()
