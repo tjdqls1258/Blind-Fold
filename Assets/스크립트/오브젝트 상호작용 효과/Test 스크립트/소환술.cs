@@ -11,13 +11,16 @@ public class 소환술 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!Is_Light)
+        if (other.tag == "Player")
         {
-            StartCoroutine(Set_Light_Switch());
-        }
-        if (!Is_Atvie)
-        {
-            StartCoroutine(Set_Ative_On());
+            if (!Is_Light)
+            {
+                StartCoroutine(Set_Light_Switch());
+            }
+            if (!Is_Atvie)
+            {
+                StartCoroutine(Set_Ative_On());
+            }
         }
     }
 

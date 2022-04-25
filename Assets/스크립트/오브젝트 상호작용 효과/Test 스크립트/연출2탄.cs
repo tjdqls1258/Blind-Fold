@@ -17,10 +17,13 @@ public class 연출2탄 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!Is_Atvie)
+        if (other.tag == "Player")
         {
-            StartCoroutine(Set_Ative_On());
-            audioSource.Play();
+            if (!Is_Atvie)
+            {
+                StartCoroutine(Set_Ative_On());
+                audioSource.Play();
+            }
         }
     }
 
