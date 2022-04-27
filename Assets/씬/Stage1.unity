@@ -11329,6 +11329,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Hard_Run
+      value: 
+      objectReference: {fileID: 8300000, guid: 41b885dcac20cfb40b001ecd9f228f6d, type: 3}
+    - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Run_Speed
       value: 2
       objectReference: {fileID: 0}

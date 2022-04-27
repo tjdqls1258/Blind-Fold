@@ -13,10 +13,13 @@ public class Player_Move : MonoBehaviour
     [SerializeField] private float Min_Stamina_Gage = 1.0f;
     [SerializeField] private float Stamina_Gage = 5.0f;
 
+    [SerializeField] private Image Stamina_Image;
+
     private float Is_Run_Speed = 1.0f;
     private bool IsRun = false;
 
-    [SerializeField] private Image Stamina_Image;
+    [SerializeField] private AudioClip Hard_Run;
+
     private Rigidbody rigid;
     private Relay_Sound relay;
     private Animator animator;
@@ -29,7 +32,6 @@ public class Player_Move : MonoBehaviour
         relay = GetComponent<Relay_Sound>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        audioSource.pitch = 1.5f;
         collect_key = 0;
     }
 
@@ -53,6 +55,7 @@ public class Player_Move : MonoBehaviour
         rigid.MovePosition(transform.position + dirset * (Move_Speed*Is_Run_Speed) * Time.deltaTime);
         if(horizontal + vertical != 0 && (!audioSource.isPlaying))
         {
+            audioSource.pitch = 1.5f;
             audioSource.Play();
         }
         if (rigid.velocity != Vector3.zero)
@@ -82,7 +85,11 @@ public class Player_Move : MonoBehaviour
             else
             {
                 animator.SetBool("Is_Run", false);
-                audioSource.pitch = 1.5f;
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.pitch = 1.0f;
+                    audioSource.PlayOneShot(Hard_Run);
+                }
                 IsRun = false;
             }
         }
@@ -90,7 +97,6 @@ public class Player_Move : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             animator.SetBool("Is_Run", false);
-            audioSource.pitch = 1.5f;
             IsRun = false;
         }
 
