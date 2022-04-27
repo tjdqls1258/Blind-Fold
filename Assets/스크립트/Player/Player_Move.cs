@@ -19,14 +19,14 @@ public class Player_Move : MonoBehaviour
     [SerializeField] private Image Stamina_Image;
     private Rigidbody rigid;
     private Relay_Sound relay;
-
+    private Animator animator;
     public int collect_key;
     
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
         relay = GetComponent<Relay_Sound>();
-
+        animator = GetComponent<Animator>();
         collect_key = 0;
     }
 
@@ -69,16 +69,19 @@ public class Player_Move : MonoBehaviour
             if (IsRun && (Stamina_Gage >= 0.01f))
             {
                 Is_Run_Speed = Run_Speed;
+                animator.SetBool("Is_Run", true);
                 Stamina_Gage -= Time.deltaTime;
             }
             else
             {
+                animator.SetBool("Is_Run", false);
                 IsRun = false;
             }
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            animator.SetBool("Is_Run", false);
             IsRun = false;
         }
 

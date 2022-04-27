@@ -10,7 +10,7 @@ public class AI_Atk : MonoBehaviour
 
     private void Start()
     {
-        Parent = gameObject.transform.parent.gameObject;
+        Parent = transform.parent.gameObject;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -19,7 +19,8 @@ public class AI_Atk : MonoBehaviour
         {
             if (Parent.GetComponent<State_Machine>())
             {
-                collision.transform.gameObject.GetComponent<Player_Is_Die>().Is_Die();
+                Transform trans = collision.transform;
+                collision.transform.gameObject.GetComponent<Player_Is_Die>().Is_Die(gameObject);
                 Emission_Object.Emission_This_Object(5.0f);
                 Die_Cam.SetActive(true);
                 StartCoroutine(Die_Player());

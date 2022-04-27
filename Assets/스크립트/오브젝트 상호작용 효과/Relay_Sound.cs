@@ -66,7 +66,7 @@ public class Relay_Sound : MonoBehaviour
                 }
 
                 NavMeshHit hit;
-                if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
+                if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas) && Target.GetComponent<State_Machine>().aI_State != AI_State.Seek_Player)
                 {
                     Target.GetComponent<State_Machine>().Change_State(new I_SeekSound(gameObject.transform.position, Target));
                 }
