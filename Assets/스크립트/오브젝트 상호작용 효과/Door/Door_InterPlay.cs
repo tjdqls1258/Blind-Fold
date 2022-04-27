@@ -12,7 +12,7 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
         animator = GetComponent<Animator>();
         GetComponent<Interplay_machice>().SetInterplay(this);
         animator.SetBool("SwitchDoor", It_Close);
-        if (!It_Close)
+        if (It_Close)
         {
             GetComponent<Interplay_machice>().Exposition = "문 열기";
         }
@@ -25,7 +25,7 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
     public void Effect()
     {
         animator.SetBool("SwitchDoor", It_Close);
-        if (!It_Close)
+        if (It_Close)
         {
             GetComponent<Interplay_machice>().Exposition = "문 열기";
         }

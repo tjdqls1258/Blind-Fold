@@ -20,6 +20,7 @@ public class Player_Move : MonoBehaviour
     private Rigidbody rigid;
     private Relay_Sound relay;
     private Animator animator;
+    private AudioSource audioSource;
     public int collect_key;
     
     private void Start()
@@ -27,6 +28,8 @@ public class Player_Move : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         relay = GetComponent<Relay_Sound>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = 1.5f;
         collect_key = 0;
     }
 
@@ -48,7 +51,10 @@ public class Player_Move : MonoBehaviour
         dirset.y = 0;
 
         rigid.MovePosition(transform.position + dirset * (Move_Speed*Is_Run_Speed) * Time.deltaTime);
-
+        if(horizontal + vertical != 0 && (!audioSource.isPlaying))
+        {
+            audioSource.Play();
+        }
         if (rigid.velocity != Vector3.zero)
         {
             rigid.velocity = Vector3.zero;
@@ -68,6 +74,7 @@ public class Player_Move : MonoBehaviour
 
             if (IsRun && (Stamina_Gage >= 0.01f))
             {
+                audioSource.pitch = 2.5f;
                 Is_Run_Speed = Run_Speed;
                 animator.SetBool("Is_Run", true);
                 Stamina_Gage -= Time.deltaTime;
@@ -75,6 +82,7 @@ public class Player_Move : MonoBehaviour
             else
             {
                 animator.SetBool("Is_Run", false);
+                audioSource.pitch = 1.5f;
                 IsRun = false;
             }
         }
@@ -82,6 +90,7 @@ public class Player_Move : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             animator.SetBool("Is_Run", false);
+            audioSource.pitch = 1.5f;
             IsRun = false;
         }
 
