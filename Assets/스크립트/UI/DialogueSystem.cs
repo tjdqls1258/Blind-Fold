@@ -29,7 +29,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void Next()
     {
-        if (sentences.Count == 0)
+        if ((sentences.Count == 0) || scriptend)
         {
             End();
             return;
@@ -50,6 +50,7 @@ public class DialogueSystem : MonoBehaviour
         //대화창 끄기
         Time.timeScale = 1.0f;
         Debug.Log("튜토 끝 - 재움직임");
+        testtext.text = "";
     }
 
     IEnumerator Next_script()

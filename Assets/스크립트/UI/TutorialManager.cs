@@ -55,4 +55,9 @@ public class TutorialManager : MonoBehaviour
         trigger.GetComponent<DialogueTrigger>().Trigger(radio_num);
         Debug.Log("라디오 시작");
     }
+
+    public void skip_script()
+    {
+        dialoguesystem.GetComponent<DialogueSystem>().End();
+    }
 }
