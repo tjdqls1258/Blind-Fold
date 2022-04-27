@@ -11344,6 +11344,10 @@ PrefabInstance:
       propertyPath: Stamina_Image
       value: 
       objectReference: {fileID: 1512031718}
+    - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Min_Stamina_Gage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_RootOrder
       value: 0
