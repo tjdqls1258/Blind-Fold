@@ -72,7 +72,6 @@ public class Player_Move : MonoBehaviour
         {
             if (Stamina_Gage >= Min_Stamina_Gage)
             {
-                audioSource.Stop();
                 IsRun = true;
             }
 

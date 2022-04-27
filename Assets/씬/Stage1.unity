@@ -2188,7 +2188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1393215958, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6094
+      value: 2.6094
       objectReference: {fileID: 0}
     - target: {fileID: 1393215958, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11346,7 +11346,7 @@ PrefabInstance:
       objectReference: {fileID: 1512031718}
     - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Min_Stamina_Gage
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_RootOrder
