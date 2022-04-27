@@ -14,8 +14,8 @@ public class DialogueSystem : MonoBehaviour
     public void Begin(Dialogue info)
     {
         Player.GetComponent<Fire_Bullte>().enabled = false;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
         scriptend = false;
         sentences.Clear();
 
@@ -36,17 +36,25 @@ public class DialogueSystem : MonoBehaviour
         }
 
         testtext.text = sentences.Dequeue();
+
+        StartCoroutine(Next_script());
     }
 
     public void End()
     {
         Player.GetComponent<Fire_Bullte>().enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
         scriptend = true;
         Debug.Log("end");
         //대화창 끄기
         Time.timeScale = 1.0f;
         Debug.Log("튜토 끝 - 재움직임");
+    }
+
+    IEnumerator Next_script()
+    {
+        yield return new WaitForSeconds(2.0f);
+        Next();
     }
 }

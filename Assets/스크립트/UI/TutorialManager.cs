@@ -8,11 +8,14 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] GameObject trigger;
     [SerializeField] GameObject dialoguesystem;
     [SerializeField] GameObject explanation;
+
+    //[SerializeField] GameObject radio;
+
     // Start is called before the first frame update
     void Start()
     {
         questnum = 0;
-        StartCoroutine(starttuto());
+        //StartCoroutine(starttuto());
     }
 
     IEnumerator starttuto()
@@ -45,5 +48,11 @@ public class TutorialManager : MonoBehaviour
         explanation.SetActive(false);
 
         yield return new WaitUntil(() => questnum > 1);
+    }
+
+    public void radio_script(int radio_num)
+    {
+        trigger.GetComponent<DialogueTrigger>().Trigger(radio_num);
+        Debug.Log("라디오 시작");
     }
 }

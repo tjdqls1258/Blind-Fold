@@ -10,6 +10,9 @@ public class Radio_Effect : MonoBehaviour
     private Light light;
     private bool Is_Ative = true;
 
+    [SerializeField] GameObject UI;
+    public int radio_num;
+
     void Start()
     {
         audio = GetComponent<AudioSource>();
@@ -22,7 +25,10 @@ public class Radio_Effect : MonoBehaviour
         {
             audio.Play();
             light.enabled = true;
-            Text.text = Talk;
+            //Text.text = Talk;
+
+            UI.GetComponent<TutorialManager>().radio_script(radio_num);
+            Debug.Log("라디오 상호작용");
         }
     }
 

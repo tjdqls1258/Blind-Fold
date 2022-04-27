@@ -5630,7 +5630,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385184360}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d1ed2082293a2b43ac75188ec521644, type: 3}
   m_Name: 
@@ -6476,10 +6476,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f950e40083fa78347a665c53aa390c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
+  audio: {fileID: 475077934}
   Text: {fileID: 333592995}
   Talk: "\uB300\uCDA9 \uC790\uB9C9\uC774\uB77C\uB294 \uD45C\uC2DC (\uB300\uCDA9 \uB044\uB355\uC774\uB294
     \uC774\uBAA8\uD2F0\uCF58)"
+  UI: {fileID: 385184360}
+  radio_num: 0
 --- !u!82 &475077934
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9099,6 +9101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d03977e014971745a4191e706fdc8a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groupinfo:
+    d_group: []
 --- !u!1 &830481145
 GameObject:
   m_ObjectHideFlags: 0
@@ -17162,7 +17166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1811179712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17175,9 +17179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45dd21b80dc548c4caa80ef6858b0f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testtext: {fileID: 1337677788}
+  testtext: {fileID: 333592995}
   scriptend: 0
-  Player: {fileID: 0}
+  Player: {fileID: 665288523}
 --- !u!4 &1811179713
 Transform:
   m_ObjectHideFlags: 0
