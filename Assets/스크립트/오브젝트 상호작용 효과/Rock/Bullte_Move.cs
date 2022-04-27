@@ -13,7 +13,7 @@ public class Bullte_Move : MonoBehaviour
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        Bullet_Charge = GameObject.FindWithTag("Player").GetComponent<Fire_Bullte>().get_bullet_charge();
+        Bullet_Charge = GameObject.FindWithTag("Player").GetComponent<Fire_Bullte>().get_bullet_charge();        
         Rock_Throwing();
     }
 
