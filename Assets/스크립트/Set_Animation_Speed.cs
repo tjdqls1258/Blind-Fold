@@ -5,7 +5,14 @@ using UnityEngine;
 public class Set_Animation_Speed : MonoBehaviour
 {
     [SerializeField] private float Animation_Speed = 1.0f;
-
+    [SerializeField] private bool Is_Cusor_Off;
+    private void Start()
+    {
+        if(Is_Cusor_Off)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
     private void Awake()
     {
         GetComponent<Animator>().speed = Animation_Speed;

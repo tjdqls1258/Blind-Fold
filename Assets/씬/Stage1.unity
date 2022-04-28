@@ -12150,7 +12150,7 @@ GameObject:
   - component: {fileID: 1063539500}
   - component: {fileID: 1063539504}
   - component: {fileID: 1063539505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sector1Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16151,6 +16151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animation_Speed: 0.1
+  Is_Cusor_Off: 1
 --- !u!1 &1593826602
 GameObject:
   m_ObjectHideFlags: 0
