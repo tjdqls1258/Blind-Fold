@@ -18,8 +18,8 @@ public class Interplay_Object : MonoBehaviour
     void Update()
     {    
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, Ray_distance))
+        
+        if (Physics.Raycast(ray, out hit, Ray_distance, ((-1)-(1<<8))))
         {
             if (hit.transform.gameObject.GetComponent<Interplay_machice>())
             {
