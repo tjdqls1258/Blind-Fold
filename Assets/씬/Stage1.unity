@@ -16138,6 +16138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 665288523}
   Player_Head: {fileID: 55907729}
+  Parent: {fileID: 1862054836}
 --- !u!114 &1573538491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20195,7 +20196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tutorial Scene
+  m_Text: 
 --- !u!222 &2054728500
 CanvasRenderer:
   m_ObjectHideFlags: 0

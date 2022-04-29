@@ -68,13 +68,16 @@ public class Player_Move : MonoBehaviour
     {
         Is_Run_Speed = 1.0f;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (Stamina_Gage >= Min_Stamina_Gage)
             {
+                audioSource.Stop();
                 IsRun = true;
             }
-
+        }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
             if (IsRun && (Stamina_Gage >= 0.01f))
             {
                 audioSource.pitch = 2.5f;
@@ -85,7 +88,7 @@ public class Player_Move : MonoBehaviour
             else
             {
                 animator.SetBool("Is_Run", false);
-                if (!audioSource.isPlaying)
+                if (Stamina_Gage <= 0.01f)
                 {
                     audioSource.pitch = 1.0f;
                     audioSource.PlayOneShot(Hard_Run);
@@ -104,6 +107,7 @@ public class Player_Move : MonoBehaviour
         {
             Stamina_Gage += Time.deltaTime;
         }
+
         Stamina_Image.fillAmount = Stamina_Gage / Max_Stamina_Gage;
     }
 }

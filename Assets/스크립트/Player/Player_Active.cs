@@ -6,6 +6,7 @@ public class Player_Active : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject Player_Head;
+    [SerializeField] private GameObject Parent;
 
     private void OnEnable()
     {
@@ -15,5 +16,6 @@ public class Player_Active : MonoBehaviour
         Player_Head.GetComponent<Player_Rotate>().enabled = true;
         Player_Head.GetComponent<Camera>().enabled = true;
         Player_Head.GetComponent<Interplay_Object>().enabled = true;
+        Destroy(Parent);
     }
 }
