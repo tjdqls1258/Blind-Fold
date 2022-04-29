@@ -15,6 +15,8 @@ public class Create_Echo : MonoBehaviour
     [SerializeField] private uint Count_Cycle = 1;
     private bool Sonar_Is_Start = false;
     Relay_Sound relay_Sound;
+
+    [SerializeField] private float stamina_percent;
     private void Start()
     {
         relay_Sound = gameObject.GetComponent<Relay_Sound>();
@@ -33,8 +35,11 @@ public class Create_Echo : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            relay_Sound.Serch_AI_And_Relay_Sound(Echo_Hear_Distance_Power);
-            StartCoroutine(Sonar_agin(transform.position, Echo_Power));
+            stamina_percent = this.GetComponent<Player_Move>().get_stamina_percent();
+            this.GetComponent<Player_Move>().Stamina_Gage -= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f);
+
+            relay_Sound.Serch_AI_And_Relay_Sound(Echo_Hear_Distance_Power * stamina_percent);
+            StartCoroutine(Sonar_agin(transform.position, Echo_Power * stamina_percent));
         }
     }
 
@@ -47,7 +52,7 @@ public class Create_Echo : MonoBehaviour
             for (int currnet = 0; currnet < Count_Cycle; currnet++)
             {
                 if (parent) parent.StartSonarRing(pos, power);
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.5f * stamina_percent);
             }
             Sonar_Is_Start = false;
         }

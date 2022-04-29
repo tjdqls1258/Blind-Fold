@@ -9,9 +9,9 @@ public class Player_Move : MonoBehaviour
     [SerializeField] private float Run_Speed = 1.5f;
     [SerializeField] private float Move_Speed = 5;
     [Header("스테미나 관련")]
-    [SerializeField] private float Max_Stamina_Gage = 5.0f;
+    [SerializeField] public float Max_Stamina_Gage = 5.0f;
     [SerializeField] private float Min_Stamina_Gage = 1.0f;
-    [SerializeField] private float Stamina_Gage = 5.0f;
+    [SerializeField] public float Stamina_Gage = 5.0f;
 
     [SerializeField] private Image Stamina_Image;
 
@@ -116,5 +116,10 @@ public class Player_Move : MonoBehaviour
         }
 
         Stamina_Image.fillAmount = Stamina_Gage / Max_Stamina_Gage;
+    }
+
+    public float get_stamina_percent()
+    {
+        return (Stamina_Gage/Max_Stamina_Gage);
     }
 }
