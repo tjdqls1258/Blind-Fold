@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class 연출2탄 : MonoBehaviour
 {
-    [SerializeField] GameObject 따란;
+    [SerializeField] GameObject[] 짜란;
     [SerializeField] GameObject 빛이_있으라;
     AudioSource audioSource;
-    int count = 20;
-    bool Is_Atvie = false;
+    int count = 30;
+    [SerializeField] bool Is_Atvie = false;
 
     private void Awake()
     {
@@ -29,16 +29,18 @@ public class 연출2탄 : MonoBehaviour
 
     IEnumerator Set_Ative_On()
     {
-        for(int i = 0; i < count; i++)
+        int num = 0;
+        for (int i = 0; i < count; i++)
         {
             yield return new WaitForSeconds(0.05f);
-            if (i == 10)
+            if (i%2 == 1)
             {
-                따란.SetActive(true);
+                num = Random.Range(0, 짜란.Length);
+                짜란[num].SetActive(true);
                 Is_Atvie = true;
-                StartCoroutine(Set_Ative_OFF());
+                StartCoroutine(Set_Ative_OFF(num));
             }
-            if (i % 2 == 1)
+            if (i % 3 == 1)
             {
                 빛이_있으라.SetActive(true);
             }
@@ -47,12 +49,11 @@ public class 연출2탄 : MonoBehaviour
                 빛이_있으라.SetActive(false);
             }
         }
-        Destroy(gameObject);
     }
 
-    IEnumerator Set_Ative_OFF()
+    IEnumerator Set_Ative_OFF(int num)
     {
         yield return new WaitForSeconds(0.5f);
-        따란.SetActive(false);
+        짜란[num].SetActive(false);
     }
 }

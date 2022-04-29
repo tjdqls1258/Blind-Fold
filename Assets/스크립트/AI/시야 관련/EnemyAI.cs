@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     private Animator ain;
 
     private AudioSource audio;
-    private bool Find_Player = false;
+    public bool Find_Player = false;
 
     void Awake()
     {
@@ -83,13 +83,13 @@ public class EnemyAI : MonoBehaviour
         //**** 措面 匡何垄绰 家府客 局聪皋捞记 ****
         if (!Find_Player)
         {
+            state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
             audio.PlayOneShot(audio.clip);
-            ain.SetBool("Is_Finder", true);
+            yield return new WaitForSeconds(2.0f);
+           
             navMesh.isStopped = true;
             Find_Player = true;
-            yield return new WaitForSeconds(2.0f);
             ain.SetBool("Is_Finder", false);
-            state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
         }
     }
 
