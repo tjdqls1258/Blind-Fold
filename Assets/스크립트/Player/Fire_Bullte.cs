@@ -47,24 +47,25 @@ public class Fire_Bullte : MonoBehaviour
                 Throw_Power = Min_Throw_Power;
             }
             Throw_Power += Time.deltaTime * 10.0f;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;          
         }
-        if(Input.GetMouseButtonUp(0) && Can_Fire && Count_Bullte > 0)
+        if(Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
         {
-            Instantiate(Bullte.Dequeue(), fir_Pos.transform.position, fir_Pos.transform.rotation);
-            //GameObject.Find("Game_UI_Base").transform.Find("Stone").gameObject.SetActive(false);
-            Can_Fire = false;
-            Count_Bullte -= 1;
-            Throw_Power = 0;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
-            StartCoroutine(Change_Fire_Bullte());
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
+            if(Can_Fire)
+            {
+                Instantiate(Bullte.Dequeue(), fir_Pos.transform.position, fir_Pos.transform.rotation);
+                Count_Bullte -= 1;
+            }
             Can_Fire = false;
             Throw_Power = 0;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
             StartCoroutine(Change_Fire_Bullte());
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Can_Fire = false;
+            Throw_Power = 0;
+            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
         }
     }
 
