@@ -59,6 +59,13 @@ public class Fire_Bullte : MonoBehaviour
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
             StartCoroutine(Change_Fire_Bullte());
         }
+        if(Input.GetMouseButtonDown(1))
+        {
+            Can_Fire = false;
+            Throw_Power = 0;
+            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            StartCoroutine(Change_Fire_Bullte());
+        }
     }
 
     private IEnumerator Change_Fire_Bullte()

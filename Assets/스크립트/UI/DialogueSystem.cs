@@ -13,7 +13,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void Begin(Dialogue info)
     {
-        Player.GetComponent<Fire_Bullte>().enabled = false;
+        //Player.GetComponent<Fire_Bullte>().enabled = false;
         //Cursor.lockState = CursorLockMode.None;
         //Cursor.visible = true;
         scriptend = false;
