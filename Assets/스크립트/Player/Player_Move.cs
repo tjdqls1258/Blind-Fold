@@ -105,7 +105,14 @@ public class Player_Move : MonoBehaviour
 
         if (Stamina_Gage <= Max_Stamina_Gage && !IsRun)
         {
-            Stamina_Gage += Time.deltaTime;
+            if (Stamina_Gage >= Max_Stamina_Gage)
+            {
+                Stamina_Gage = Max_Stamina_Gage;
+            }
+            else
+            {
+                Stamina_Gage += Time.deltaTime;
+            }
         }
 
         Stamina_Image.fillAmount = Stamina_Gage / Max_Stamina_Gage;
