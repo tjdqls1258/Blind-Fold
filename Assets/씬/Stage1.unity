@@ -16151,7 +16151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff7a16889f2b1e4c8268804ecf57dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animation_Speed: 0.1
+  Animation_Speed: 100
   Is_Cusor_Off: 1
 --- !u!1 &1593826602
 GameObject:

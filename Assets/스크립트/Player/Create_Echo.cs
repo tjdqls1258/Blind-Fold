@@ -33,10 +33,15 @@ public class Create_Echo : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetKeyDown(KeyCode.Q) 
+            && (this.GetComponent<Player_Move>().Stamina_Gage >= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f)))
         {
             stamina_percent = this.GetComponent<Player_Move>().get_stamina_percent();
             this.GetComponent<Player_Move>().Stamina_Gage -= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f);
+            if(this.GetComponent<Player_Move>().Stamina_Gage < 0)
+            {
+                this.GetComponent<Player_Move>().Stamina_Gage = 0;
+            }
 
             relay_Sound.Serch_AI_And_Relay_Sound(Echo_Hear_Distance_Power * stamina_percent);
             StartCoroutine(Sonar_agin(transform.position, Echo_Power * stamina_percent));
