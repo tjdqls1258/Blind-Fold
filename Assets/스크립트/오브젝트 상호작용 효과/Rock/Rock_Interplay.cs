@@ -29,7 +29,6 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
             //Instantiate(this.gameObject, Vector3.zero, Quaternion.identity);
             Destroy(gameObject);
         }
-        
     }
 
     private void OnCollisionEnter(Collision collision)

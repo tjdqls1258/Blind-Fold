@@ -21,7 +21,7 @@ public class Play_UI : MonoBehaviour
 
     [SerializeField] GameObject Player;
 
-    [SerializeField] bool isdie = false;
+    public bool isdie = false;
 
     void Update()
     {
@@ -36,11 +36,6 @@ public class Play_UI : MonoBehaviour
                 PauseEnter();
             }
         }
-        /*
-         * 스태미너 및 파동 차징 함수 들어 갈 곳
-         * stamina.fillAmount = 현재 스태미나(기본 최대, 점점소모됨) / 전체 스태미나(최대치);
-         * charge.fillAmount = 현재 차징(기본 0, 점점 차오름) / 전체 차징(최대치);
-         */
 
         Key_count.text = "x" + Player.GetComponent<Player_Move>().collect_key;
         Stone_count.text = "x" + Player.GetComponent<Fire_Bullte>().get_count_bullet();
