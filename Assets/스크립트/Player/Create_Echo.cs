@@ -45,6 +45,7 @@ public class Create_Echo : MonoBehaviour
             this.GetComponent<Player_Move>().stamina_pause = true;
             stamina_percent = this.GetComponent<Player_Move>().get_stamina_percent();
             this.GetComponent<Player_Move>().Stamina_Gage -= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f);
+            this.GetComponent<Relay_Sound>().Sound_Power *= stamina_percent;
             if (this.GetComponent<Player_Move>().Stamina_Gage < 0)
             {
                 this.GetComponent<Player_Move>().Stamina_Gage = 0;
