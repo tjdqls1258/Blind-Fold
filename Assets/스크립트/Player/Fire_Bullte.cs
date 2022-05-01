@@ -21,6 +21,8 @@ public class Fire_Bullte : MonoBehaviour
     [SerializeField] private float Min_Throw_Power = 1.0f;
     [SerializeField] private float Max_Throw_Power = 10.0f;
     public Image Throw_Power_Charge;
+
+    [SerializeField] private Text interplay;
     //총알 발사
     private void Awake()
     {
@@ -47,7 +49,9 @@ public class Fire_Bullte : MonoBehaviour
                 Throw_Power = Min_Throw_Power;
             }
             Throw_Power += Time.deltaTime * 10.0f;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;          
+            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+
+            interplay.text = "던지기 취소 \n[우클릭]";
         }
         if(Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
         {
@@ -60,12 +64,16 @@ public class Fire_Bullte : MonoBehaviour
             Throw_Power = 0;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
             StartCoroutine(Change_Fire_Bullte());
+
+            interplay.text = " ";
         }
         if (Input.GetMouseButtonDown(1))
         {
             Can_Fire = false;
             Throw_Power = 0;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+
+            interplay.text = " ";
         }
     }
 

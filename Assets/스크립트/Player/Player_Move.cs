@@ -25,6 +25,7 @@ public class Player_Move : MonoBehaviour
     private Animator animator;
     private AudioSource audioSource;
     public int collect_key;
+    public bool stamina_pause = false;
     
     private void Start()
     {
@@ -103,7 +104,7 @@ public class Player_Move : MonoBehaviour
             IsRun = false;
         }
 
-        if (Stamina_Gage <= Max_Stamina_Gage && !IsRun)
+        if (Stamina_Gage <= Max_Stamina_Gage && !IsRun && !stamina_pause)
         {
             if (Stamina_Gage >= Max_Stamina_Gage)
             {
