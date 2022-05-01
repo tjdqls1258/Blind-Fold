@@ -28,13 +28,19 @@ public class Asscet_Password : MonoBehaviour
 
     public void Up_Button(Text Input)
     {
-        int StringInt = int.Parse(Input.text) + 1;
-        Input.text = StringInt.ToString();
+        if (int.Parse(Input.text) < 10)
+        {
+            int StringInt = int.Parse(Input.text) + 1;
+            Input.text = StringInt.ToString();
+        }
     }
 
     public void Down_Button(Text Input)
     {
-        int StringInt = int.Parse(Input.text) - 1;
-        Input.text = StringInt.ToString();
+        if (int.Parse(Input.text) >= 0)
+        {
+            int StringInt = int.Parse(Input.text) - 1;
+            Input.text = StringInt.ToString();
+        }
     }
 }
