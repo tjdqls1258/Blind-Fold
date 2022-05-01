@@ -17,6 +17,11 @@ public class Create_Echo : MonoBehaviour
     Relay_Sound relay_Sound;
 
     [SerializeField] private float stamina_percent;
+    private bool isecho = true;
+
+    [Header("임시 변수")]
+    [SerializeField] private float echocool;
+
     private void Start()
     {
         relay_Sound = gameObject.GetComponent<Relay_Sound>();
@@ -33,18 +38,21 @@ public class Create_Echo : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q) 
+        if (Input.GetKeyDown(KeyCode.Q) && isecho
             && (this.GetComponent<Player_Move>().Stamina_Gage >= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f)))
         {
+            isecho = false;
+            this.GetComponent<Player_Move>().stamina_pause = true;
             stamina_percent = this.GetComponent<Player_Move>().get_stamina_percent();
             this.GetComponent<Player_Move>().Stamina_Gage -= (this.GetComponent<Player_Move>().Max_Stamina_Gage * 0.25f);
-            if(this.GetComponent<Player_Move>().Stamina_Gage < 0)
+            if (this.GetComponent<Player_Move>().Stamina_Gage < 0)
             {
                 this.GetComponent<Player_Move>().Stamina_Gage = 0;
             }
 
             relay_Sound.Serch_AI_And_Relay_Sound(Echo_Hear_Distance_Power * stamina_percent);
             StartCoroutine(Sonar_agin(transform.position, Echo_Power * stamina_percent));
+            StartCoroutine(Echo_cooltime());
         }
     }
 
@@ -61,5 +69,12 @@ public class Create_Echo : MonoBehaviour
             }
             Sonar_Is_Start = false;
         }
+    }
+
+    IEnumerator Echo_cooltime()
+    {
+        yield return new WaitForSeconds(echocool);
+        isecho = true;
+        this.GetComponent<Player_Move>().stamina_pause = false;
     }
 }
