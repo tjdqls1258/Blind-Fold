@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 [System.Serializable]
 public class Save_Data_Class
 {
-    public Vector3 Player_Pos;
-    public Quaternion Player_Rotate;
-
-    public Vector3 Enemy_Pos;
-    public Quaternion Enemy_Rotate;
+    public int Stage_num;
 }
 
 public class Save_Data : MonoBehaviour
@@ -20,10 +16,6 @@ public class Save_Data : MonoBehaviour
     private Save_Data_Class saveData = new Save_Data_Class();
     private string SAVE_DATA_DIRECTORY;
 
-    [SerializeField] private Transform Player;
-    [SerializeField] private Transform AI;
-
-    // Start is called before the first frame update
     void Start()
     {
         SAVE_DATA_DIRECTORY = Application.dataPath + "/SaveFile.txt";
@@ -34,16 +26,14 @@ public class Save_Data : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void SaveData()
     {
-        Player = GameObject.Find("Player").transform;
-        AI = GameObject.Find("AI").transform;
-
-        saveData.Player_Pos = Player.position;
-        saveData.Player_Rotate = Player.rotation;
-
-        saveData.Enemy_Pos = AI.position;
-        saveData.Enemy_Rotate = AI.rotation;
+        saveData.Stage_num = SceneManager.GetActiveScene().buildIndex;
 
         string json = JsonUtility.ToJson(saveData);
 
@@ -52,27 +42,17 @@ public class Save_Data : MonoBehaviour
         Debug.Log("저장완료 : ");
     }
 
-    public void LoadData()
+    public int LoadData()
     {
         if(! File.Exists(SAVE_DATA_DIRECTORY))
         {
             Debug.Log("데이터 없음.");
-            return;
+            return 0;
         }
         string loadJson = File.ReadAllText(SAVE_DATA_DIRECTORY);
 
         saveData = JsonUtility.FromJson<Save_Data_Class>(loadJson);
 
-        Player = GameObject.Find("Player").transform;
-        AI = GameObject.Find("AI").transform;
-        
-
-        Player.position = saveData.Player_Pos;
-        Player.rotation = saveData.Player_Rotate;
-
-        AI.position = saveData.Enemy_Pos;
-        AI.rotation = saveData.Enemy_Rotate;
-        AI.GetComponent<EnemyAI>().Repeating_Patrol(0);
-        Debug.Log("로드 완료.");
+        return saveData.Stage_num;
     }
 }
