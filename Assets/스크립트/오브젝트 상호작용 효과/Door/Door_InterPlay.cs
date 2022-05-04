@@ -6,6 +6,11 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
 {
     Animator animator;
     [SerializeField] bool It_Close = true;
+    [SerializeField] bool Isclear = false;
+    [SerializeField] int key_num;
+
+    [SerializeField] GameObject Player;
+
     private void Awake()
     {
         //해당 컴포넌트를 Interplay_machice에 참조시킨다.
@@ -24,15 +29,23 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
 
     public void Effect()
     {
-        animator.SetBool("SwitchDoor", It_Close);
-        if (It_Close)
+        if (Player.GetComponent<Player_Move>().collect_key >= key_num)
         {
-            GetComponent<Interplay_machice>().Exposition = "문 열기";
+            animator.SetBool("SwitchDoor", It_Close);
+            if (It_Close)
+            {
+                GetComponent<Interplay_machice>().Exposition = "문 열기";
+            }
+            else
+            {
+                GetComponent<Interplay_machice>().Exposition = "문 닫기";
+            }
+            It_Close = !It_Close;
+
+            if (Isclear)
+            {
+                this.GetComponent<ClearPoint>().Clear();
+            }
         }
-        else
-        {
-            GetComponent<Interplay_machice>().Exposition = "문 닫기";
-        }
-        It_Close = !It_Close;
     }
 }

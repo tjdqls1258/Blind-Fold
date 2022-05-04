@@ -5,14 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ClearPoint : MonoBehaviour
 {
-    public GameObject Player;
-    public int target_num;
+    //[SerializeField] GameObject Player;
+    //[SerializeField] int target_num;
 
-    private void OnTriggerEnter(Collider other)
+    public void Clear()
     {
-        if((other.tag == "Player") && (Player.GetComponent<Player_Move>().collect_key >= target_num))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
