@@ -38,6 +38,7 @@ public class Fire_Bullte : MonoBehaviour
     {
         //다항 조건문인데 더 효율적인거 없을까.
         //일단 설명 마우스 좌클릭을 했고 총을 쏠수 있는 상황이며, 총알이 있을경우.
+        
         if (Input.GetMouseButton(0) && Can_Fire && Count_Bullte > 0)
         {
             if (Throw_Power >= Max_Throw_Power)
@@ -50,8 +51,6 @@ public class Fire_Bullte : MonoBehaviour
             }
             Throw_Power += Time.deltaTime * 10.0f;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
-
-            interplay.text = "던지기 취소 \n[우클릭]";
         }
         if(Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
         {
