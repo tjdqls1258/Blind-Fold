@@ -9,8 +9,8 @@ public class Title_UI : MonoBehaviour
     [SerializeField] GameObject SettingPanel;
     private int loadstage_num;
 
-    //public Button Loadgame;
-    //public Text Load_text;
+    public Button Loadgame;
+    public Text Load_text;
 
     //loadgame을 위해 저장된 스테이지 stagenum을 받아와야함.
 
@@ -18,6 +18,17 @@ public class Title_UI : MonoBehaviour
     {
         loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData() + 1;
         Debug.Log(GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData());
+
+        if(loadstage_num > 0)
+        {
+            Loadgame.GetComponent<Button>().interactable = true;
+            Load_text.color = new Color(0, 0, 0, 255);
+        }
+        else
+        {
+            Loadgame.GetComponent<Button>().interactable = false;
+            Load_text.color = new Color(0, 0, 0, 100);
+        }
     }
 
     public void NewgameEnter()
