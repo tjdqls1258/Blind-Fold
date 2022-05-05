@@ -61,11 +61,6 @@ public class Play_UI : MonoBehaviour
         SettingPanel.SetActive(false);      
         IsPause = false;
         Time.timeScale = 1.0f;
-
-        //if (DialogueSystem.GetComponent<DialogueSystem>().scriptend == false)
-        //{
-        //    Time.timeScale = 0.0f;
-        //}
     }
 
     public void MainMenu()
