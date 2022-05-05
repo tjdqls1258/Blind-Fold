@@ -13,6 +13,11 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     private Animator ani;
 
     bool Player_Hidding = false;
+    private void Start()
+    {
+        Say_GetOut = GameObject.Find("Interplay_text").GetComponent<Text>();
+    }
+
     private void OnEnable()
     {
         StartCoroutine(Enable_Do());
