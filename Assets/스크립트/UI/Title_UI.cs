@@ -13,13 +13,12 @@ public class Title_UI : MonoBehaviour
     //public Text Load_text;
 
     //loadgame을 위해 저장된 스테이지 stagenum을 받아와야함.
-    /*
-     * void start()
-     * {
-     *  load 해야할 정보가 있으면 -> loadgame버튼을 반투명->불투명 + 버튼 활성화
-     *  loadstage_num = load 정보(최근 stage)
-     * }
-     */
+
+    private void Start()
+    {
+        loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData() + 1;
+        Debug.Log(GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData());
+    }
 
     public void NewgameEnter()
     {
