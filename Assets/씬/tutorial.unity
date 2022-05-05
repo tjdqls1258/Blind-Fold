@@ -5533,6 +5533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: map_parent
+      value: 
+      objectReference: {fileID: 263001750}
     - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_Name
       value: Player

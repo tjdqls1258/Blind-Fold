@@ -16,9 +16,6 @@ public class Title_UI : MonoBehaviour
 
     private void Start()
     {
-        loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData() + 1;
-        Debug.Log(GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData());
-
         if(loadstage_num > 0)
         {
             Loadgame.GetComponent<Button>().interactable = true;
@@ -40,7 +37,7 @@ public class Title_UI : MonoBehaviour
     public void LoadgameEnter()
     {
         //Loadgame버튼 누를 시 최근 플레이 stage로 이동
-        SceneManager.LoadScene(loadstage_num);
+        GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData();
     }
 
     public void SettingEnter()
