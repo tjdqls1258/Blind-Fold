@@ -6,6 +6,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
 {
     AudioSource Audio;
     float Sound_Value;
+    [SerializeField] bool Is_Map = false;
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Object_Sound_Clip>())
+        if (collision.gameObject.GetComponent<Object_Sound_Clip>() && !Is_Map)
         {
             Audio.PlayOneShot(collision.gameObject.GetComponent<Object_Sound_Clip>().Collider_Sound, Sound_Value);
         }
