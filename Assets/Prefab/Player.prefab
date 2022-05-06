@@ -215,6 +215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745c471ec44609543950e9da61175dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullte: []
+  ScrollSeepd: 10
+  Bullte_Index: 0
   fir_Pos: {fileID: 3328462872937666770}
   Count_Bullte: 0
   Max_Count_Bullte: 1
@@ -666,6 +669,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3328462873740829155}
     m_Modifications:
+    - target: {fileID: 4786223112222899053, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112222899053, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112222899058, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4cccafb3c0b392448961c2a0220ded53, type: 3}
     - target: {fileID: 4786223112655068938, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_Name
       value: Game_UI_Base

@@ -57,7 +57,7 @@ public class Fire_Bullte : MonoBehaviour
         {
             Bullte_Index = (int)Scroll_Index;
         }
-        if(Bullte.Count < Bullte_Index)
+        if(Bullte.Count+1 < Bullte_Index)
         {
             Bullte_Index = Bullte.Count;
         }

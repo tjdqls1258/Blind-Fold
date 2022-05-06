@@ -323,8 +323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b22b3d6832709524a969a87dce89ff09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  AI: {fileID: 0}
 --- !u!4 &1997540896
 Transform:
   m_ObjectHideFlags: 0
@@ -349,6 +347,34 @@ PrefabInstance:
     - target: {fileID: 883291244745342519, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1997540895}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ResetData
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Save_Data, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 883291244936758102, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 883291245368563230, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -384,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 883291246254605657, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 883291246539228842, guid: adefdd4171f0f2646935a65f8ea276a0, type: 3}
       propertyPath: m_Pivot.x
