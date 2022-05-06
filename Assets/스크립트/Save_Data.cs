@@ -16,9 +16,6 @@ public class Save_Data : MonoBehaviour
     private Save_Data_Class saveData = new Save_Data_Class();
     private string SAVE_DATA_DIRECTORY;
 
-    [SerializeField] private Transform Player;
-    [SerializeField] private Transform AI;
-
     // Start is called before the first frame update
     private void Awake()
     {
@@ -32,6 +29,14 @@ public class Save_Data : MonoBehaviour
         {
             Directory.CreateDirectory(SAVE_DATA_DIRECTORY);
         }
+    }
+
+    public void ResetData()
+    {
+        saveData.Stage_num = 1;
+        string json = JsonUtility.ToJson(saveData);
+
+        File.WriteAllText(SAVE_DATA_DIRECTORY, json);
     }
 
     public void SaveData()

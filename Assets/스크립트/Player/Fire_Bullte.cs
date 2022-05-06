@@ -7,7 +7,11 @@ public class Fire_Bullte : MonoBehaviour
 {
     [Header("Bullte Setting")]
     
-    public Queue<GameObject> Bullte;
+    public List<GameObject> Bullte;
+    [SerializeField] private float ScrollSeepd = 10.0f;
+    [SerializeField] private int Bullte_Index;
+    private float Scroll_Index;
+
     [SerializeField] private Transform fir_Pos;
 
     [Header("InGame Shotting Setting")]
@@ -26,7 +30,8 @@ public class Fire_Bullte : MonoBehaviour
     //총알 발사
     private void Awake()
     {
-        Bullte = new Queue<GameObject>();
+        Bullte = new List<GameObject>();
+        Bullte_Index = 0;
     }
 
     private void OnEnable()
@@ -36,27 +41,53 @@ public class Fire_Bullte : MonoBehaviour
 
     private void Update()
     {
-        //다항 조건문인데 더 효율적인거 없을까.
-        //일단 설명 마우스 좌클릭을 했고 총을 쏠수 있는 상황이며, 총알이 있을경우.
-        
+        Selete_Rock();
+        Fire_Bullte_Function();
+    }
+
+    private void Selete_Rock()
+    {
+        if(Bullte.Count <= 1)
+        {
+            Bullte_Index = 0;
+            return;
+        }
+        Scroll_Index = Input.GetAxis("Mouse ScrollWheel") * ScrollSeepd;
+        if(Scroll_Index < 0 || Scroll_Index > 0)
+        {
+            Bullte_Index = (int)Scroll_Index;
+        }
+        if(Bullte.Count < Bullte_Index)
+        {
+            Bullte_Index = Bullte.Count;
+        }
+        else if (Bullte_Index < 0)
+        {
+            Bullte_Index = 0;
+        }
+    }
+
+    private void Fire_Bullte_Function()
+    {
         if (Input.GetMouseButton(0) && Can_Fire && Count_Bullte > 0)
         {
             if (Throw_Power >= Max_Throw_Power)
             {
                 Throw_Power = Max_Throw_Power;
             }
-            else if(Throw_Power <= Min_Throw_Power)
+            else if (Throw_Power <= Min_Throw_Power)
             {
                 Throw_Power = Min_Throw_Power;
             }
             Throw_Power += Time.deltaTime * 10.0f;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
         }
-        if(Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
+        if (Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
         {
-            if(Can_Fire)
+            if (Can_Fire)
             {
-                Instantiate(Bullte.Dequeue(), fir_Pos.transform.position, fir_Pos.transform.rotation);
+                Instantiate(Bullte[Bullte_Index], fir_Pos.transform.position, fir_Pos.transform.rotation);
+                Bullte.RemoveAt(Bullte_Index);
                 Count_Bullte -= 1;
             }
             Can_Fire = false;

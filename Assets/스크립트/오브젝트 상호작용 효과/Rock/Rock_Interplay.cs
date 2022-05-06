@@ -26,7 +26,7 @@ public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
                 gameObject.name = gameObject.name.Substring(0, index);
             }
 
-            GameObject.Find("Player").GetComponent<Fire_Bullte>().Bullte.Enqueue(Resources.Load<GameObject>("Rock/" + gameObject.name));
+            GameObject.Find("Player").GetComponent<Fire_Bullte>().Bullte.Add(Resources.Load<GameObject>("Rock/" + gameObject.name));
             //Instantiate(this.gameObject, Vector3.zero, Quaternion.identity);
             Destroy(gameObject);
         }

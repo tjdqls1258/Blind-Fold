@@ -23,6 +23,11 @@ public class Play_UI : MonoBehaviour
 
     public bool isdie = false;
 
+    void Awake()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !isdie)
