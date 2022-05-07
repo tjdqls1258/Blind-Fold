@@ -70,6 +70,7 @@ public class Fire_Bullte : MonoBehaviour
         {
             Bullte_Index = 0;
         }
+        Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
     }
 
     private void Fire_Bullte_Function()

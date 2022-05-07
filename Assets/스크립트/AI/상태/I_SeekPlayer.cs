@@ -6,13 +6,15 @@ using UnityEngine.AI;
 public class I_SeekPlayer : MonoBehaviour ,IState
 {
     NavMeshAgent navMesh = null;
-    Transform Target;
+    GameObject Target;
+    GameObject State_AI;
     Animator AI_Run_Ain;
     GameObject[] Map_Hidding;
 
-    public I_SeekPlayer(NavMeshAgent nav, Transform target, GameObject self)
+    public I_SeekPlayer(NavMeshAgent nav, GameObject target, GameObject self)
     {
         Map_Hidding = GameObject.FindGameObjectsWithTag("Hidding");
+        State_AI = self;
         AI_Run_Ain = self.GetComponent<Animator>();
         navMesh = nav;
         Target = target;
@@ -31,7 +33,12 @@ public class I_SeekPlayer : MonoBehaviour ,IState
 
     public void Excute()
     {
-        navMesh.SetDestination(Target.position);
+        navMesh.SetDestination(Target.transform.position);
+        NavMeshHit hit;
+        if (!NavMesh.SamplePosition(State_AI.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            State_AI.GetComponent<EnemyAI>().Repeating_Patrol(0.01f);
+        }
     }
 
     public void End_State()

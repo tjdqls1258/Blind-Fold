@@ -46,23 +46,6 @@ public class EnemyAI : MonoBehaviour
             Vector3 _direction = (other.transform.position - AI_Head.transform.position).normalized; //AI가 타겟을 바라보는 방향
             float angle = Vector3.Angle(_direction, AI_Head.transform.forward);
 
-            ////디버그 레이 쏘기.
-            Vector3 _leftBoundary =
-                new Vector3(
-                    Mathf.Sin((((-View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad),
-                    0.0f,
-                Mathf.Cos((((-View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad));
-
-            Vector3 _rightBoundary =
-                new Vector3(
-                    Mathf.Sin((((View_Angle) * 0.5f) + AI_Head.transform.eulerAngles.y+ 90) * Mathf.Deg2Rad),
-                    0.0f,
-                Mathf.Cos((((View_Angle ) * 0.5f) + AI_Head.transform.eulerAngles.y + 90) * Mathf.Deg2Rad));
-
-            Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _leftBoundary * View_Distance, Color.red);
-            Debug.DrawRay(AI_Head.transform.position + AI_Head.transform.up, _rightBoundary * View_Distance, Color.red);
-            //디버그 레이 끝
-
             if (angle < (View_Angle) * 0.5f )
             {
                 //사이에 벽과 같은 장애물이 있는지 여부 판단.
@@ -71,7 +54,11 @@ public class EnemyAI : MonoBehaviour
                 {
                     if (_hit.transform.tag == "Player")
                     {
-                        StartCoroutine(Seek_Player(other.gameObject));
+                        NavMeshHit hit;
+                        if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
+                        {
+                            StartCoroutine(Seek_Player(other.gameObject));
+                        }
                     }
                 }
             }
@@ -83,12 +70,14 @@ public class EnemyAI : MonoBehaviour
         //**** 대충 울부짖는 소리와 애니메이션 ****
         if (!Find_Player)
         {
-            state_machine.Change_State(new I_SeekPlayer(navMesh, Target.transform, this.gameObject));
+            Find_Player = true;
+            ain.SetBool("Is_Finder", true);
+            navMesh.isStopped = true;
             audio.PlayOneShot(audio.clip);
             yield return new WaitForSeconds(2.0f);
-           
-            navMesh.isStopped = true;
-            Find_Player = true;
+
+            state_machine.Change_State(new I_SeekPlayer(navMesh, Target, this.gameObject));
+            navMesh.isStopped = false;
             ain.SetBool("Is_Finder", false);
         }
     }

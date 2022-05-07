@@ -29,8 +29,6 @@ public class Interplay_Object : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     interplay.Interplay();
-                    //각 상호작용마다 Interplay_machice.cs가 필요함
-                    //각 오브젝트의 상호작용 효과 기능은 I_Interplay_effect를 상속받음.
                 }
             }
             else
