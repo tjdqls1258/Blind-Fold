@@ -10,7 +10,7 @@ public class Fire_Bullte : MonoBehaviour
     public List<GameObject> Bullte;
     [SerializeField] private float ScrollSeepd = 10.0f;
     [SerializeField] private int Bullte_Index;
-    [SerializeField] private Image Bullte_Image;
+    public Image Bullte_Image;
     private float Scroll_Index;
 
     [SerializeField] private Transform fir_Pos;
@@ -51,24 +51,23 @@ public class Fire_Bullte : MonoBehaviour
         if(Bullte.Count <= 1)
         {
             Bullte_Index = 0;
+            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
             return;
         }
         Scroll_Index = Input.GetAxis("Mouse ScrollWheel") * ScrollSeepd;
         if(Scroll_Index < 0 || Scroll_Index > 0)
         {
             Bullte_Index = (int)Scroll_Index;
-            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
-        if(Bullte.Count+1 < Bullte_Index)
+        if(Bullte.Count + 1 < Bullte_Index)
         {
             Bullte_Index = Bullte.Count;
-            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
         else if (Bullte_Index < 0)
         {
             Bullte_Index = 0;
-            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
+        Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image; 
     }
 
     private void Fire_Bullte_Function()
@@ -92,6 +91,10 @@ public class Fire_Bullte : MonoBehaviour
             {
                 Instantiate(Bullte[Bullte_Index], fir_Pos.transform.position, fir_Pos.transform.rotation);
                 Bullte.RemoveAt(Bullte_Index);
+                if(Bullte_Index > Bullte.Count)
+                {
+                    Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
+                }
                 Count_Bullte -= 1;
             }
             Can_Fire = false;
