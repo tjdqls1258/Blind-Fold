@@ -88,6 +88,8 @@ public class Fire_Bullte : MonoBehaviour
             Throw_Power += Time.deltaTime * 10.0f;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
 
+            transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = false;
+            transform.Find("Player_Head").GetComponent<Interplay_Object>().exposition_text.text = " ";
             charge_text.text = "던지기 취소\n[우클릭]";
         }
         if (Input.GetMouseButtonUp(0) /*&& Can_Fire*/ && Count_Bullte > 0)
@@ -106,7 +108,7 @@ public class Fire_Bullte : MonoBehaviour
             Throw_Power = 0;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
             StartCoroutine(Change_Fire_Bullte());
-
+            transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = true;
             charge_text.text = " ";
         }
         if (Input.GetMouseButtonDown(1))
@@ -114,7 +116,7 @@ public class Fire_Bullte : MonoBehaviour
             Can_Fire = false;
             Throw_Power = 0;
             Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
-
+            transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = true;
             charge_text.text = " ";
         }
     }

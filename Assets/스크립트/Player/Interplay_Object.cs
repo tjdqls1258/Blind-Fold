@@ -8,7 +8,7 @@ public class Interplay_Object : MonoBehaviour
     private RaycastHit hit;
     private Ray ray;
     [SerializeField] private float Ray_distance;
-    [SerializeField] private Text exposition_text;
+    public Text exposition_text;
 
     void Start()
     {
