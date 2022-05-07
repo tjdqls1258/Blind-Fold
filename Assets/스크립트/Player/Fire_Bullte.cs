@@ -10,6 +10,7 @@ public class Fire_Bullte : MonoBehaviour
     public List<GameObject> Bullte;
     [SerializeField] private float ScrollSeepd = 10.0f;
     [SerializeField] private int Bullte_Index;
+    [SerializeField] private Image Bullte_Image;
     private float Scroll_Index;
 
     [SerializeField] private Transform fir_Pos;
@@ -56,14 +57,17 @@ public class Fire_Bullte : MonoBehaviour
         if(Scroll_Index < 0 || Scroll_Index > 0)
         {
             Bullte_Index = (int)Scroll_Index;
+            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
         if(Bullte.Count+1 < Bullte_Index)
         {
             Bullte_Index = Bullte.Count;
+            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
         else if (Bullte_Index < 0)
         {
             Bullte_Index = 0;
+            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
         }
     }
 

@@ -218,6 +218,7 @@ MonoBehaviour:
   Bullte: []
   ScrollSeepd: 10
   Bullte_Index: 0
+  Bullte_Image: {fileID: 4786223112593540793}
   fir_Pos: {fileID: 3328462872937666770}
   Count_Bullte: 0
   Max_Count_Bullte: 1
@@ -794,6 +795,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4786223112593540793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4786223112222899058, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+  m_PrefabInstance: {fileID: 438861259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4786223111275222351 stripped

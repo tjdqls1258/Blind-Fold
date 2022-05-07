@@ -368,6 +368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 875f6758db183f84c936e1ad6c85d76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Is_Map: 0
+  Rock_Image: {fileID: 21300000, guid: 4cccafb3c0b392448961c2a0220ded53, type: 3}
 --- !u!114 &2638982389217028903
 MonoBehaviour:
   m_ObjectHideFlags: 0
