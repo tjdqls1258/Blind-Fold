@@ -5813,6 +5813,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6210514087734118862, guid: aa4a778d02bef8246b3cc6b308a70fb3, type: 3}
   m_PrefabInstance: {fileID: 1352297124}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1359635369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7006003286951912805, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+  m_PrefabInstance: {fileID: 1501341180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1372799043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6345,6 +6356,10 @@ PrefabInstance:
       propertyPath: ScrollSeepd
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: charge_text
+      value: 
+      objectReference: {fileID: 1359635369}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Max_Count_Bullte
       value: 2

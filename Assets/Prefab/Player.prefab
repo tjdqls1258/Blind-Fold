@@ -683,6 +683,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3328462873740829155}
     m_Modifications:
+    - target: {fileID: 4352633708675236553, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110599199549, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110681853972, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110999286853, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111094940517, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111378528391, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111500207069, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111607544033, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112006371865, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112020795360, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112073257194, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4786223112222899053, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.6
@@ -695,6 +739,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 4cccafb3c0b392448961c2a0220ded53, type: 3}
+    - target: {fileID: 4786223112570442944, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4786223112655068938, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_Name
       value: Game_UI_Base
