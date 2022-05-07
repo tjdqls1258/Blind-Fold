@@ -3636,6 +3636,14 @@ PrefabInstance:
       propertyPath: Say_GetOut
       value: 
       objectReference: {fileID: 1501341182}
+    - target: {fileID: 3971254923447195654, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
+      propertyPath: AI
+      value: 
+      objectReference: {fileID: 1162845303}
+    - target: {fileID: 3971254923447195654, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
+      propertyPath: Max_Distance_For_AI
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3971254923447195898, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -3643,6 +3651,10 @@ PrefabInstance:
     - target: {fileID: 5579013130711179501, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
       propertyPath: m_Name
       value: 5.Hidding
+      objectReference: {fileID: 0}
+    - target: {fileID: 5579013130711179501, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
+      propertyPath: m_TagString
+      value: Hidding
       objectReference: {fileID: 0}
     - target: {fileID: 5579013130711179501, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5183,6 +5195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+--- !u!1 &1162845303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 609911959637251317, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+  m_PrefabInstance: {fileID: 1139023047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1215813798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6275,6 +6292,10 @@ PrefabInstance:
     - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_RootOrder

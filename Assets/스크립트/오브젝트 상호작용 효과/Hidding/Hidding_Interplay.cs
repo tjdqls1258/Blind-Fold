@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
 {
@@ -20,6 +21,7 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
     {
         if(Vector3.Distance(transform.position, AI.transform.position) <= Max_Distance_For_AI)
         {
+            StartCoroutine(ChangeText());
             return;
         }
         GameObject.Find("AI").GetComponent<EnemyAI>().Repeating_Patrol(2.0f);
@@ -30,5 +32,12 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
         Player.gameObject.transform.Find("Player_Head").gameObject.SetActive(false);
         cam.SetActive(true);
         ain.SetTrigger("In");
+    }
+
+    IEnumerator ChangeText()
+    {
+        GetComponent<Interplay_machice>().Exposition = "적이 가까이에 있습니다.";
+        yield return new WaitForSeconds(1.0f);
+        GetComponent<Interplay_machice>().Exposition = "숨기 (E)";
     }
 }
