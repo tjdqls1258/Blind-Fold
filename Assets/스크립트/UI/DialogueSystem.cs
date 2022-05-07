@@ -13,9 +13,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void Begin(Dialogue info)
     {
-        //Player.GetComponent<Fire_Bullte>().enabled = false;
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
+
         scriptend = false;
         sentences.Clear();
 
@@ -24,7 +22,8 @@ public class DialogueSystem : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-        Next();
+        //Next();
+        StartCoroutine(Next_script());
     }
 
     public void Next()
@@ -43,8 +42,6 @@ public class DialogueSystem : MonoBehaviour
     public void End()
     {
         Player.GetComponent<Fire_Bullte>().enabled = true;
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
         scriptend = true;
         Debug.Log("end");
         //¥Î»≠√¢ ≤Ù±‚
@@ -55,7 +52,7 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator Next_script()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         Next();
     }
 }

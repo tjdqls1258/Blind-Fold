@@ -1822,7 +1822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084821657955660363, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4084821657955660363, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4821,34 +4821,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 139398186}
     m_Modifications:
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Size.x
-      value: 5.5519624
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0078032
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Size.z
-      value: 4.7760324
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Center.x
-      value: -5.6360674
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Center.y
-      value: 0.0039016008
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947448, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_Center.z
-      value: 4.3396482
-      objectReference: {fileID: 0}
-    - target: {fileID: 421875300118947449, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 539e54c3a324c7341a61c6edde66d718, type: 3}
     - target: {fileID: 421875300118947450, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
       propertyPath: UI
       value: 
@@ -4904,10 +4876,6 @@ PrefabInstance:
     - target: {fileID: 8847316205635485356, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
       propertyPath: m_Name
       value: Radio
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847316205635485356, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af5d2ae8e904dd4c872e3c37a7a9842, type: 3}
