@@ -51,7 +51,10 @@ public class Fire_Bullte : MonoBehaviour
         if(Bullte.Count <= 1)
         {
             Bullte_Index = 0;
-            Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
+            if (Bullte.Count != 0)
+            {
+                Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
+            }
             return;
         }
         Scroll_Index = Input.GetAxis("Mouse ScrollWheel") * ScrollSeepd;
@@ -67,7 +70,6 @@ public class Fire_Bullte : MonoBehaviour
         {
             Bullte_Index = 0;
         }
-        Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image; 
     }
 
     private void Fire_Bullte_Function()
