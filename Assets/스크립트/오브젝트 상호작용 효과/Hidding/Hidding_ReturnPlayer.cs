@@ -13,10 +13,6 @@ public class Hidding_ReturnPlayer : MonoBehaviour
     private Animator ani;
 
     bool Player_Hidding = false;
-    private void Start()
-    {
-        Say_GetOut = GameObject.Find("Interplay_text").GetComponent<Text>();
-    }
 
     private void OnEnable()
     {
@@ -51,7 +47,8 @@ public class Hidding_ReturnPlayer : MonoBehaviour
         yield return new WaitForSeconds(End_Time);
         ani.ResetTrigger("Out");
         Cam.SetActive(false);
-        Player.SetActive(true);
+        Player.GetComponent<Player_Hidding>().Is_Hidding_End();
+        Player.gameObject.transform.Find("Player_Head").gameObject.SetActive(true);
         this.enabled = false;
     }
 }

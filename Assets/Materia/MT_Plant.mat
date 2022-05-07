@@ -96,7 +96,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1, g: 0.48490566, b: 0.48490566, a: 1}
+    - _EmissionColor: {r: 0.5546935, g: 1, b: 0.48627448, a: 1}
     - _RingColor: {r: 1, g: 1, b: 1, a: 0.50980395}
     - _RingEmission: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

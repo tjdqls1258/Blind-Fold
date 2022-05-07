@@ -45,21 +45,13 @@ public class EnemyAI : MonoBehaviour
         {
             Vector3 _direction = (other.transform.position - AI_Head.transform.position).normalized; //AI가 타겟을 바라보는 방향
             float angle = Vector3.Angle(_direction, AI_Head.transform.forward);
-
-            if (angle < (View_Angle) * 0.5f )
+            RaycastHit _hit;
+            if (angle < (View_Angle) * 0.5f && Physics.Raycast(AI_Head.transform.position, _direction, out _hit, View_Distance))
             {
                 //사이에 벽과 같은 장애물이 있는지 여부 판단.
-                RaycastHit _hit;
-                if (Physics.Raycast(AI_Head.transform.position, _direction, out _hit, View_Distance))
+                if (_hit.transform.tag == "Player")
                 {
-                    if (_hit.transform.tag == "Player")
-                    {
-                        NavMeshHit hit;
-                        if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
-                        {
-                            StartCoroutine(Seek_Player(other.gameObject));
-                        }
-                    }
+                    StartCoroutine(Seek_Player(other.gameObject));
                 }
             }
         }
@@ -84,7 +76,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        StartCoroutine(Stop_Seek(10.0f));
+        StartCoroutine(Stop_Seek(5.0f));
     }
 
     public void Repeating_Patrol(float Wait_Time)
