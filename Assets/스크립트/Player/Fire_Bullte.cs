@@ -28,6 +28,9 @@ public class Fire_Bullte : MonoBehaviour
     public Image Throw_Power_Charge;
 
     [SerializeField] private Text charge_text;
+    
+    public Sprite None_bullet;
+
     //ÃÑ¾Ë ¹ß»ç
     private void Awake()
     {
@@ -51,6 +54,10 @@ public class Fire_Bullte : MonoBehaviour
         if(Bullte.Count <= 1)
         {
             Bullte_Index = 0;
+            if(Bullte.Count == 0)
+            {
+                Bullte_Image.sprite = None_bullet;
+            }
             if (Bullte.Count != 0)
             {
                 Bullte_Image.sprite = Bullte[Bullte_Index].GetComponent<Rock_Interplay>().Rock_Image;
@@ -110,6 +117,7 @@ public class Fire_Bullte : MonoBehaviour
             StartCoroutine(Change_Fire_Bullte());
             transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = true;
             charge_text.text = " ";
+
         }
         if (Input.GetMouseButtonDown(1))
         {
