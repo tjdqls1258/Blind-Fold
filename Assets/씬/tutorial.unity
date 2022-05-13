@@ -6361,6 +6361,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: None_bullet
+      value: 
+      objectReference: {fileID: 21300000, guid: bf9c0e6020706ce4ab202979ed75e99d, type: 3}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: ScrollSeepd
       value: 10
       objectReference: {fileID: 0}
