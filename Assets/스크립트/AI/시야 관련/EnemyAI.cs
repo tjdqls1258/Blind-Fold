@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Patrol Point")]
     [SerializeField] Transform[] m_WayPoints = null;
+    Transform Start_Transform;
     int m_count = 0;
 
     [Header("View")]
@@ -28,7 +29,15 @@ public class EnemyAI : MonoBehaviour
     {
         navMesh = GetComponent<NavMeshAgent>();
         state_machine = GetComponent<State_Machine>();
-        state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
+        if (m_WayPoints.Length == 0)
+        {
+            Start_Transform = gameObject.transform;
+            state_machine.Change_State(new I_IdleState(Start_Transform.position, Start_Transform.rotation.eulerAngles));
+        }
+        else
+        {
+            state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
+        }
         ain = GetComponent<Animator>();
         ain.SetBool("Is_Idle", true);
         audio = GetComponent<AudioSource>();
@@ -88,6 +97,14 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(Wait_Time);
         Find_Player = false;
-        state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
+        if (m_WayPoints.Length == 0)
+        {
+            navMesh.SetDestination(Start_Transform.position);
+            state_machine.Change_State(new I_IdleState(Start_Transform.position,Start_Transform.rotation.eulerAngles));
+        }
+        else
+        {
+            state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
+        }
     }
 }

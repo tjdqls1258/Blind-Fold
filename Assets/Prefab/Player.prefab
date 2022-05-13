@@ -228,7 +228,8 @@ MonoBehaviour:
   Min_Throw_Power: 1
   Max_Throw_Power: 10
   Throw_Power_Charge: {fileID: 4786223111533776545}
-  interplay: {fileID: 4786223110736346010}
+  charge_text: {fileID: 0}
+  None_bullet: {fileID: 0}
 --- !u!136 &3198611507755258780
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -443,6 +444,7 @@ GameObject:
   - component: {fileID: 55907730}
   - component: {fileID: 55907736}
   - component: {fileID: 55907737}
+  - component: {fileID: 8706187982462074149}
   m_Layer: 7
   m_Name: Player_Head
   m_TagString: MainCamera
@@ -497,7 +499,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -676,6 +678,23 @@ MonoBehaviour:
   _horizontalShake: 0
   _colorDrift: 0
   _shader: {fileID: 4800000, guid: da33272284ea24f208f36998880990be, type: 3}
+--- !u!114 &8706187982462074149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328462874641346357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: accee2e601cf935498ad196babd36e31, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1001 &438861259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,6 +702,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3328462873740829155}
     m_Modifications:
+    - target: {fileID: 470581257967576761, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4352633708675236553, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_RootOrder
       value: 12
