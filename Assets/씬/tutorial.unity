@@ -6363,7 +6363,7 @@ PrefabInstance:
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: None_bullet
       value: 
-      objectReference: {fileID: 21300000, guid: bf9c0e6020706ce4ab202979ed75e99d, type: 3}
+      objectReference: {fileID: 21300000, guid: 7ada9310308b51a499c807d05d3716a6, type: 3}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: ScrollSeepd
       value: 10
@@ -6373,8 +6373,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1359635369}
     - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: Bullte_Image
+      value: 
+      objectReference: {fileID: 1501341183}
+    - target: {fileID: 3328462873740829157, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: Max_Count_Bullte
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110640333135, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a81c4ed8814242448ced82bbaa7ae93, type: 3}
+    - target: {fileID: 4786223110640333135, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110640333135, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223110640333135, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4786223111101011317, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6383,6 +6403,18 @@ PrefabInstance:
     - target: {fileID: 4786223111101011317, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BacktoMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111275222351, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111275222351, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111275222351, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_FillOrigin
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4786223112203987210, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_Text
@@ -6428,6 +6460,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 4786223112593540793, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ada9310308b51a499c807d05d3716a6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
 --- !u!1 &1501341181 stripped
@@ -6444,6 +6480,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1501341183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4786223112593540793, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+  m_PrefabInstance: {fileID: 1501341180}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1512077933
