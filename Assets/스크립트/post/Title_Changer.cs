@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Title_Changer : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Title_Changer : MonoBehaviour
     [SerializeField] private float Timer;
     [SerializeField] private float Switch_Time;
     [SerializeField] private int Min_Random, Max_Random;
+    [SerializeField] private PostProcessVolume postProcessVolume;
     int Resicle_Count;
 
     private float Sec = 0;
@@ -36,6 +38,9 @@ public class Title_Changer : MonoBehaviour
             D_Light.intensity = 100;
             Object_1.SetActive(false);
             Object_2.SetActive(true);
+            postProcessVolume.profile.GetSetting<Bloom>().intensity.value = 20.0f;
+            yield return new WaitForSeconds(0.005f);
+            postProcessVolume.profile.GetSetting<Bloom>().intensity.value = 2.0f;
             yield return new WaitForSeconds(Switch_Time);
             D_Light.intensity = 10;
             Object_1.SetActive(true);
