@@ -9,7 +9,7 @@ public class Player_Hidding : MonoBehaviour
         gameObject.GetComponent<Player_Move>().enabled = false;
         gameObject.GetComponent<Fire_Bullte>().enabled = false; 
         gameObject.GetComponent<Create_Echo>().enabled = false;   
-        gameObject.GetComponent<CapsuleCollider>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 
     public void Is_Hidding_End()
@@ -17,6 +17,6 @@ public class Player_Hidding : MonoBehaviour
         gameObject.GetComponent<Player_Move>().enabled = true;
         gameObject.GetComponent<Fire_Bullte>().enabled = true;
         gameObject.GetComponent<Create_Echo>().enabled = true;
-        gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        gameObject.GetComponent<BoxCollider>().enabled = true;
     }
 }
