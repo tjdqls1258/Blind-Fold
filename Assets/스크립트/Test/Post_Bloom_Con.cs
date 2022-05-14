@@ -16,7 +16,7 @@ public class Post_Bloom_Con : MonoBehaviour
     {
         while (post.profile.GetSetting<Bloom>().intensity.value >= 0.0f)
         {
-            post.profile.GetSetting<Bloom>().intensity.value -= Time.deltaTime * 30.0f;
+            post.profile.GetSetting<Bloom>().intensity.value -= Time.deltaTime * 50.0f;
             yield return null;
         }
         yield return null;

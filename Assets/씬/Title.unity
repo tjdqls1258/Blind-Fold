@@ -244,7 +244,7 @@ MonoBehaviour:
   Object_1: {fileID: 1877981541}
   Object_2: {fileID: 1895830163}
   Max_Timer: 30
-  Switch_Time: 0.2
+  Switch_Time: 0.5
   Min_Random: 2
   Max_Random: 4
   postProcessVolume: {fileID: 1471995335}
