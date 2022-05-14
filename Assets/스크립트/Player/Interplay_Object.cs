@@ -19,7 +19,7 @@ public class Interplay_Object : MonoBehaviour
     {    
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         
-        if (Physics.Raycast(ray, out hit, Ray_distance, ((-1)-(1<<8))))
+        if (Physics.Raycast(ray, out hit, Ray_distance, ((-1)-(1<<8)-(1<<7))))
         {
             if (hit.transform.gameObject.GetComponent<Interplay_machice>())
             {

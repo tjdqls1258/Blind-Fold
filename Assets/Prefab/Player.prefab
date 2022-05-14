@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 3328462873740829154}
   - component: {fileID: 3328462873740829156}
   - component: {fileID: 3328462873740829157}
-  - component: {fileID: 3198611507755258780}
   - component: {fileID: 3198611507755258781}
   - component: {fileID: 386846339652383134}
   - component: {fileID: 2775551461060706587}
@@ -143,6 +142,7 @@ GameObject:
   - component: {fileID: 665288524}
   - component: {fileID: 665288533}
   - component: {fileID: 6338612058468919840}
+  - component: {fileID: 67760572820551967}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -230,20 +230,6 @@ MonoBehaviour:
   Throw_Power_Charge: {fileID: 4786223111533776545}
   charge_text: {fileID: 0}
   None_bullet: {fileID: 0}
---- !u!136 &3198611507755258780
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3328462873740829153}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &3198611507755258781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +414,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ce18ffbbaa59b49abb0884f13e8328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &67760572820551967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328462873740829153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8044906, z: 1}
+  m_Center: {x: 0, y: 0.40224528, z: 0}
 --- !u!1 &3328462874641346357
 GameObject:
   m_ObjectHideFlags: 0
