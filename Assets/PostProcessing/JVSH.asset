@@ -18,19 +18,19 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 2
+    value: 0.33
   threshold:
     overrideState: 1
-    value: 0.73
+    value: 0.47
   softKnee:
     overrideState: 1
-    value: 0.52
+    value: 0.82
   clamp:
     overrideState: 1
     value: 65472
   diffusion:
     overrideState: 1
-    value: 10
+    value: 7.42
   anamorphicRatio:
     overrideState: 1
     value: 1
@@ -42,11 +42,11 @@ MonoBehaviour:
     value: 0
   dirtTexture:
     overrideState: 0
-    value: {fileID: 0}
+    value: {fileID: 2800000, guid: 4ef6a6bc343d82749b9a5b849f8db1a3, type: 3}
     defaultState: 1
   dirtIntensity:
     overrideState: 0
-    value: 0
+    value: 735.62
 --- !u!114 &-8366960806571319273
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -98,28 +98,114 @@ MonoBehaviour:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
   center:
-    overrideState: 1
+    overrideState: 0
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.53
+    value: 0
   smoothness:
     overrideState: 1
-    value: 0.46
+    value: 1
   roundness:
     overrideState: 1
-    value: 0.85
+    value: 1
   rounded:
     overrideState: 1
     value: 0
   mask:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 2800000, guid: 84cd5ef0583ef6449bfe7ad09c001723, type: 3}
     defaultState: 1
   opacity:
-    overrideState: 0
+    overrideState: 1
     value: 1
---- !u!114 &-5337520317757019383
+--- !u!114 &-5343445405853438163
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34fa72bd4185749832024e9c8010bf, type: 3}
+  m_Name: ScreenSpaceReflections
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  preset:
+    overrideState: 1
+    value: 2
+  maximumIterationCount:
+    overrideState: 0
+    value: 16
+  resolution:
+    overrideState: 0
+    value: 0
+  thickness:
+    overrideState: 0
+    value: 8
+  maximumMarchDistance:
+    overrideState: 1
+    value: 1000
+  distanceFade:
+    overrideState: 1
+    value: 1
+  vignette:
+    overrideState: 1
+    value: 1
+--- !u!114 &-4715767595656918906
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
+  m_Name: AmbientOcclusion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 1
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  ambientOnly:
+    overrideState: 1
+    value: 1
+  noiseFilterTolerance:
+    overrideState: 0
+    value: 0
+  blurTolerance:
+    overrideState: 0
+    value: -4.6
+  upsampleTolerance:
+    overrideState: 0
+    value: -12
+  thicknessModifier:
+    overrideState: 1
+    value: 10
+  directLightingStrength:
+    overrideState: 0
+    value: 0
+  radius:
+    overrideState: 1
+    value: 2
+  quality:
+    overrideState: 1
+    value: 2
+--- !u!114 &-1430004004346566326
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1430,55 +1516,6 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
---- !u!114 &-4715767595656918906
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
-  m_Name: AmbientOcclusion
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  mode:
-    overrideState: 1
-    value: 0
-  intensity:
-    overrideState: 1
-    value: 1
-  color:
-    overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
-  ambientOnly:
-    overrideState: 1
-    value: 1
-  noiseFilterTolerance:
-    overrideState: 0
-    value: 0
-  blurTolerance:
-    overrideState: 0
-    value: -4.6
-  upsampleTolerance:
-    overrideState: 0
-    value: -12
-  thicknessModifier:
-    overrideState: 1
-    value: 10
-  directLightingStrength:
-    overrideState: 0
-    value: 0
-  radius:
-    overrideState: 1
-    value: 2
-  quality:
-    overrideState: 1
-    value: 4
 --- !u!114 &-248804495543522011
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1518,12 +1555,13 @@ MonoBehaviour:
   - {fileID: 5135846878568429397}
   - {fileID: -8387823896671523585}
   - {fileID: 1054929487003699839}
-  - {fileID: -5337520317757019383}
+  - {fileID: -1430004004346566326}
   - {fileID: -8366960806571319273}
   - {fileID: 3656518085714850499}
   - {fileID: 4452291755201984054}
   - {fileID: -248804495543522011}
   - {fileID: -8071976290279001107}
+  - {fileID: -5343445405853438163}
 --- !u!114 &1054929487003699839
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1542,14 +1580,14 @@ MonoBehaviour:
     value: 1
   spectralLut:
     overrideState: 0
-    value: {fileID: 0}
+    value: {fileID: 2800000, guid: 4ef6a6bc343d82749b9a5b849f8db1a3, type: 3}
     defaultState: 1
   intensity:
     overrideState: 0
     value: 0
   fastMode:
     overrideState: 0
-    value: 0
+    value: 1
 --- !u!114 &3656518085714850499
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1568,13 +1606,13 @@ MonoBehaviour:
     value: 1
   colored:
     overrideState: 1
-    value: 1
+    value: 0
   intensity:
     overrideState: 1
-    value: 0.388
+    value: 1
   size:
     overrideState: 1
-    value: 1.15
+    value: 0.3
   lumContrib:
     overrideState: 1
     value: 1
@@ -1596,7 +1634,7 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: -100
+    value: 18.84
   intensityX:
     overrideState: 1
     value: 1

@@ -1813,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 223784306}
     - target: {fileID: 4084821658243828549, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}
       propertyPath: Animation_Speed
-      value: 0.1
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}

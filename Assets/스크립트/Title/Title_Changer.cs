@@ -46,7 +46,7 @@ public class Title_Changer : MonoBehaviour
             yield return new WaitForSeconds(0.005f);
             postProcessVolume.profile.GetSetting<Bloom>().intensity.value = 2.0f;
             yield return new WaitForSeconds(Switch_Time);
-            D_Light.intensity = 10;
+            D_Light.intensity = 1.5f;
             Object_1.SetActive(true);
             Object_2.SetActive(false);
         }
