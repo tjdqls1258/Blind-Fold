@@ -11,6 +11,7 @@ public class Post_Bloom_Con : MonoBehaviour
     void Awake()
     {
         post = GetComponent<PostProcessVolume>();
+        post.profile.GetSetting<Bloom>().intensity.value = 100.0f;
         Player = GameObject.Find("Player");
         StartCoroutine(Change_Vaule_To_Bloom());
     }
