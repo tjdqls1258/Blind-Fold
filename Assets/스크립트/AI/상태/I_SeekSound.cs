@@ -25,14 +25,14 @@ public class I_SeekSound : IState
     public void Start_State()
     {
         navMesh.destination = Target_Point;
+        navMesh.SetDestination(Target_Point);
         navMesh.isStopped = false;
         Walk_Ain.SetBool("Is_Walk", true);
     }
 
     public void Excute()
     {
-        navMesh.SetDestination(Target_Point);
-        if (navMesh.velocity == Vector3.zero && !Is_Arrive)
+        if (navMesh.remainingDistance <= 0.5f && !Is_Arrive)
         {
             Is_Arrive = true;
             Serch_Around();

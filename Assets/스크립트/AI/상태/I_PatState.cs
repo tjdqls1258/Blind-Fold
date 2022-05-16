@@ -15,6 +15,7 @@ public class I_PatState : IState
 
     public I_PatState(Transform[] transforms, NavMeshAgent nav, GameObject self)
     {
+        time = 0;
         Walk_Ain = self.GetComponent<Animator>();
         navMesh = nav;
         m_WayPoints = transforms;
@@ -25,9 +26,10 @@ public class I_PatState : IState
         Walk_Ain.SetBool("Is_Run", false);
         Walk_Ain.SetBool("Is_Walk", true);
         int m_count_copy = Random.Range(0, m_WayPoints.Length);
-        navMesh.SetDestination(m_WayPoints[m_count_copy].position);
-        Debug.Log("is Working");
         navMesh.ResetPath();
+        navMesh.SetDestination(m_WayPoints[m_count_copy].position);
+        navMesh.destination = m_WayPoints[m_count_copy].position;
+        Debug.Log("is Working");
         navMesh.isStopped = false;
     }
 
@@ -35,7 +37,7 @@ public class I_PatState : IState
     {
         time += Time.deltaTime;
         if (time > wait_time)
-        { 
+        {
             int m_count_copy = Random.Range(0, m_WayPoints.Length);
             if (navMesh.velocity == Vector3.zero)
             {
@@ -44,6 +46,7 @@ public class I_PatState : IState
                 {
                     navMesh.SetDestination(m_WayPoints[m_count_copy].position);
                     m_count = m_count_copy;
+                    Debug.Log(m_WayPoints[m_count_copy]);
                     Walk_Ain.SetBool("Is_Walk", true);
                 }
 

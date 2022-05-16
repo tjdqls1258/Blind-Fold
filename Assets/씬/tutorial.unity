@@ -14881,12 +14881,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_WayPoints.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_WayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 88554745}
     - target: {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_WayPoints.Array.data[1]
       value: 
