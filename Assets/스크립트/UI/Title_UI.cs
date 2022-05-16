@@ -14,17 +14,20 @@ public class Title_UI : MonoBehaviour
 
     //loadgame을 위해 저장된 스테이지 stagenum을 받아와야함.
 
-    private void Start()
+    private void Awake()
     {
-        if(loadstage_num > 0)
+        loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadStage_Num();
+        Debug.Log(loadstage_num);
+        if (loadstage_num > 1)
         {
             Loadgame.GetComponent<Button>().interactable = true;
-            Load_text.color = new Color(0, 0, 0, 255);
+            Load_text.color = new Color(255, 255, 255, 255);
         }
         else
         {
             Loadgame.GetComponent<Button>().interactable = false;
-            Load_text.color = new Color(0, 0, 0, 100);
+            Load_text.color = new Color(255, 255, 255, 0.3f);
+            Debug.Log("RGB");
         }
     }
 

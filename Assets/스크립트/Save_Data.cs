@@ -63,4 +63,26 @@ public class Save_Data : MonoBehaviour
 
         SceneManager.LoadScene(saveData.Stage_num);
     }
+
+    public int LoadStage_Num()
+    {
+        SAVE_DATA_DIRECTORY = Application.dataPath + "/SaveFile.txt";
+
+        if (Directory.Exists(SAVE_DATA_DIRECTORY))
+        {
+            Directory.CreateDirectory(SAVE_DATA_DIRECTORY);
+            return 0;
+        }
+
+        if (!File.Exists(SAVE_DATA_DIRECTORY))
+        {
+            Debug.Log("데이터 없음.");
+            return 0;
+        }
+        string loadJson = File.ReadAllText(SAVE_DATA_DIRECTORY);
+
+        saveData = JsonUtility.FromJson<Save_Data_Class>(loadJson);
+
+        return saveData.Stage_num;
+    }
 }
