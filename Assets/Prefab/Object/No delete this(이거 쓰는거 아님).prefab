@@ -103,7 +103,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7413191829447257695}
   - component: {fileID: 7413191829447257693}
-  - component: {fileID: 7413191829447257694}
   - component: {fileID: 7413191829447257692}
   m_Layer: 0
   m_Name: Head
@@ -170,14 +169,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &7413191829447257694
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7413191829447257688}
-  m_Enabled: 1
 --- !u!114 &7413191829447257692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 7413191829447257688}
+  AI: {fileID: 0}
+  Max_Distance_For_AI: 2
 --- !u!114 &8730574815162085921
 MonoBehaviour:
   m_ObjectHideFlags: 0

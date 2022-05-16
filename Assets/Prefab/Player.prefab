@@ -471,7 +471,6 @@ GameObject:
   - component: {fileID: 3328462874641346359}
   - component: {fileID: 3328462874641346507}
   - component: {fileID: 3328462874641346505}
-  - component: {fileID: 3328462874641346510}
   - component: {fileID: 55907730}
   - component: {fileID: 55907736}
   - component: {fileID: 55907737}
@@ -569,19 +568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotspeed: 1000
   parent: {fileID: 3328462873740829153}
---- !u!65 &3328462874641346510
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3328462874641346357}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &55907730
 AudioSource:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Patrol Point")]
     [SerializeField] Transform[] m_WayPoints = null;
-    Transform Start_Transform;
+    Vector3 Start_Pos, Start_Rotate;
     int m_count = 0;
 
     [Header("View")]
@@ -31,8 +31,9 @@ public class EnemyAI : MonoBehaviour
         state_machine = GetComponent<State_Machine>();
         if (m_WayPoints.Length == 0)
         {
-            Start_Transform = gameObject.transform;
-            state_machine.Change_State(new I_IdleState(Start_Transform.position, Start_Transform.rotation.eulerAngles));
+            Start_Pos = gameObject.transform.position;
+            Start_Rotate = gameObject.transform.rotation.eulerAngles;
+            state_machine.Change_State(new I_IdleState(gameObject , Start_Pos, Start_Rotate));
         }
         else
         {
@@ -99,8 +100,7 @@ public class EnemyAI : MonoBehaviour
         Find_Player = false;
         if (m_WayPoints.Length == 0)
         {
-            navMesh.SetDestination(Start_Transform.position);
-            state_machine.Change_State(new I_IdleState(Start_Transform.position,Start_Transform.rotation.eulerAngles));
+            state_machine.Change_State(new I_IdleState(gameObject, Start_Pos, Start_Rotate));
         }
         else
         {

@@ -31,6 +31,7 @@ public class I_SeekSound : IState
 
     public void Excute()
     {
+        navMesh.SetDestination(Target_Point);
         if (navMesh.velocity == Vector3.zero && !Is_Arrive)
         {
             Is_Arrive = true;
@@ -47,7 +48,7 @@ public class I_SeekSound : IState
 
     private void Serch_Around()//주위를 탐색함
     {
-        State_AI.GetComponent<EnemyAI>().Repeating_Patrol(0.5f);
+        State_AI.GetComponent<EnemyAI>().Repeating_Patrol(1.5f);
     }
 
     public AI_State Get_State()

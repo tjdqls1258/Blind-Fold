@@ -1,28 +1,57 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class I_IdleState : MonoBehaviour, IState
 {
     Vector3 First_Pos, First_Rotate;
-    public I_IdleState(Vector3 transform, Vector3 rotate)
+    GameObject Self;
+    NavMeshAgent navMesh;
+    Animator Walk_Ain;
+    bool Is_Arrive = false;
+
+    public I_IdleState(GameObject AI,Vector3 Pos, Vector3 rotate)
     {
-        First_Pos = transform;
+        Is_Arrive = false;
+        navMesh = AI.GetComponent<NavMeshAgent>();
+        Self = AI;
+        First_Pos = Pos;
+        First_Rotate = rotate;
+        Walk_Ain = AI.GetComponent<Animator>();
     }
-    public void Start_State(){}
+    
+    public void Start_State()
+    {
+        navMesh.destination = First_Pos;
+        navMesh.isStopped = false;
+        Walk_Ain.SetBool("Is_Walk", true);
+    }
+
     public void Excute() 
     {
-        if (First_Pos == null || First_Rotate == null)
+        if (navMesh.velocity == Vector3.zero && !Is_Arrive)
         {
-            return;
-        }
-        if (Vector3.SqrMagnitude(gameObject.transform.position - First_Pos) <= 1.0f &&
-            Vector3.SqrMagnitude(gameObject.transform.rotation.eulerAngles - First_Rotate) >= 0.1f)
-        {
-            gameObject.transform.Rotate(First_Rotate, 10);
+            if (Vector3.SqrMagnitude(Self.transform.rotation.eulerAngles - First_Rotate) >= 0.1f)
+            {
+                Self.transform.Rotate(First_Rotate, 1);
+            }
+            else
+            {
+                Is_Arrive = true;
+                Walk_Ain.SetBool("Is_Walk", false);
+            }
+            
         }
     }
-    public void End_State()  {   }
+
+    public void End_State() 
+    {
+        navMesh.ResetPath();
+        navMesh.isStopped = true;
+        Walk_Ain.SetBool("Is_Walk", false);
+    }
+
     public AI_State Get_State()
     {
         return AI_State.Idle_State;

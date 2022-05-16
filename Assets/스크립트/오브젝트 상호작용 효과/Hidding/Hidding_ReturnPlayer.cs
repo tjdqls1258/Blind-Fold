@@ -48,7 +48,6 @@ public class Hidding_ReturnPlayer : MonoBehaviour
         ani.ResetTrigger("Out");
         Cam.SetActive(false);
         Player.GetComponent<Player_Hidding>().Is_Hidding_End();
-        Player.gameObject.transform.Find("Player_Head").gameObject.SetActive(true);
         this.enabled = false;
     }
 }

@@ -28,8 +28,7 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
         GetComponent<Hidding_ReturnPlayer>().enabled = true;
         GetComponent<Hidding_ReturnPlayer>().Player = GameObject.Find("Player");
         GameObject Player =  GameObject.Find("Player");
-        Player.GetComponent<Player_Hidding>().Is_Hidding_Start();
-        Player.gameObject.transform.Find("Player_Head").gameObject.SetActive(false);
+        Player.GetComponent<Player_Hidding>().Is_Hidding_Start(); 
         cam.SetActive(true);
         ain.SetTrigger("In");
     }
