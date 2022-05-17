@@ -1238,7 +1238,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1664302010, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1310,7 +1310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194975, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.x
@@ -1340,6 +1340,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 48221827}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: It_Close
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
 --- !u!1 &311091969

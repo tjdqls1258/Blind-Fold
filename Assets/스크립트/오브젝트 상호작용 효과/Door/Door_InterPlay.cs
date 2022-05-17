@@ -35,6 +35,7 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
     {
         if (Player.GetComponent<Player_Move>().collect_key >= key_num)
         {
+            It_Close = !It_Close;
             animator.SetBool("SwitchDoor", It_Close);
             if (It_Close)
             {
@@ -46,7 +47,6 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
                 Sourece.PlayOneShot(Door_Close_Sound_Clip);
                 GetComponent<Interplay_machice>().Exposition = "¹® ´Ý±â";
             }
-            It_Close = !It_Close;
 
             if (Isclear)
             {
