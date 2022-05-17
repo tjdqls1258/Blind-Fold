@@ -32,7 +32,7 @@ public class I_SeekSound : IState
 
     public void Excute()
     {
-        if (navMesh.remainingDistance <= 0.5f && !Is_Arrive)
+        if (navMesh.remainingDistance <= 0.1f && !Is_Arrive)
         {
             Is_Arrive = true;
             Serch_Around();

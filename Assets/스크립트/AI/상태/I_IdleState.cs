@@ -34,7 +34,7 @@ public class I_IdleState : MonoBehaviour, IState
         {
             if (Vector3.SqrMagnitude(Self.transform.rotation.eulerAngles - First_Rotate) >= 0.1f)
             {
-                Self.transform.Rotate(First_Rotate, 1);
+                Self.transform.Rotate(First_Rotate, 0.1f);
             }
             else
             {

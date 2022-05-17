@@ -7,7 +7,7 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
 {
     [Header("*필수 내부 카메라 설정")]
     [SerializeField] private GameObject cam;
-    [SerializeField] private GameObject AI;
+    [SerializeField] private GameObject[] AI;
     [SerializeField] private float Max_Distance_For_AI = 2.0f;
     private Animator ain;
 
@@ -19,10 +19,13 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
     }
     public void Effect()
     {
-        if(Vector3.Distance(transform.position, AI.transform.position) <= Max_Distance_For_AI)
+        for (int count = 0; count < AI.Length; count++)
         {
-            StartCoroutine(ChangeText());
-            return;
+            if (Vector3.Distance(transform.position, AI[count].transform.position) <= Max_Distance_For_AI)
+            {
+                StartCoroutine(ChangeText());
+                return;
+            }
         }
         GameObject.Find("AI").GetComponent<EnemyAI>().Repeating_Patrol(2.0f);
         GetComponent<Hidding_ReturnPlayer>().enabled = true;
