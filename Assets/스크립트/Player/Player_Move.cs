@@ -14,7 +14,8 @@ public class Player_Move : MonoBehaviour
     [SerializeField] public float Stamina_Gage = 5.0f;
 
     [SerializeField] private Image Stamina_Image;
-
+    [SerializeField] private Image Stamina2;
+ 
     private float Is_Run_Speed = 1.0f;
     private bool IsRun = false;
 
@@ -40,6 +41,7 @@ public class Player_Move : MonoBehaviour
     {
         Is_Run();
         move();
+        stamina_manage();
     }
 
     private void move()
@@ -117,6 +119,21 @@ public class Player_Move : MonoBehaviour
         }
 
         Stamina_Image.fillAmount = Stamina_Gage / Max_Stamina_Gage;
+        Stamina2.fillAmount = Stamina_Image.fillAmount;
+    }
+
+    void stamina_manage()
+    {
+        if(Stamina_Gage == Max_Stamina_Gage)
+        {
+            Stamina_Image.color = new Color(255,255,255,0);
+            Stamina2.color = new Color(255, 255, 255, 0);
+        }
+        else
+        {
+            Stamina_Image.color = new Color(255, 255, 255, (1-(Stamina_Gage / Max_Stamina_Gage)));
+            Stamina2.color = new Color(255, 255, 255, (1 - (Stamina_Gage / Max_Stamina_Gage)));
+        }
     }
 
     public float get_stamina_percent()

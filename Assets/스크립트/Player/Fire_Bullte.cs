@@ -93,7 +93,8 @@ public class Fire_Bullte : MonoBehaviour
                 Throw_Power = Min_Throw_Power;
             }
             Throw_Power += Time.deltaTime * 10.0f;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            //Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            Throw_Power_Charge.GetComponent<RectTransform>().localScale = new Vector2((Throw_Power / Max_Throw_Power), (Throw_Power / Max_Throw_Power));
 
             transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = false;
             transform.Find("Player_Head").GetComponent<Interplay_Object>().exposition_text.text = " ";
@@ -113,7 +114,8 @@ public class Fire_Bullte : MonoBehaviour
             }
             Can_Fire = false;
             Throw_Power = 0;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            //Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            Throw_Power_Charge.GetComponent<RectTransform>().localScale = new Vector2(0, 0);
             StartCoroutine(Change_Fire_Bullte());
             transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = true;
             charge_text.text = " ";
@@ -123,7 +125,8 @@ public class Fire_Bullte : MonoBehaviour
         {
             Can_Fire = false;
             Throw_Power = 0;
-            Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            //Throw_Power_Charge.fillAmount = Throw_Power / Max_Throw_Power;
+            Throw_Power_Charge.GetComponent<RectTransform>().localScale = new Vector2(0,0);
             transform.Find("Player_Head").GetComponent<Interplay_Object>().enabled = true;
             charge_text.text = " ";
         }
