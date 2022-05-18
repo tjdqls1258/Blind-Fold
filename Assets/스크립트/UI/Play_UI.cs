@@ -8,7 +8,6 @@ public class Play_UI : MonoBehaviour
 {
     [SerializeField] static bool IsPause = false;
     [SerializeField] GameObject SettingPanel;
-    [SerializeField] GameObject WarningPanel;
     [SerializeField] GameObject DialogueSystem;
     [SerializeField] GameObject Gameover_panel;
     [SerializeField] Button Gameover_m_btn;
@@ -70,13 +69,6 @@ public class Play_UI : MonoBehaviour
 
     public void MainMenu()
     {
-        //MainMenu버튼을 누르면 경고창이 나옴
-        WarningPanel.SetActive(true);
-    }
-
-    public void BacktoMainMenu()
-    {
-        //경고창에서 yes버튼 누르면 메인메뉴로
         SceneManager.LoadScene("Title");
     }
 

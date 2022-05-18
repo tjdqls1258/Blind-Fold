@@ -16216,6 +16216,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4786223110970914549, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111006304066, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111006304066, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111751084151, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223111751084151, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112180718303, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112180718303, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112180718303, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4786223112288576199, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: trigger
       value: 
@@ -16224,6 +16256,18 @@ PrefabInstance:
       propertyPath: dialoguesystem
       value: 
       objectReference: {fileID: 151822789}
+    - target: {fileID: 4786223112415335900, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112415335900, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786223112415335900, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
 --- !u!1 &1501341181 stripped
