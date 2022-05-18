@@ -131,8 +131,15 @@ public class Player_Move : MonoBehaviour
         }
         else
         {
-            Stamina_Image.color = new Color(255, 255, 255, (1-(Stamina_Gage / Max_Stamina_Gage)));
-            Stamina2.color = new Color(255, 255, 255, (1 - (Stamina_Gage / Max_Stamina_Gage)));
+            Stamina_Image.color 
+                = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)), 
+                (255 * (Stamina_Gage / Max_Stamina_Gage)), (1-(Stamina_Gage / Max_Stamina_Gage)));
+            //Stamina2.color 
+            //    = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)), 
+            //    (255 * (Stamina_Gage / Max_Stamina_Gage)), (1 - (Stamina_Gage / Max_Stamina_Gage)));
+
+            Stamina2.GetComponent<Image>().color = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)),
+                (255 * (Stamina_Gage / Max_Stamina_Gage)), (1 - (Stamina_Gage / Max_Stamina_Gage)));
         }
     }
 

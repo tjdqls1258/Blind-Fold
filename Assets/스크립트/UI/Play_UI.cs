@@ -17,6 +17,7 @@ public class Play_UI : MonoBehaviour
     [SerializeField] Image charge;
     [SerializeField] Text Key_count;
     [SerializeField] Text Stone_count;
+    [SerializeField] Image Aim;
 
     [SerializeField] GameObject Player;
 
@@ -49,6 +50,7 @@ public class Play_UI : MonoBehaviour
     {
         //Pause버튼 클릭
         Player.GetComponent<Fire_Bullte>().enabled = false;
+        Aim.GetComponent<Image>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SettingPanel.SetActive(true);
@@ -60,6 +62,7 @@ public class Play_UI : MonoBehaviour
     {
         //Pause창에서 나옴
         Player.GetComponent<Fire_Bullte>().enabled = true;
+        Aim.GetComponent<Image>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         SettingPanel.SetActive(false);      
