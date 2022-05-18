@@ -83,25 +83,28 @@ public class Play_UI : MonoBehaviour
     public void IsDie()
     {
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        StartCoroutine(Fadein());
+        Cursor.lockState = CursorLockMode.None;        
         isdie = true;
+        StartCoroutine(Fadein());
     }
 
     IEnumerator Fadein()
     {
-        yield return new WaitForSeconds(2.5f);
-        float fadecount = 0.0f;
-
-        while (fadecount < 1.0f)
+        if (isdie == true)
         {
-            fadecount += 0.1f;
-            Gameover_panel.GetComponent<Image>().color = new Color(0, 0, 0, fadecount);
-            Gameover_m_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
-            Gameover_r_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
-            Gameover_text.color = new Color(255, 0, 0, fadecount);
-            Gameover_panel.SetActive(true);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(2.5f);
+            float fadecount = 0.0f;
+
+            while (fadecount < 1.0f)
+            {
+                fadecount += 0.1f;
+                Gameover_panel.GetComponent<Image>().color = new Color(0, 0, 0, fadecount);
+                Gameover_m_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
+                Gameover_r_btn.GetComponent<Image>().color = new Color(255, 255, 255, fadecount);
+                Gameover_text.color = new Color(255, 0, 0, fadecount);
+                Gameover_panel.SetActive(true);
+                yield return new WaitForSeconds(0.1f);
+            }
         }
     }
 }

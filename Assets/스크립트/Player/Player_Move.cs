@@ -126,20 +126,17 @@ public class Player_Move : MonoBehaviour
     {
         if(Stamina_Gage == Max_Stamina_Gage)
         {
-            Stamina_Image.color = new Color(255,255,255,0);
-            Stamina2.color = new Color(255, 255, 255, 0);
+            Stamina_Image.color = new Color32(255,255,255,0);
+            Stamina2.color = new Color32(255, 255, 255, 0);
         }
         else
         {
             Stamina_Image.color 
-                = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)), 
-                (255 * (Stamina_Gage / Max_Stamina_Gage)), (1-(Stamina_Gage / Max_Stamina_Gage)));
-            //Stamina2.color 
-            //    = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)), 
-            //    (255 * (Stamina_Gage / Max_Stamina_Gage)), (1 - (Stamina_Gage / Max_Stamina_Gage)));
-
-            Stamina2.GetComponent<Image>().color = new Color(255, (255 * (Stamina_Gage / Max_Stamina_Gage)),
-                (255 * (Stamina_Gage / Max_Stamina_Gage)), (1 - (Stamina_Gage / Max_Stamina_Gage)));
+                = new Color32(255, (byte)(255 * (Stamina_Gage / Max_Stamina_Gage)),
+                (byte)(255 * 0.1 *(Stamina_Gage / Max_Stamina_Gage)), (byte)(255*(1 - (Stamina_Gage / Max_Stamina_Gage))));
+            Stamina2.color
+                = new Color32(255, (byte)(255 * (Stamina_Gage / Max_Stamina_Gage)),
+                (byte)(255 * 0.1 *(Stamina_Gage / Max_Stamina_Gage)), (byte)(255*(1 - (Stamina_Gage / Max_Stamina_Gage))));
         }
     }
 
