@@ -7,21 +7,21 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
 {
     [Header("*필수 내부 카메라 설정")]
     [SerializeField] private GameObject cam;
-    [SerializeField] private GameObject[] AI;
+    [SerializeField] private List<GameObject> AI;
     [SerializeField] private float Max_Distance_For_AI = 2.0f;
     private Animator ain;
 
-    private void Start()
+    private void Awake()
     {
-        //AI = GameObject.Find("AI");
+        AI = new List<GameObject>(GameObject.FindGameObjectsWithTag("AI"));
         GetComponent<Interplay_machice>().SetInterplay(this);
         ain = GetComponent<Animator>();
     }
     public void Effect()
     {
-        for (int count = 0; count < AI.Length; count++)
+        foreach (GameObject ai in AI)
         {
-            if (Vector3.Distance(transform.position, AI[count].transform.position) <= Max_Distance_For_AI)
+            if (Vector3.Distance(transform.position, ai.transform.position) <= Max_Distance_For_AI)
             {
                 StartCoroutine(ChangeText());
                 return;
