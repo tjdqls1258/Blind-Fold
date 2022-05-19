@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ClearPoint : MonoBehaviour
 {
-    //[SerializeField] GameObject Player;
-    //[SerializeField] int target_num;
-
     public void Clear()
     {
         if(GameObject.Find("StageManger").GetComponent<Save_Data>())

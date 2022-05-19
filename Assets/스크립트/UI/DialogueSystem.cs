@@ -52,15 +52,20 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator Next_script()
     {
-        float fadecount = 1.0f;
-        yield return new WaitForSeconds(1.0f);
+        //float fadecount = 1.0f;
+        yield return new WaitForSeconds(2.0f);
 
-        while (fadecount > 0.0f)
-        {
-            fadecount -= 0.03f;
-            testtext.color = new Color(255, 255, 255, fadecount);
-            yield return new WaitForSeconds(0.1f);
-        }
+        //while (fadecount > 0.0f)
+        //{
+        //    fadecount -= 0.03f;
+        //    if (fadecount < 0.0f)
+        //    {
+        //        fadecount = 0.0f;
+        //    }
+        //    testtext.color = new Color(255, 255, 255, fadecount);
+        //    yield return new WaitForSeconds(0.1f);
+            
+        //}
 
         Next();
     }
