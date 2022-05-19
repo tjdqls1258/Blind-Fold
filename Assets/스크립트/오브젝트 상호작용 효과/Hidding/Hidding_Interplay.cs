@@ -27,7 +27,10 @@ public class Hidding_Interplay : MonoBehaviour, I_Interplay_effect
                 return;
             }
         }
-        GameObject.Find("AI").GetComponent<EnemyAI>().Repeating_Patrol(2.0f);
+        foreach (GameObject ai in AI)
+        {
+            ai.GetComponent<EnemyAI>().Player_Hidding_Start();
+        }
         GetComponent<Hidding_ReturnPlayer>().enabled = true;
         GetComponent<Hidding_ReturnPlayer>().Player = GameObject.Find("Player");
         GameObject Player =  GameObject.Find("Player");

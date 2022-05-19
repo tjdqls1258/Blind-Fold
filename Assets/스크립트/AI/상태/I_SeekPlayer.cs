@@ -43,11 +43,6 @@ public class I_SeekPlayer : MonoBehaviour ,IState
 
     public void End_State()
     {
-        //foreach (GameObject count in Map_Hidding)
-        //{
-        //    count.GetComponent<Hidding_Interplay>().AI_No_Seek_Player_Now();
-        //}
-
         AI_Run_Ain.SetBool("Is_Run", false);
         Target = null;
         navMesh.ResetPath();

@@ -49,7 +49,10 @@ public class Play_UI : MonoBehaviour
     public void PauseEnter()
     {
         //Pause버튼 클릭
-        Player.GetComponent<Fire_Bullte>().enabled = false;
+        if (Player)
+        {
+            Player.GetComponent<Fire_Bullte>().enabled = false;
+        }
         Aim.GetComponent<Image>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -61,7 +64,11 @@ public class Play_UI : MonoBehaviour
     public void Resume()
     {
         //Pause창에서 나옴
-        Player.GetComponent<Fire_Bullte>().enabled = true;
+        if (Player)
+        {
+            Player.GetComponent<Fire_Bullte>().enabled = true;
+            Player.GetComponent<Animator>().StopPlayback();
+        }
         Aim.GetComponent<Image>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

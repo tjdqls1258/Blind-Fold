@@ -14887,6 +14887,10 @@ PrefabInstance:
       propertyPath: map_parent
       value: 
       objectReference: {fileID: 263001750}
+    - target: {fileID: 609911959637251312, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 609911959637251313, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_Radius
       value: 15
@@ -16164,6 +16168,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380040377, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 67760572820551967, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: map_parent
       value: 
@@ -26722,10 +26734,22 @@ PrefabInstance:
       propertyPath: m_RenderingPath
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 607998387377125826, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 609507962101281618, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 609911959637251308, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: map_parent
       value: 
       objectReference: {fileID: 263001750}
+    - target: {fileID: 609911959637251312, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 609911959637251313, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_Radius
       value: 15
@@ -26792,7 +26816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251317, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_Name
-      value: AI (1)
+      value: AI
       objectReference: {fileID: 0}
     - target: {fileID: 610702586448485734, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_LocalPosition.x

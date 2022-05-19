@@ -39,8 +39,8 @@ public class Radio_Effect : MonoBehaviour
             Is_Ative = false;
             light.enabled = false;
             audio.Stop();
-            Text.text = "";
-            UI.GetComponent<TutorialManager>().skip_script();
+            //Text.text = "";
+            //UI.GetComponent<TutorialManager>().skip_script();
         }
     }
 }

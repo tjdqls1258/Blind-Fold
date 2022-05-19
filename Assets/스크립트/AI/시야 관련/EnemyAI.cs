@@ -84,9 +84,27 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void Player_Hidding_Start()
+    {
+        StartCoroutine(Player_Hidding());
+    }
+
+    private IEnumerator Player_Hidding()
+    {
+        while (navMesh.remainingDistance >= 1.0f)
+        {
+            Debug.Log(navMesh.remainingDistance);
+            yield return null;
+        }
+        Repeating_Patrol(4.0f);
+    }
+
     private void OnTriggerExit(Collider other)
     {
-        StartCoroutine(Stop_Seek(5.0f));
+        if (other.tag == ("Player"))
+        {
+            StartCoroutine(Stop_Seek(5.0f));
+        }
     }
 
     public void Repeating_Patrol(float Wait_Time)
