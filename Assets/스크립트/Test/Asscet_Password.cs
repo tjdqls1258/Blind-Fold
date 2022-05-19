@@ -26,11 +26,25 @@ public class Asscet_Password : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void Set_Ative_False()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        GetComponentInParent<Play_UI>().isdie = false;
+        GameObject.Find("Player").GetComponent<Animator>().StopPlayback();
+        Time.timeScale = 1.0f;
+        gameObject.SetActive(false);
+    }
+
     public void Up_Button(Text Input)
     {
         if (int.Parse(Input.text) < 10)
         {
             int StringInt = int.Parse(Input.text) + 1;
+            Input.text = StringInt.ToString();
+        }
+        if (int.Parse(Input.text) == 10)
+        {
+            int StringInt = 0;
             Input.text = StringInt.ToString();
         }
     }
@@ -42,5 +56,11 @@ public class Asscet_Password : MonoBehaviour
             int StringInt = int.Parse(Input.text) - 1;
             Input.text = StringInt.ToString();
         }
+        if(int.Parse(Input.text) == -1)
+        {
+            int StringInt = 9;
+            Input.text = StringInt.ToString();
+        }
     }
+
 }
