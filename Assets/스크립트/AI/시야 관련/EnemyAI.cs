@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
         {
             Start_Pos = gameObject.transform.position;
             Start_Rotate = gameObject.transform.rotation.eulerAngles;
-            state_machine.Change_State(new I_IdleState(gameObject , Start_Pos, Start_Rotate));
+            state_machine.Change_State(new I_IdleState(gameObject, Start_Pos, Start_Rotate));
         }
         else
         {
@@ -78,7 +78,7 @@ public class EnemyAI : MonoBehaviour
             audio.PlayOneShot(audio.clip);
             yield return new WaitForSeconds(2.0f);
 
-            state_machine.Change_State(new I_SeekPlayer(navMesh, Target, this.gameObject));
+            state_machine.Change_State(new I_SeekPlayer(navMesh, Target, gameObject));
             navMesh.isStopped = false;
             ain.SetBool("Is_Finder", false);
         }

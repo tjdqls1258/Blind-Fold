@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class I_IdleState : MonoBehaviour, IState
+public class I_IdleState : IState
 {
     Vector3 First_Pos, First_Rotate;
     GameObject Self;
@@ -13,7 +13,6 @@ public class I_IdleState : MonoBehaviour, IState
 
     public I_IdleState(GameObject AI,Vector3 Pos, Vector3 rotate)
     {
-        Is_Arrive = false;
         navMesh = AI.GetComponent<NavMeshAgent>();
         Self = AI;
         First_Pos = Pos;
@@ -23,6 +22,7 @@ public class I_IdleState : MonoBehaviour, IState
     
     public void Start_State()
     {
+        Is_Arrive = false;
         navMesh.destination = First_Pos;
         navMesh.isStopped = false;
         Walk_Ain.SetBool("Is_Walk", true);

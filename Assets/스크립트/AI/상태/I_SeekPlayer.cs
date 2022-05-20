@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class I_SeekPlayer : MonoBehaviour ,IState
+public class I_SeekPlayer : IState
 {
     NavMeshAgent navMesh = null;
     GameObject Target;
@@ -21,12 +21,7 @@ public class I_SeekPlayer : MonoBehaviour ,IState
     }
 
     public void Start_State()
-    {
-        //foreach (GameObject count in Map_Hidding)
-        //{
-        //    count.GetComponent<Hidding_Interplay>().AI_Seek_Player_Now();
-        //}
-       
+    {      
         navMesh.isStopped = false;
         AI_Run_Ain.SetBool("Is_Run", true);
     }

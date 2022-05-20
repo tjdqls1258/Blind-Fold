@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class I_AttackState : MonoBehaviour, IState
+public class I_AttackState : IState
 {
     Animator AI_Atk_Ain;
 

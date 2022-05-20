@@ -753,11 +753,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40513529}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &48271999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1406009338526363811, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-  m_PrefabInstance: {fileID: 1406009338553590492}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &50681054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 439586, guid: 46aad46494938c844a7bfbbcb53b98e1, type: 3}
@@ -7267,44 +7262,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider_Sound: {fileID: 8300000, guid: 56f22645d05fb4c4c86066e1ed620e72, type: 3}
---- !u!1 &1087182500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1406009337483326584, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-  m_PrefabInstance: {fileID: 1406009338553590492}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1087182503
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087182500}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d31c08dc6a81c0347af2ea781b203475, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1087182505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087182500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff7a16889f2b1e4c8268804ecf57dbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Animation_Speed: 0.5
-  Is_Cusor_Off: 0
 --- !u!43 &1108246215
 Mesh:
   m_ObjectHideFlags: 0
@@ -13305,54 +13262,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1406009337483326580, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_Depth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326580, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_RenderingPath
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326580, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326580, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326580, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326585, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326585, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326585, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337483326586, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: m_ShowToolkit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337719615608, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: priority
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1406009337719615608, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: accee2e601cf935498ad196babd36e31, type: 2}
-    - target: {fileID: 1406009337719615611, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
-      propertyPath: Parent
-      value: 
-      objectReference: {fileID: 48271999}
     - target: {fileID: 1406009337719615611, guid: 96afdbccdc1e5094dad54bc256ff50a9, type: 3}
       propertyPath: Player
       value: 

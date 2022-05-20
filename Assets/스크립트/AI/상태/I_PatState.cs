@@ -9,9 +9,9 @@ public class I_PatState : IState
     NavMeshAgent navMesh = null;
     Animator Walk_Ain;
 
-    int m_count = 0;
+    int m_count = 0 , m_count_copy;
     float time = 0.0f;
-    public float wait_time = 2.0f;
+    public float wait_time = 1.0f;
 
     public I_PatState(Transform[] transforms, NavMeshAgent nav, GameObject self)
     {
@@ -25,7 +25,7 @@ public class I_PatState : IState
     {
         Walk_Ain.SetBool("Is_Run", false);
         Walk_Ain.SetBool("Is_Walk", true);
-        int m_count_copy = Random.Range(0, m_WayPoints.Length);
+        m_count_copy = 0;
         navMesh.ResetPath();
         navMesh.SetDestination(m_WayPoints[m_count_copy].position);
         navMesh.destination = m_WayPoints[m_count_copy].position;
@@ -35,24 +35,26 @@ public class I_PatState : IState
 
     public void Excute()
     {
-        time += Time.deltaTime;
-        if (time > wait_time)
+        if (navMesh.remainingDistance <= 0.5f)
         {
-            int m_count_copy = Random.Range(0, m_WayPoints.Length);
+            Debug.Log(m_count_copy);
+
             if (navMesh.velocity == Vector3.zero)
             {
-                Walk_Ain.SetBool("Is_Walk", false);
-                if (m_count_copy != m_count)
+                if (m_count_copy <= m_WayPoints.Length)
                 {
-                    navMesh.SetDestination(m_WayPoints[m_count_copy].position);
-                    m_count = m_count_copy;
-                    Debug.Log(m_WayPoints[m_count_copy]);
-                    Walk_Ain.SetBool("Is_Walk", true);
+                    m_count_copy++;
+                }
+                else
+                {
+                    m_count_copy = 0;
                 }
 
+                Walk_Ain.SetBool("Is_Walk", false);
+                navMesh.SetDestination(m_WayPoints[m_count_copy].position);
+                Debug.Log(m_WayPoints[m_count_copy]);
+                Walk_Ain.SetBool("Is_Walk", true);
             }
-            
-            time = 0;
         }
     }
 
