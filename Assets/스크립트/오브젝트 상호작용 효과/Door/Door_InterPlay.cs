@@ -12,11 +12,12 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
     [SerializeField] AudioClip Door_Close_Sound_Clip;
     [SerializeField] AudioSource Sourece;
 
-[SerializeField] GameObject Player;
+    [SerializeField] GameObject Player;
 
     private void Awake()
     {
         //해당 컴포넌트를 Interplay_machice에 참조시킨다.
+        Player = GameObject.Find("Player");
         Sourece = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         GetComponent<Interplay_machice>().SetInterplay(this);
