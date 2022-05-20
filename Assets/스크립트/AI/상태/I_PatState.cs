@@ -8,16 +8,19 @@ public class I_PatState : IState
     [SerializeField] Transform[] m_WayPoints = null;
     NavMeshAgent navMesh = null;
     Animator Walk_Ain;
+    GameObject AI;
 
-    int m_count = 0 , m_count_copy;
+    int m_count;
     float time = 0.0f;
     public float wait_time = 1.0f;
 
-    public I_PatState(Transform[] transforms, NavMeshAgent nav, GameObject self)
+    public I_PatState(Transform[] transforms, NavMeshAgent nav, GameObject self, int count = 0)
     {
         time = 0;
         Walk_Ain = self.GetComponent<Animator>();
+        AI = self;
         navMesh = nav;
+        m_count = count;
         m_WayPoints = transforms;
     }
 
@@ -25,10 +28,9 @@ public class I_PatState : IState
     {
         Walk_Ain.SetBool("Is_Run", false);
         Walk_Ain.SetBool("Is_Walk", true);
-        m_count_copy = 0;
         navMesh.ResetPath();
-        navMesh.SetDestination(m_WayPoints[m_count_copy].position);
-        navMesh.destination = m_WayPoints[m_count_copy].position;
+        navMesh.SetDestination(m_WayPoints[m_count].position);
+        navMesh.destination = m_WayPoints[m_count].position;
         Debug.Log("is Working");
         navMesh.isStopped = false;
     }
@@ -37,22 +39,22 @@ public class I_PatState : IState
     {
         if (navMesh.remainingDistance <= 0.5f)
         {
-            Debug.Log(m_count_copy);
+            Debug.Log(m_count);
 
             if (navMesh.velocity == Vector3.zero)
             {
-                if (m_count_copy <= m_WayPoints.Length)
+                if (m_count <= m_WayPoints.Length)
                 {
-                    m_count_copy++;
+                    m_count++;
                 }
                 else
                 {
-                    m_count_copy = 0;
+                    m_count = 0;
                 }
 
                 Walk_Ain.SetBool("Is_Walk", false);
-                navMesh.SetDestination(m_WayPoints[m_count_copy].position);
-                Debug.Log(m_WayPoints[m_count_copy]);
+                navMesh.SetDestination(m_WayPoints[m_count].position);
+                Debug.Log(m_WayPoints[m_count]);
                 Walk_Ain.SetBool("Is_Walk", true);
             }
         }
@@ -63,6 +65,7 @@ public class I_PatState : IState
         navMesh.ResetPath();
         Walk_Ain.SetBool("Is_Walk", false);
         navMesh.isStopped = true;
+        AI.GetComponent<EnemyAI>().Pate_Count = m_count;
     }
 
     public AI_State Get_State()

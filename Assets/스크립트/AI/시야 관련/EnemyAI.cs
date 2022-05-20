@@ -25,6 +25,8 @@ public class EnemyAI : MonoBehaviour
     private AudioSource audio;
     public bool Find_Player = false;
 
+    public int Pate_Count = 0;
+
     void Awake()
     {
         navMesh = GetComponent<NavMeshAgent>();
@@ -93,7 +95,6 @@ public class EnemyAI : MonoBehaviour
     {
         while (navMesh.remainingDistance >= 1.0f)
         {
-            Debug.Log(navMesh.remainingDistance);
             yield return null;
         }
         Repeating_Patrol(4.0f);
@@ -122,7 +123,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject));
+            state_machine.Change_State(new I_PatState(m_WayPoints, navMesh, gameObject, Pate_Count));
         }
     }
 }
