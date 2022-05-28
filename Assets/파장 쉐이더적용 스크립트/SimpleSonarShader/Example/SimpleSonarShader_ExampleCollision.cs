@@ -16,6 +16,13 @@ public class SimpleSonarShader_ExampleCollision : MonoBehaviour
             return;
         }
         // Start sonar ring from the contact point
+        if (collision.transform.GetComponent<Rock_Interplay>())
+        {
+            if (collision.transform.GetComponent<Rock_Interplay>().Is_Map)
+            {
+                return;
+            }
+        }
         if (collision.transform.GetComponent<Relay_Sound>())
         {
             StartCoroutine(Sonar_agin(collision.contacts[0].point, collision.transform.GetComponent<Relay_Sound>().Sound_Power));

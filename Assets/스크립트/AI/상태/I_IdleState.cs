@@ -32,7 +32,7 @@ public class I_IdleState : IState
     {
         if (navMesh.velocity == Vector3.zero && !Is_Arrive)
         {
-            if (Vector3.SqrMagnitude(Self.transform.rotation.eulerAngles - First_Rotate) >= 0.1f)
+            if (Vector3.SqrMagnitude(Self.transform.rotation.eulerAngles - First_Rotate) >= 0.5f)
             {
                 Self.transform.Rotate(First_Rotate, 0.1f);
             }

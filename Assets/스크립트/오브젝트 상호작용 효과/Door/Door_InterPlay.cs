@@ -55,11 +55,29 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
                 StartCoroutine(Wait());
             }
         }
+        else
+        {
+            GetComponent<Interplay_machice>().Exposition = "문을 열수 없습니다.";
+            StartCoroutine(Reset_Text());
+        }
     }
 
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         GetComponent<ClearPoint>().Clear();
+    }
+
+    private IEnumerator Reset_Text()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (It_Close)
+        {
+            GetComponent<Interplay_machice>().Exposition = "문 열기";
+        }
+        else
+        {
+            GetComponent<Interplay_machice>().Exposition = "문 닫기";
+        }
     }
 }

@@ -93,7 +93,7 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator Player_Hidding()
     {
-        while (navMesh.remainingDistance >= 1.0f)
+        while (navMesh.remainingDistance >= 1.5f)
         {
             yield return null;
         }

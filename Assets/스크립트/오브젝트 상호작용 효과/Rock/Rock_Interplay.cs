@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Rock_Interplay : MonoBehaviour , I_Interplay_effect
 {
-    AudioSource Audio;
-    float Sound_Value;
-    [SerializeField] bool Is_Map = false;
+    private AudioSource Audio;
+    private float Sound_Value;
+    public bool Is_Map = false;
     public Sprite Rock_Image;
 
     private void Awake()
