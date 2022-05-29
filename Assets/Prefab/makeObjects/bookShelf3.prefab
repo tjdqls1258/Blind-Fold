@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 480040230672243703}
   - component: {fileID: 480040230672243464}
   - component: {fileID: 480040230672243465}
+  - component: {fileID: 5618938246665165974}
   m_Layer: 0
   m_Name: bookShelf3
   m_TagString: Untagged
@@ -4122,7 +4123,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4153,3 +4154,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &5618938246665165974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480040230672243466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.53519565, y: 3, z: 3.7499995}
+  m_Center: {x: 0.2675592, y: 1.5, z: -1.8750002}
