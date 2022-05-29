@@ -6,6 +6,7 @@ public class Password_Locker : MonoBehaviour , I_Interplay_effect
 {
     [SerializeField] private GameObject Locker;
     [SerializeField] private GameObject UI;
+    public bool Is_Open = false;
 
     private void Awake()
     {
@@ -14,6 +15,10 @@ public class Password_Locker : MonoBehaviour , I_Interplay_effect
 
     public void Effect()
     {
+        if(Is_Open)
+        {
+            return;
+        }
         Locker.SetActive(true);
         UI.GetComponent<Play_UI>().isdie = true;
         Time.timeScale = 0.0f;

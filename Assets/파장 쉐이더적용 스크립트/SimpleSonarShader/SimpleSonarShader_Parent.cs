@@ -101,6 +101,10 @@ public class SimpleSonarShader_Parent : MonoBehaviour
                 {
                     Get_Object[count].gameObject.GetComponent<Emission_Effect>().Emission_This_Object(4.0f);
                 }
+                if(Get_Object[count].gameObject.GetComponent<Emission_Hint>() && !Get_Object[count].gameObject.GetComponent<Emission_Hint>().Is_Emission)
+                {
+                    Get_Object[count].gameObject.GetComponent<Emission_Hint>().Show_The_Hint(4.0f);
+                }
             }
             yield return null;
             //yield return new WaitForSeconds(0.1f);

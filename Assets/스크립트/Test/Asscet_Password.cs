@@ -7,6 +7,7 @@ public class Asscet_Password : MonoBehaviour
 {
     [SerializeField] Password_Data Hintnum1, Hintnum2, Hintnum3;
     [SerializeField] private Text Input1, Input2, Input3;
+    [SerializeField] private GameObject Locker;
 
     public void Is_Asscet()
     {
@@ -14,6 +15,9 @@ public class Asscet_Password : MonoBehaviour
             Hintnum2.Pass_Num == int.Parse(Input2.text) &&
             Hintnum3.Pass_Num == int.Parse(Input3.text))
         {
+            Locker.GetComponent<Password_Locker>().Is_Open = true;
+            Locker.GetComponent<Collider>().enabled = false;
+            Locker.GetComponentInChildren<Animator>().SetBool("Is_Open", true);
             Debug.Log("¼º°ø");
         }
         else

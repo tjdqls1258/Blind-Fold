@@ -26,22 +26,24 @@ public class Emission_Effect : MonoBehaviour
     }
     public void Emission_This_Object(float Wait_Time)
     {
-        Is_Emission = true;
+        if (!Is_Emission)
+        {
+            Is_Emission = true;
+            foreach (Renderer r in ObjectRenderers)
+            {
+                r.material.SetFloat("_Emission", 0.5f);
+            }
 
-        foreach (Renderer r in ObjectRenderers)
-        {
-            r.material.SetFloat("_Emission", 0.5f);
+            if (GetComponent<Renderer>())
+            {
+                GetComponent<Renderer>().material.SetFloat("_Emission", 0.5f);
+            }
+            else
+            {
+                GetComponentInChildren<Renderer>().material.SetFloat("_Emission", 0.5f);
+            }
+            StartCoroutine(Return_Emission(Wait_Time));
         }
-
-        if (GetComponent<Renderer>())
-        {
-            GetComponent<Renderer>().material.SetFloat("_Emission", 0.5f);
-        }
-        else
-        {
-            GetComponentInChildren<Renderer>().material.SetFloat("_Emission", 0.5f);
-        }
-        StartCoroutine(Return_Emission(Wait_Time));
     }
 
     private IEnumerator Return_Emission(float Wait_Time)
@@ -63,8 +65,6 @@ public class Emission_Effect : MonoBehaviour
                     r.material.SetFloat("_Emission", Fade_Out);
                 }
             }
-
-
         }
 
         if (GetComponent<Renderer>())
