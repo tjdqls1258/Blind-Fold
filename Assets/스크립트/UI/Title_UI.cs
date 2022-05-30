@@ -16,6 +16,8 @@ public class Title_UI : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadStage_Num();
         Debug.Log(loadstage_num);
         if (loadstage_num > 1)
