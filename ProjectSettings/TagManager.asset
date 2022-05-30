@@ -8,6 +8,7 @@ TagManager:
   - AI
   - Hidding
   - Walls
+  - Directing
   layers:
   - Default
   - TransparentFX
