@@ -21,6 +21,7 @@ public class Password_Locker : MonoBehaviour , I_Interplay_effect
         }
         Locker.SetActive(true);
         UI.GetComponent<Play_UI>().isdie = true;
+        GameObject.Find("Player").GetComponent<Fire_Bullte>().enabled = false;
         Time.timeScale = 0.0f;
         Cursor.lockState = CursorLockMode.Confined;
     }

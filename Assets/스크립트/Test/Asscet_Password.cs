@@ -26,6 +26,7 @@ public class Asscet_Password : MonoBehaviour
         }
         Cursor.lockState = CursorLockMode.Locked;
         GetComponentInParent<Play_UI>().isdie = false;
+        GameObject.Find("Player").GetComponent<Fire_Bullte>().enabled = true;
         Time.timeScale = 1.0f;
         gameObject.SetActive(false);
     }
@@ -35,6 +36,7 @@ public class Asscet_Password : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         GetComponentInParent<Play_UI>().isdie = false;
         GameObject.Find("Player").GetComponent<Animator>().StopPlayback();
+        GameObject.Find("Player").GetComponent<Fire_Bullte>().enabled = true;
         Time.timeScale = 1.0f;
         gameObject.SetActive(false);
     }

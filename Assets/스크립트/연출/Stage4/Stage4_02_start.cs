@@ -9,6 +9,7 @@ public class Stage4_02_start : MonoBehaviour
     private Ray ray;
 
     private AudioSource audio;
+    private bool Is_Coll = false;
 
     [SerializeField] private GameObject Supersize_Object;
 
@@ -25,8 +26,9 @@ public class Stage4_02_start : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 10, ((-1) - (1 << 8) - (1 << 7))))
             {
-                if (hit.transform.tag == "Directing")
+                if (hit.transform.tag == "Directing" && !Is_Coll)
                 {
+                    Is_Coll = true;
                     Supersize_Object.SetActive(true);
                     audio.Play();
                 }
