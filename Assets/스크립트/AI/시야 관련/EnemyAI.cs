@@ -58,7 +58,7 @@ public class EnemyAI : MonoBehaviour
             Vector3 _direction = (other.transform.position - AI_Head.transform.position).normalized; //AI가 타겟을 바라보는 방향
             float angle = Vector3.Angle(_direction, AI_Head.transform.forward);
             RaycastHit _hit;
-            if (angle < (View_Angle) * 0.5f && Physics.Raycast(AI_Head.transform.position, _direction, out _hit, View_Distance))
+            if (angle < (View_Angle) * 0.5f && Physics.Raycast(AI_Head.transform.position, _direction, out _hit, View_Distance, ((-1) - (1 << 8))))
             {
                 //사이에 벽과 같은 장애물이 있는지 여부 판단.
                 if (_hit.transform.tag == "Player")

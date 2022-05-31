@@ -124,7 +124,7 @@ Material:
     - _layer1Tiling: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1, g: 0.390566, b: 0.390566, a: 1}
+    - _EmissionColor: {r: 2.0663915, g: 2.4622889, b: 0, a: 1}
     - _RingColor: {r: 1, g: 1, b: 1, a: 1}
     - _RingEmission: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

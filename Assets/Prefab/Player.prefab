@@ -277,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map_parent: {fileID: 0}
   Echo_Power: 15
-  Echo_Hear_Distance_Power: 50
+  Echo_Hear_Distance_Power: 100
   Count_Cycle: 3
   stamina_percent: 0
   echocool: 1

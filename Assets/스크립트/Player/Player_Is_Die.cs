@@ -8,7 +8,7 @@ public class Player_Is_Die : MonoBehaviour
     [SerializeField] float Rot_Speed = 10.0f;
     public GameObject playui;
 
-    public void Is_Die(GameObject AI)
+    public void Is_Die()
     {
         GetComponent<Player_Move>().enabled = false;
         GetComponent<Fire_Bullte>().enabled = false;
