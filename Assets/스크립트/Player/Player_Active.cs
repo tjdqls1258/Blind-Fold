@@ -10,6 +10,12 @@ public class Player_Active : MonoBehaviour
 
     private void OnEnable()
     {
+        StartCoroutine(Player_Ative());
+    }
+
+    IEnumerator Player_Ative()
+    {
+        yield return new WaitForSeconds(1.8f);
         Player.GetComponent<Player_Move>().enabled = true;
         Player.GetComponent<Create_Echo>().enabled = true;
         Player.GetComponent<Fire_Bullte>().enabled = true;
