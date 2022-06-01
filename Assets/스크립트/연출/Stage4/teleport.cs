@@ -12,7 +12,8 @@ public class teleport : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Player.transform.position = new Vector3(d_tel.transform.position.x, d_tel.transform.position.y, d_tel.transform.position.z);
-            Player.transform.Rotate(new Vector3(d_tel.transform.rotation.x, d_tel.transform.rotation.y, d_tel.transform.rotation.z));
+            //Player.transform.rotation = Quaternion.Euler(new Vector3(d_tel.transform.rotation.x, d_tel.transform.rotation.y, d_tel.transform.rotation.z));
+            Player.transform.rotation = d_tel.transform.rotation;
         }
     }
 }
