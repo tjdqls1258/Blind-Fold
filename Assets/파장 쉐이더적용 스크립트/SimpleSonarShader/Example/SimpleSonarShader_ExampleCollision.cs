@@ -11,7 +11,7 @@ public class SimpleSonarShader_ExampleCollision : MonoBehaviour
     private bool Sonar_Is_Start = false;
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.tag == "Player" || collision.transform.tag == "AI")
+        if(collision.transform.tag != "Rock")
         {
             return;
         }
