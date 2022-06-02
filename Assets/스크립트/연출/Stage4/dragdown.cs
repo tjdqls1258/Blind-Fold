@@ -34,7 +34,7 @@ public class dragdown : MonoBehaviour
     {
         while(Player.transform.position.y > 2.0f)
         {
-            Player.transform.position = Vector3.MoveTowards(Player.transform.position, D_pos.transform.position, Time.deltaTime * 10.0f);
+            Player.transform.position = Vector3.MoveTowards(Player.transform.position, D_pos.transform.position, Time.deltaTime * 100.0f);
             yield return new WaitForSeconds(0.1f);
         }       
 

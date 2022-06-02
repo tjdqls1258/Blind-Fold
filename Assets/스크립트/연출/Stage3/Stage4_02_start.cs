@@ -24,7 +24,7 @@ public class Stage4_02_start : MonoBehaviour
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 10, ((-1) - (1 << 8) - (1 << 7))))
+            if (Physics.Raycast(ray, out hit, 5, ((-1) - (1 << 7))))
             {
                 if (hit.transform.tag == "Directing" && !Is_Coll)
                 {

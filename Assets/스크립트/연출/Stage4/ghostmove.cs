@@ -7,9 +7,9 @@ public class ghostmove : MonoBehaviour
     [SerializeField] GameObject destination;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        GetComponent<Animator>().SetBool("Is_Walk", true);
     }
 
     // Update is called once per frame
