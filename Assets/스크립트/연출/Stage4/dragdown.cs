@@ -7,24 +7,15 @@ public class dragdown : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] GameObject D_pos;
     [SerializeField] GameObject Drag_Trap;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] GameObject hand;
+    [SerializeField] GameObject trap_base;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
             Player.GetComponent<Player_Move>().enabled = false;
+            hand.SetActive(true);
             Player.transform.position = transform.position;
             StartCoroutine(destination());
         }
@@ -35,9 +26,11 @@ public class dragdown : MonoBehaviour
         while(Player.transform.position.y > 2.0f)
         {
             Player.transform.position = Vector3.MoveTowards(Player.transform.position, D_pos.transform.position, Time.deltaTime * 100.0f);
+            trap_base.transform.position = Vector3.MoveTowards(Player.transform.position - Vector3.up*1.0f, D_pos.transform.position, Time.deltaTime * 100.0f);
             yield return new WaitForSeconds(0.1f);
-        }       
+        }
 
+        Destroy(trap_base);
         Drag_Trap.GetComponent<CapsuleCollider>().isTrigger = false;
         Player.GetComponent<Player_Move>().enabled = true;
 

@@ -15,6 +15,11 @@ public class ghostmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, destination.transform.position, Time.deltaTime * 10.0f);
+        transform.position = Vector3.MoveTowards(transform.position, destination.transform.position, Time.deltaTime * 4.0f);
+
+        if(Vector3.Distance(transform.position,destination.transform.position)<=1.0f)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
