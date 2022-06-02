@@ -16,7 +16,9 @@ public class dragdown : MonoBehaviour
         {
             Player.GetComponent<Player_Move>().enabled = false;
             hand.SetActive(true);
+            //trap_base.GetComponent<Animator>().SetBool("Is_Coll", true);
             Player.transform.position = transform.position;
+            trap_base.transform.position = trap_base.transform.position - trap_base.transform.up * 1.2f;
             StartCoroutine(destination());
         }
     }
@@ -25,8 +27,10 @@ public class dragdown : MonoBehaviour
     {
         while(Player.transform.position.y > 2.0f)
         {
-            Player.transform.position = Vector3.MoveTowards(Player.transform.position, D_pos.transform.position, Time.deltaTime * 100.0f);
-            trap_base.transform.position = Vector3.MoveTowards(Player.transform.position - Vector3.up*1.0f, D_pos.transform.position, Time.deltaTime * 100.0f);
+            Player.transform.Translate(-Vector3.up * Time.fixedDeltaTime * 40.0f);
+            trap_base.transform.Translate(-Vector3.up * Time.fixedDeltaTime * 40.0f);
+            // Player.transform.position = Vector3.MoveTowards(Player.transform.position, D_pos.transform.position, Time.deltaTime * 100.0f);
+            //trap_base.transform.position = Vector3.MoveTowards(Player.transform.position - Vector3.up*1.0f, D_pos.transform.position, Time.deltaTime * 100.0f);
             yield return new WaitForSeconds(0.1f);
         }
 
