@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Player_Rotate : MonoBehaviour
 {
-    float Rotate_X;
-    float Rotate_Y;
+    private float Rotate_X;
+    private float Rotate_Y;
     public float rotspeed = 200;
     [SerializeField] private GameObject parent;
 
