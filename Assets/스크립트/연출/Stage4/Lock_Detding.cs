@@ -17,9 +17,16 @@ public class Lock_Detding : MonoBehaviour
             {
                 Is_Coll = true;
 
-                Surprise.SetActive(true);
-                Surprise.transform.position = other.transform.position + (other.transform.forward * 3.5f) + (other.transform.up * 0.8f);
+                StartCoroutine(shako(other));
             }
         }
+    }
+
+    IEnumerator shako(Collider other)
+    {
+        yield return new WaitForSeconds(0.8f);
+
+        Surprise.SetActive(true);
+        Surprise.transform.position = other.transform.position + (other.transform.forward * 3.5f) + (other.transform.up * 0.8f);
     }
 }//511

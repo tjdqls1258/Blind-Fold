@@ -7,6 +7,9 @@ public class enemymove : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] GameObject Player_head;
     private Renderer[] reander;
+
+    Vector3 p_chase;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,8 +25,11 @@ public class enemymove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, Time.deltaTime);
-        if(Vector3.Distance(transform.position, Player.transform.position) <= 1.0f)
+        p_chase = Player.transform.position;
+        p_chase.y = transform.position.y;
+        transform.position = Vector3.MoveTowards(transform.position, p_chase, Time.deltaTime);
+        transform.LookAt(p_chase);
+        if(Vector3.Distance(transform.position, p_chase) <= 1.0f)
         {
             Player_head.GetComponent<Interplay_Object>().enabled = true;
             this.gameObject.SetActive(false);
