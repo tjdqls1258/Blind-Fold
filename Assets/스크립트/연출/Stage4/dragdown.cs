@@ -24,6 +24,7 @@ public class dragdown : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            Player.GetComponent<Player_Move>().enabled = false;
             StartCoroutine(destination());
         }
     }
@@ -37,6 +38,7 @@ public class dragdown : MonoBehaviour
         }       
 
         Drag_Trap.GetComponent<CapsuleCollider>().isTrigger = false;
+        Player.GetComponent<Player_Move>().enabled = true;
 
         yield return new WaitForSeconds(0.1f);
     }
