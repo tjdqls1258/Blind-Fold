@@ -25,6 +25,7 @@ public class dragdown : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Player.GetComponent<Player_Move>().enabled = false;
+            Player.transform.position = transform.position;
             StartCoroutine(destination());
         }
     }

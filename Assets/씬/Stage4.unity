@@ -23389,7 +23389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 85f151c4a0862bc47920cded6fafce55, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 85f151c4a0862bc47920cded6fafce55, type: 3}
       propertyPath: m_RootOrder
@@ -23409,7 +23409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 85f151c4a0862bc47920cded6fafce55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.747
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 85f151c4a0862bc47920cded6fafce55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -51301,6 +51301,25 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1473306079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 609911959637251317, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+  m_PrefabInstance: {fileID: 1530576003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1473306080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473306079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf01f6951e10523458dd36e15fb66cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 333488203}
+  Player_head: {fileID: 1597493874}
 --- !u!1 &1477773125
 GameObject:
   m_ObjectHideFlags: 0
@@ -53855,7 +53874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251315, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.11
+      value: -18.888
       objectReference: {fileID: 0}
     - target: {fileID: 609911959637251315, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53889,7 +53908,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 609911959637251317, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 609911959637251314, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+    - {fileID: 609911959637251319, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+    - {fileID: 609911959637251308, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+    - {fileID: 7682591374458856171, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+    - {fileID: 1372780014, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
+    - {fileID: 609911959637251312, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 359708ab69d40cc45bf1ea922fe9c52b, type: 3}
 --- !u!4 &1530576004 stripped
 Transform:
@@ -68423,7 +68452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688d5017a67c7f54c9e279d08e894110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaser: {fileID: 0}
+  chaser: {fileID: 1473306079}
   Player_head: {fileID: 1597493874}
 --- !u!65 &2017213042
 BoxCollider:
@@ -68436,8 +68465,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.28726, y: 1, z: 20.039726}
-  m_Center: {x: -1.14363, y: 1.5, z: -10.473343}
+  m_Size: {x: 3.62669, y: 1, z: 20.039726}
+  m_Center: {x: -2.8827906, y: 1.5, z: -10.473343}
 --- !u!43 &2024296252
 Mesh:
   m_ObjectHideFlags: 0
