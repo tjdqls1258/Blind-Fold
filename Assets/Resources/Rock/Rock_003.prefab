@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 6166779199379130048}
   - component: {fileID: 6720288303794814214}
   - component: {fileID: -1894538911594929963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rock_003
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766154480af5ff646ada0bdef6989586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Exposition: "\uB3CC \uC90D\uAE30 (E)"
+  Exposition: "\uCC45 \uC90D\uAE30 (E)"
 --- !u!114 &6166779199379130048
 MonoBehaviour:
   m_ObjectHideFlags: 0

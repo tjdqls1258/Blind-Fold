@@ -87,7 +87,7 @@ Material:
     - _Parallax: 0.0306
     - _RingColorIntensity: 1
     - _RingIntensityScale: 1
-    - _RingSpeed: 3
+    - _RingSpeed: 5
     - _RingWidth: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
