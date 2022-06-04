@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
 {
+    public bool Is_Lock = false;
+
     Animator animator;
     [SerializeField] bool It_Close = true;
     [SerializeField] bool Isclear = false;
@@ -34,7 +36,7 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
 
     public void Effect()
     {
-        if (Player.GetComponent<Player_Move>().collect_key >= key_num)
+        if (Player.GetComponent<Player_Move>().collect_key >= key_num && !Is_Lock)
         {
             It_Close = !It_Close;
             animator.SetBool("SwitchDoor", It_Close);
