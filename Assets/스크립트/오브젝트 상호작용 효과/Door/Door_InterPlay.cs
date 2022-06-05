@@ -24,14 +24,14 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
         animator = GetComponent<Animator>();
         GetComponent<Interplay_machice>().SetInterplay(this);
         animator.SetBool("SwitchDoor", It_Close);
-        if (It_Close)
-        {
-            GetComponent<Interplay_machice>().Exposition = "문 열기";
-        }
-        else
-        {
-            GetComponent<Interplay_machice>().Exposition = "문 닫기";
-        }
+        //if (It_Close)
+        //{
+        //    GetComponent<Interplay_machice>().Exposition = "문 열기";
+        //}
+        //else
+        //{
+        //    GetComponent<Interplay_machice>().Exposition = "문 닫기";
+        //}
     }
 
     public void Effect()
@@ -43,12 +43,12 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
             if (It_Close)
             {
                 Sourece.PlayOneShot(Door_Open_Sound_Clip);
-                GetComponent<Interplay_machice>().Exposition = "문 열기";
+                //GetComponent<Interplay_machice>().Exposition = "문 열기";
             }
             else
             {
                 Sourece.PlayOneShot(Door_Close_Sound_Clip);
-                GetComponent<Interplay_machice>().Exposition = "문 닫기";
+                //GetComponent<Interplay_machice>().Exposition = "문 닫기";
             }
 
             if (Isclear)
@@ -73,13 +73,13 @@ public class Door_InterPlay : MonoBehaviour, I_Interplay_effect
     private IEnumerator Reset_Text()
     {
         yield return new WaitForSeconds(0.5f);
-        if (It_Close)
-        {
-            GetComponent<Interplay_machice>().Exposition = "문 열기";
-        }
-        else
-        {
-            GetComponent<Interplay_machice>().Exposition = "문 닫기";
-        }
+        //if (It_Close)
+        //{
+        //    GetComponent<Interplay_machice>().Exposition = "문 열기";
+        //}
+        //else
+        //{
+        //    GetComponent<Interplay_machice>().Exposition = "문 닫기";
+        //}
     }
 }

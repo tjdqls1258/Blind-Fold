@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766154480af5ff646ada0bdef6989586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Exposition: "\uBB38 \uC5F4\uAE30"
+  Exposition: "\uBB38 \uC0C1\uD638\uC791\uC6A9(E)"
 --- !u!65 &5883750478787195808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f2de97afad10d439087074bee52b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Is_Lock: 0
   It_Close: 1
   Isclear: 1
   key_num: 0
