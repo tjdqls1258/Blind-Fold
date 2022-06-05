@@ -23,24 +23,18 @@ public class Radio_Effect : MonoBehaviour
     {
         if(other.tag == "Player" && Is_Ative)
         {
-            audio.Play();
-            light.enabled = true;
+            Is_Ative = false;
+            if (audio)
+            {
+                audio.Play();
+            }
+            if (light)
+            {
+                light.enabled = true;
+            }
             //Text.text = Talk;
 
             UI.GetComponent<TutorialManager>().radio_script(radio_num);
-            Debug.Log("라디오 상호작용");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player" && Is_Ative)
-        {
-            Is_Ative = false;
-            light.enabled = false;
-            audio.Stop();
-            Text.text = "";
-            UI.GetComponent<TutorialManager>().skip_script();
         }
     }
 }

@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766154480af5ff646ada0bdef6989586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Exposition: "\uC5F4\uC1E0 \uC90D\uAE30"
+  Exposition: "\uC5F4\uC1E0 \uC90D\uAE30 (E)"
 --- !u!114 &5535685882472746525
 MonoBehaviour:
   m_ObjectHideFlags: 0
