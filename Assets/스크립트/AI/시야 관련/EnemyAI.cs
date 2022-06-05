@@ -104,7 +104,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.tag == ("Player"))
         {
-            StartCoroutine(Stop_Seek(5.0f));
+            StartCoroutine(Stop_Seek(10.0f));
         }
     }
 
