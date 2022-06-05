@@ -110,8 +110,8 @@ Material:
     - _Power: 2
     - _RingColorIntensity: 2
     - _RingIntensityScale: 1
-    - _RingSpeed: 5
-    - _RingWidth: 0.045
+    - _RingSpeed: 3
+    - _RingWidth: 0.05
     - _Shift: -0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -7364,7 +7364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e6341a345cd4a854684fb1133f8df5b4, type: 2}
+  - {fileID: 2100000, guid: 64cf103a92f6e7f4caadfaf79a7280d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19607,7 +19607,7 @@ PrefabInstance:
     - target: {fileID: 272131669578485834, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e6341a345cd4a854684fb1133f8df5b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 64cf103a92f6e7f4caadfaf79a7280d6, type: 2}
     - target: {fileID: 272131669578485835, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 

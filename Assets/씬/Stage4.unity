@@ -8664,14 +8664,14 @@ PrefabInstance:
     - target: {fileID: 272131669578485834, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
+      objectReference: {fileID: 2100000, guid: e6341a345cd4a854684fb1133f8df5b4, type: 2}
     - target: {fileID: 272131669578485835, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
     - target: {fileID: 272131669578485835, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 272131669627462104, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
@@ -8679,7 +8679,7 @@ PrefabInstance:
       objectReference: {fileID: 12800000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
     - target: {fileID: 272131669627462104, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 272131669627462107, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8716,7 +8716,7 @@ PrefabInstance:
     - target: {fileID: 272131669627462111, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
+      objectReference: {fileID: 2100000, guid: e6341a345cd4a854684fb1133f8df5b4, type: 2}
     - target: {fileID: 272131670079368353, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -8772,14 +8772,14 @@ PrefabInstance:
     - target: {fileID: 272131670079368357, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
+      objectReference: {fileID: 2100000, guid: e6341a345cd4a854684fb1133f8df5b4, type: 2}
     - target: {fileID: 272131670079368358, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 7ef48a378e8795044817ce9b0992a603, type: 3}
     - target: {fileID: 272131670079368358, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 272131670371228424, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_RootOrder

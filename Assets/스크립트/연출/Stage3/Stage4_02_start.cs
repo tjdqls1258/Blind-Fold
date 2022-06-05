@@ -12,6 +12,7 @@ public class Stage4_02_start : MonoBehaviour
     private bool Is_Coll = false;
 
     [SerializeField] private GameObject Supersize_Object;
+    [SerializeField] private Kino.AnalogGlitch Player_Head;
 
     private void Awake()
     {
@@ -31,8 +32,16 @@ public class Stage4_02_start : MonoBehaviour
                     Is_Coll = true;
                     Supersize_Object.SetActive(true);
                     audio.Play();
+                    StartCoroutine(Nocie_Cam());
                 }
             }
         }
+    }
+
+    IEnumerator Nocie_Cam()
+    {
+        Player_Head.colorDrift = 1.0f;
+        yield return new WaitForSeconds(0.5f);
+        Player_Head.colorDrift = 0.0f;
     }
 }
