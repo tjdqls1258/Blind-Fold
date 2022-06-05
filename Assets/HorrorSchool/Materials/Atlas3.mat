@@ -99,8 +99,8 @@ Material:
     - _Parallax: 0.02
     - _RingColorIntensity: 2
     - _RingIntensityScale: 1
-    - _RingSpeed: 1
-    - _RingWidth: 0.1
+    - _RingSpeed: 5
+    - _RingWidth: 0.045
     - _SpecMap: 0.23214284
     - _SrcBlend: 1
     - _UVSec: 0
