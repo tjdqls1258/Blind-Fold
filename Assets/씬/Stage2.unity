@@ -304,7 +304,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -33.72, y: -1.367271, z: 8.98}
   m_LocalScale: {x: 2.5, y: 0.5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 17
@@ -333,7 +332,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -393,6 +391,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -481,6 +483,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &14243884 stripped
@@ -495,7 +501,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  serializedVersion: 4
+  serializedVersion: 3
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
@@ -508,7 +514,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
-  m_LightmapCompression: 3
+  m_TextureCompression: 1
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -549,7 +555,6 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
 --- !u!1 &23504422
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +585,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.138988, y: -4.3189626, z: -32.318836}
   m_LocalScale: {x: 2, y: 5, z: 12}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1331909567}
   m_RootOrder: 3
@@ -609,7 +613,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -689,7 +692,6 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 1.8, y: 2.2, z: 0.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1627131164}
   m_RootOrder: 4
@@ -848,7 +850,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.2372475, y: -32.4553, z: -3.3493786}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 7
@@ -877,7 +878,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -937,6 +937,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -1025,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &44173546 stripped
@@ -1062,7 +1070,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.15, y: 7.5, z: 7.73}
   m_LocalScale: {x: 0.5, y: 6, z: 24.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 22
@@ -1091,7 +1098,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1250,7 +1256,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1299,7 +1304,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32.34, y: -0.0001, z: 0.31}
   m_LocalScale: {x: 10, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764943492}
   m_RootOrder: 1
@@ -1407,7 +1411,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.08095169, y: -0.253438, z: 0.031788807}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1558191939}
   m_RootOrder: 0
@@ -1562,7 +1565,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.086773, y: -8.289843, z: -1.7386541}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1034601052}
   - {fileID: 1418414674}
@@ -1630,7 +1632,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1679,7 +1680,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.113782, y: -4.464296, z: -8.146971}
   m_LocalScale: {x: 3, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 5
@@ -1790,7 +1790,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.786566, y: 7.5, z: -2.8060017}
   m_LocalScale: {x: 0.5, y: 6, z: 9.3}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 2
@@ -1819,7 +1818,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1898,7 +1896,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15.466175, y: 18.198317, z: -47.11734}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1411978635}
   - {fileID: 1532230821}
@@ -1957,7 +1954,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -24.125, y: -3.54, z: -10.428}
   m_LocalScale: {x: 2, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 9
@@ -1986,7 +1982,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2070,7 +2065,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.805283, y: -12.7, z: -24.17}
   m_LocalScale: {x: 0.5, y: 6, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 0
@@ -2099,7 +2093,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2193,7 +2186,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 2.049, y: 2.202, z: 0.085}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1049072731}
   m_RootOrder: 4
@@ -2390,7 +2382,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.83, y: -1.367271, z: 5.3}
   m_LocalScale: {x: 2.5, y: 0.5, z: 9}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 2
@@ -2419,7 +2410,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2502,7 +2492,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.019764, y: 15.7, z: 11.4235935}
   m_LocalScale: {x: 0.5, y: 6, z: 4}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 1
@@ -2531,7 +2520,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2676,7 +2664,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 13.312752, y: -32.4554, z: -26.46938}
   m_LocalScale: {x: 10, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 10
@@ -2705,7 +2692,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2788,7 +2774,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32.327545, y: -1.2666712, z: -8.947048}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 13
@@ -2817,7 +2802,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3024,7 +3008,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.76, y: -7.099579, z: 4.64}
   m_LocalScale: {x: 15, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1902972205}
   m_RootOrder: 6
@@ -3053,7 +3036,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3133,7 +3115,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.713, y: 0, z: 0.624}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994114029}
   m_RootOrder: 0
@@ -3260,7 +3241,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -57.170208, y: -57.626007, z: 28.740297}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1066826165}
   - {fileID: 1223306513}
@@ -3298,7 +3278,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.52, y: -0.001, z: 0}
   m_LocalScale: {x: 8, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 866917332}
   m_RootOrder: 1
@@ -3327,7 +3306,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3449,6 +3427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -3537,6 +3519,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &179593141 stripped
@@ -3551,6 +3537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -3639,6 +3629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &182984757 stripped
@@ -3676,7 +3670,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.646566, y: 7.5, z: 17.023996}
   m_LocalScale: {x: 19.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 19
@@ -3705,7 +3698,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3788,7 +3780,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.134, y: -3.54, z: -10.43}
   m_LocalScale: {x: 4.95, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 10
@@ -3817,7 +3808,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3914,7 +3904,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3963,7 +3952,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.653783, y: -4.464296, z: -12.116971}
   m_LocalScale: {x: 4, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 3
@@ -4079,7 +4067,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.217251, y: -32.4553, z: -11.699379}
   m_LocalScale: {x: 8, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 14
@@ -4108,7 +4095,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4191,7 +4177,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.98, y: 0, z: 0}
   m_LocalScale: {x: 21, y: 0.5, z: 18}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764943492}
   m_RootOrder: 0
@@ -4220,7 +4205,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4285,16 +4269,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4300002, guid: 6a1cbdbcd9f735f45beaa6e43bf6255e, type: 3}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.84923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4302,7 +4290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194972, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Enabled
@@ -4338,7 +4326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4346,11 +4334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4358,7 +4346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4370,19 +4358,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.x
-      value: 0.586223
+      value: 3.225275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_Size.y
+      value: 3.3890862
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.z
-      value: -2.2
+      value: 0.2173258
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.x
-      value: -0.058207516
+      value: -1.377734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_Center.y
+      value: -0.1945426
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.z
-      value: 1.1
+      value: -0.032176655
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_IsTrigger
@@ -4398,8 +4394,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: It_Close
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Open_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a7cdfaf315c1be46a068c16f14bf535, type: 3}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Close_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b037e8430baafb643a5b51825e4b52bb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
 --- !u!1 &269567363
@@ -4433,7 +4437,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.803284, y: -10.823658, z: -26.657959}
   m_LocalScale: {x: 0.5, y: 2, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 7
@@ -4462,7 +4465,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4536,6 +4538,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -4624,6 +4630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &272614340 stripped
@@ -4661,7 +4671,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.94656754, y: 7.5, z: -4.28}
   m_LocalScale: {x: 6, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 2
@@ -4690,7 +4699,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4750,6 +4758,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -4838,6 +4850,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &282049121 stripped
@@ -4871,7 +4887,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -51.619465, y: -0.4327824, z: 20.153109}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1355841083}
   - {fileID: 327950641}
@@ -4908,7 +4923,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.804161, y: -14.57248, z: -19.11732}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1519093876}
   - {fileID: 424553604}
@@ -4928,6 +4942,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -5016,6 +5034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &296310488 stripped
@@ -5053,7 +5075,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -21.256567, y: 7.5, z: -2.5730019}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 4
@@ -5082,7 +5103,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5165,7 +5185,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -35.176567, y: 7.5, z: 1.9919968}
   m_LocalScale: {x: 0.5, y: 6, z: 4}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 8
@@ -5194,7 +5213,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5339,6 +5357,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -5427,6 +5449,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &308775363 stripped
@@ -5441,6 +5467,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -5529,6 +5559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &311066862 stripped
@@ -5566,7 +5600,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.56, y: 15.7, z: 22.08}
   m_LocalScale: {x: 0.5, y: 6, z: 11.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 8
@@ -5595,7 +5628,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5655,6 +5687,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -5742,6 +5778,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -5987,7 +6027,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -45.268864, y: 1.1408877, z: 39.38142}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1049072731}
   - {fileID: 980320211}
@@ -6095,7 +6134,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 10.148762, y: 17.925917, z: 27.538593}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 14
@@ -6124,7 +6162,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6289,7 +6326,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.86, y: 0, z: 2.942}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 493536018}
   m_RootOrder: 0
@@ -6397,6 +6433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -6485,6 +6525,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &347876691 stripped
@@ -6536,7 +6580,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6585,7 +6628,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.593781, y: -4.370352, z: 2.5330286}
   m_LocalScale: {x: 2, y: 5, z: 5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017486697}
   m_RootOrder: 0
@@ -6611,6 +6653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -6699,6 +6745,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &350187772 stripped
@@ -6713,6 +6763,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -6801,6 +6855,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &351424271 stripped
@@ -6838,7 +6896,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -38.07657, y: 7.5, z: 3.433998}
   m_LocalScale: {x: 0.5, y: 6, z: 7}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 10
@@ -6867,7 +6924,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7012,7 +7068,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.935203, y: -7.099579, z: -18.96}
   m_LocalScale: {x: 2.5, y: 0.5, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1902972205}
   m_RootOrder: 1
@@ -7041,7 +7096,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7315,7 +7369,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -37.588985, y: -4.3189626, z: -31.908836}
   m_LocalScale: {x: 4, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1331909567}
   m_RootOrder: 0
@@ -7344,7 +7397,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7428,7 +7480,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -18.221975, y: -5.90178, z: -15.21052}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 841134240}
   - {fileID: 1727730479}
@@ -7538,7 +7589,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.2389565, y: 13.5, z: 4.979185}
   m_LocalScale: {x: 9, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 1
@@ -7567,7 +7617,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7650,7 +7699,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.0087624, y: 17.925917, z: 9.1735935}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 12
@@ -7679,7 +7727,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7844,7 +7891,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.555283, y: -12.7, z: -30.623959}
   m_LocalScale: {x: 8, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 2
@@ -7873,7 +7919,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7970,7 +8015,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14.587549, y: -32.458965, z: -33.75215}
   m_LocalScale: {x: 2.5, y: 0.5, z: 12.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 6
@@ -7999,7 +8043,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8059,6 +8102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -8147,6 +8194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &458687698 stripped
@@ -8184,7 +8235,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.461235, y: 15.7, z: 14.444594}
   m_LocalScale: {x: 0.5, y: 6, z: 11}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 3
@@ -8213,7 +8263,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8273,6 +8322,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -8360,6 +8413,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -8480,7 +8537,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.193228, y: 9.657113, z: 16.608654}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 866917332}
   - {fileID: 1764943492}
@@ -8537,7 +8593,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 7.5534325, y: 9.26512, z: -2.1860027}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 6
@@ -8566,7 +8621,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8920,7 +8974,7 @@ BoxCollider:
   m_Center: {x: 0, y: 9.860524, z: 0}
 --- !u!95 &493536016
 Animator:
-  serializedVersion: 4
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8933,7 +8987,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -8956,7 +9009,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -34.07, y: 0.329, z: 30.81}
   m_LocalScale: {x: 2, y: 0.2, z: 3}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 346921882}
   m_Father: {fileID: 1639822437}
@@ -9066,7 +9118,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.26, y: -1.367271, z: 13.05}
   m_LocalScale: {x: 2.5, y: 0.5, z: 23.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 4
@@ -9095,7 +9146,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9305,7 +9355,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.877552, y: -32.4553, z: -47.231247}
   m_LocalScale: {x: 18, y: 0.5, z: 15}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 4
@@ -9334,7 +9383,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9417,7 +9465,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.0557632, y: 17.980917, z: 14.731593}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 11
@@ -9446,7 +9493,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9506,6 +9552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -9593,6 +9643,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -9693,7 +9747,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.56, y: -1.7156711, z: -9.258048}
   m_LocalScale: {x: 0.5, y: 2, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 11
@@ -9722,7 +9775,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9805,7 +9857,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.028763, y: 15.7, z: 17.905594}
   m_LocalScale: {x: 0.5, y: 6, z: 3}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 0
@@ -9834,7 +9885,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10010,6 +10060,14 @@ PrefabInstance:
       propertyPath: It_Close
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Open_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a7cdfaf315c1be46a068c16f14bf535, type: 3}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Close_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b037e8430baafb643a5b51825e4b52bb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
 --- !u!1 &536835423
@@ -10042,7 +10100,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 50.45275, y: -32.4553, z: -26.779379}
   m_LocalScale: {x: 7.5, y: 0.5, z: 7.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 0
@@ -10071,7 +10128,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10154,7 +10210,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -22.59, y: -1.367271, z: 0.21}
   m_LocalScale: {x: 8, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 14
@@ -10183,7 +10238,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10309,6 +10363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -10397,6 +10455,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &549544793 stripped
@@ -10448,7 +10510,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10497,7 +10558,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.323782, y: -4.370352, z: 5.87}
   m_LocalScale: {x: 2, y: 5, z: 12}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017486697}
   m_RootOrder: 2
@@ -10585,6 +10645,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -10672,6 +10736,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -10838,7 +10906,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.606565, y: 7.5, z: 13.543997}
   m_LocalScale: {x: 0.5, y: 6, z: 13}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 12
@@ -10867,7 +10934,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10950,7 +11016,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.36, y: -1.367271, z: 8.54}
   m_LocalScale: {x: 2.58, y: 0.5, z: 20}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 11
@@ -10979,7 +11044,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11039,6 +11103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -11127,6 +11195,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &600915145 stripped
@@ -11160,7 +11232,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.665457, y: 6.235671, z: 9.254048}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1326537043}
   - {fileID: 1925163348}
@@ -11318,7 +11389,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -11354,7 +11424,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 16.195282, y: -12.7, z: -25.15396}
   m_LocalScale: {x: 7, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 5
@@ -11383,7 +11452,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11480,7 +11548,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26.57, y: 7.5, z: 6.7439976}
   m_LocalScale: {x: 0.5, y: 6, z: 21}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 13
@@ -11509,7 +11576,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11569,6 +11635,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -11656,6 +11726,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -11760,7 +11834,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.836565, y: 7.5, z: 19.963999}
   m_LocalScale: {x: 26, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 20
@@ -11789,7 +11862,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11872,7 +11944,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.426565, y: 7.5, z: -6.7160025}
   m_LocalScale: {x: 9, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 5
@@ -11901,7 +11972,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12028,6 +12098,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -12116,6 +12190,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &691719221 stripped
@@ -12153,7 +12231,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.388958, y: 13.5, z: -2.7908154}
   m_LocalScale: {x: 0.5, y: 6, z: 15.8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 3
@@ -12182,7 +12259,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12242,6 +12318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -12329,6 +12409,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -12433,7 +12517,7 @@ BoxCollider:
   m_Center: {x: 0, y: 10.448694, z: 0}
 --- !u!95 &716598798
 Animator:
-  serializedVersion: 4
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12446,7 +12530,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -12473,7 +12556,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -16.74, y: 0.329, z: 22}
   m_LocalScale: {x: 1.97, y: 0.2, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1374115315}
   m_Father: {fileID: 1639822437}
@@ -12510,7 +12592,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.785282, y: -12.7, z: -26.643959}
   m_LocalScale: {x: 0.5, y: 6, z: 8.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 4
@@ -12539,7 +12620,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12675,6 +12755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -12763,6 +12847,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &729975613 stripped
@@ -12819,7 +12907,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.5410423, y: 15.786147, z: 16.542}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 6
@@ -12848,7 +12935,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12970,6 +13056,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -13057,6 +13147,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -13157,7 +13251,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.58, y: 7.5, z: -3.98}
   m_LocalScale: {x: 2.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 23
@@ -13186,7 +13279,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13455,7 +13547,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.8034325, y: 9.739119, z: -5.7660027}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 5
@@ -13484,7 +13575,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13629,7 +13719,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -18.516565, y: 7.5, z: 1.5739975}
   m_LocalScale: {x: 6, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 3
@@ -13658,7 +13747,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13741,7 +13829,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.5, y: -1.367271, z: 10.74}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 5
@@ -13770,7 +13857,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13892,6 +13978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -13980,6 +14070,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &795915590 stripped
@@ -14033,7 +14127,6 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.041999817, y: -0.21700025, z: -0.017293936}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1626501641}
   m_RootOrder: 0
@@ -14130,7 +14223,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.672752, y: -32.4553, z: -26.779379}
   m_LocalScale: {x: 21, y: 0.5, z: 18}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 5
@@ -14159,7 +14251,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14219,6 +14310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -14307,6 +14402,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &811479354 stripped
@@ -14321,6 +14420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -14409,6 +14512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &811785073 stripped
@@ -14423,6 +14530,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -14511,6 +14622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &814807381 stripped
@@ -14525,6 +14640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -14613,6 +14732,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &817601919 stripped
@@ -14646,7 +14769,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.8011875, y: 5.3762975, z: 25.507586}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1275103845}
   - {fileID: 1233068627}
@@ -14701,7 +14823,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14750,7 +14871,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.6937828, y: -4.464296, z: -10.126971}
   m_LocalScale: {x: 2, y: 5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 2
@@ -14985,7 +15105,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -21.979559, y: -10.816674, z: -7.3141203}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2107407144}
   - {fileID: 1458448020}
@@ -15027,7 +15146,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.3599987, y: -3.7553332, z: -21.85}
   m_LocalScale: {x: 18, y: 0.5, z: 15}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 417166189}
   m_RootOrder: 0
@@ -15056,7 +15174,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15135,7 +15252,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.5367718, y: -4.283169, z: 17.301346}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1954447844}
   - {fileID: 1017486697}
@@ -15151,6 +15267,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -15239,6 +15359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &842449080 stripped
@@ -15280,7 +15404,7 @@ BoxCollider:
   m_Center: {x: 0, y: 10.85556, z: 0}
 --- !u!95 &848713478
 Animator:
-  serializedVersion: 4
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15293,7 +15417,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -15320,7 +15443,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.12, y: 0.329, z: -26.27}
   m_LocalScale: {x: 2, y: 0.2, z: 3}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1399751785}
   m_Father: {fileID: 1639822437}
@@ -15356,7 +15478,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.045, y: 13.5, z: 10.729185}
   m_LocalScale: {x: 0.5, y: 6, z: 12}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 5
@@ -15385,7 +15506,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15445,6 +15565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -15533,6 +15657,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &856159811 stripped
@@ -15566,7 +15694,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.193228, y: -9.657113, z: -16.608654}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2008242748}
   - {fileID: 174863192}
@@ -15602,7 +15729,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.633241, y: -25.49143, z: -29.697994}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1082548490}
   - {fileID: 1925108393}
@@ -15649,7 +15775,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 27.802753, y: -32.4553, z: -5.886608}
   m_LocalScale: {x: 17, y: 0.5, z: 15}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 1
@@ -15678,7 +15803,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15738,6 +15862,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -15825,6 +15953,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -15948,7 +16080,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.166567, y: 7.5, z: 6.393997}
   m_LocalScale: {x: 0.5, y: 6, z: 21}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 21
@@ -15977,7 +16108,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16060,7 +16190,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 11.573433, y: 9.535119, z: 4.643997}
   m_LocalScale: {x: 0.5, y: 1.5, z: 3.1400003}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 8
@@ -16089,7 +16218,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16234,7 +16362,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.127247, y: -32.4553, z: -1.1693783}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 16
@@ -16263,7 +16390,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16346,7 +16472,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.6834335, y: 7.5, z: -7.206002}
   m_LocalScale: {x: 24, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 0
@@ -16375,7 +16500,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16582,7 +16706,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.0910416, y: 13.5, z: 2.8191853}
   m_LocalScale: {x: 0.5, y: 6, z: 27}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 4
@@ -16611,7 +16734,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16694,7 +16816,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.5410423, y: 15.786147, z: 14.1}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 7
@@ -16737,7 +16858,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16806,7 +16926,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.5, y: -1.367271, z: 10.74}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 16
@@ -16835,7 +16954,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16895,6 +17013,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -16983,6 +17105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &916212407 stripped
@@ -17020,7 +17146,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.726568, y: 7.5, z: 8.8639965}
   m_LocalScale: {x: 0.5, y: 6, z: 9}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 16
@@ -17049,7 +17174,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17132,7 +17256,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.298988, y: -4.3189626, z: -29.2}
   m_LocalScale: {x: 2, y: 5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1331909567}
   m_RootOrder: 2
@@ -17161,7 +17284,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17221,6 +17343,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -17308,6 +17434,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -17422,7 +17552,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17471,7 +17600,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.09, y: -3.54, z: -14.184048}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 4
@@ -17520,7 +17648,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.83, y: -1.367271, z: 5.3}
   m_LocalScale: {x: 2.5, y: 0.5, z: 9}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 13
@@ -17549,7 +17676,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17609,6 +17735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -17696,6 +17826,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -17835,6 +17969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -17923,6 +18061,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &957606219 stripped
@@ -17937,6 +18079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -18025,6 +18171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &963528657 stripped
@@ -18039,6 +18189,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -18127,6 +18281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &973150820 stripped
@@ -18165,7 +18323,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.803284, y: -12.7, z: -29.159}
   m_LocalScale: {x: 0.5, y: 6, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 1
@@ -18194,7 +18351,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18268,6 +18424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -18356,6 +18516,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &978961063 stripped
@@ -18389,7 +18553,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 36.76, y: 0.37714005, z: -24.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 156251094}
   - {fileID: 1244092235}
@@ -18468,6 +18631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -18556,6 +18723,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &987452899 stripped
@@ -18607,7 +18778,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18656,7 +18826,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.324543, y: -3.54, z: -0.07404804}
   m_LocalScale: {x: 22, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 2
@@ -18829,7 +18998,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 43.13275, y: -32.4563, z: -26.779379}
   m_LocalScale: {x: 8, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 9
@@ -18858,7 +19026,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19011,7 +19178,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 11.783434, y: 9.55, z: -0.18600273}
   m_LocalScale: {x: 0.5, y: 1, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 7
@@ -19040,7 +19206,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19137,7 +19302,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19186,7 +19350,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.423783, y: -4.464296, z: -17.326971}
   m_LocalScale: {x: 14, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 0
@@ -19231,7 +19394,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 14.533782, y: 1.7103515, z: -20.54303}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 349291396}
   - {fileID: 1803867902}
@@ -19270,7 +19432,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -5.64, y: 9.809119, z: -4.27}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 24
@@ -19299,7 +19460,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19359,6 +19519,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -19447,6 +19611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1023546312 stripped
@@ -19489,7 +19657,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.36, y: -1.367271, z: 8.54}
   m_LocalScale: {x: 2.58, y: 0.5, z: 20}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 0
@@ -19518,7 +19685,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19730,7 +19896,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.051, y: 0.37714005, z: -0.5429039}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 763391529}
   - {fileID: 1343662839}
@@ -19851,7 +20016,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -22.59, y: -1.367271, z: 0.21}
   m_LocalScale: {x: 8, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 3
@@ -19880,7 +20044,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20164,7 +20327,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 16.195282, y: -12.7, z: -28.15396}
   m_LocalScale: {x: 7, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 6
@@ -20193,7 +20355,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20267,6 +20428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -20355,6 +20520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1084298763 stripped
@@ -20411,7 +20580,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -33.178986, y: -4.3189626, z: -37.278835}
   m_LocalScale: {x: 8, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1331909567}
   m_RootOrder: 1
@@ -20440,7 +20608,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20604,7 +20771,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.4687614, y: 15.7, z: 5.424594}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 6
@@ -20633,7 +20799,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20767,6 +20932,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -20854,6 +21023,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -21057,7 +21230,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.76, y: -7.099579, z: 4.64}
   m_LocalScale: {x: 15, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1902972205}
   m_RootOrder: 3
@@ -21086,7 +21258,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21165,6 +21336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -21253,6 +21428,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1135267132 stripped
@@ -21290,7 +21469,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.562752, y: -32.458027, z: -0.12937927}
   m_LocalScale: {x: 2.5, y: 0.5, z: 22}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 19
@@ -21319,7 +21497,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21461,7 +21638,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
   m_LocalPosition: {x: 2.11, y: 2.2, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 980320211}
   m_RootOrder: 4
@@ -21620,7 +21796,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -33.816566, y: 7.5, z: 6.793997}
   m_LocalScale: {x: 9, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 11
@@ -21649,7 +21824,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21790,7 +21964,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.2212334, y: -1.729845, z: -2.0918026}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1238861527}
   - {fileID: 2140953232}
@@ -21855,7 +22028,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21904,7 +22076,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.183782, y: -4.370352, z: 10.863029}
   m_LocalScale: {x: 8, y: 5, z: 2}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017486697}
   m_RootOrder: 3
@@ -21967,7 +22138,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22016,7 +22186,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.364544, y: -3.54, z: -18.42405}
   m_LocalScale: {x: 22, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 3
@@ -22189,7 +22358,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.336565, y: 7.5, z: -7.206002}
   m_LocalScale: {x: 9, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 0
@@ -22218,7 +22386,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22301,7 +22468,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.8087616, y: 15.7, z: 19.664593}
   m_LocalScale: {x: 11, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 2
@@ -22330,7 +22496,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22390,6 +22555,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -22477,6 +22646,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -22577,7 +22750,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.887249, y: -32.4553, z: 1.1406212}
   m_LocalScale: {x: 2.5, y: 0.5, z: 23.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 15
@@ -22606,7 +22778,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22887,7 +23058,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.26, y: -1.367271, z: 13.05}
   m_LocalScale: {x: 2.5, y: 0.5, z: 23.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 15
@@ -22916,7 +23086,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22996,7 +23165,6 @@ Transform:
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.04500198, y: -0.20799994, z: -0.0703354}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 213870370}
   m_RootOrder: 0
@@ -23417,7 +23585,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23466,7 +23633,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.583783, y: -4.464296, z: -10.146971}
   m_LocalScale: {x: 2, y: 5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 6
@@ -23492,6 +23658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -23580,6 +23750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1272132088 stripped
@@ -23613,7 +23787,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -34.510258, y: -34.93672, z: 8.999989}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 908916310}
   - {fileID: 712900198}
@@ -23802,7 +23975,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.693434, y: -10.199063, z: -13.563997}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 901666936}
   - {fileID: 1812457735}
@@ -23846,7 +24018,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32.356567, y: 7.5, z: 3.763998}
   m_LocalScale: {x: 6, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 7
@@ -23875,7 +24046,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23974,7 +24144,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.09282684, y: -0.04000018, z: -0.24300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 665718858}
   m_RootOrder: 0
@@ -24048,6 +24217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -24135,6 +24308,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -24251,7 +24428,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.555283, y: -12.7, z: -22.66396}
   m_LocalScale: {x: 8, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2117098698}
   m_RootOrder: 3
@@ -24280,7 +24456,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24453,7 +24628,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24502,7 +24676,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6145434, y: -3.54, z: -4.0140486}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 0
@@ -24528,6 +24701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -24616,6 +24793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1330251060 stripped
@@ -24649,7 +24830,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.218987, y: 3.3289626, z: 11.968837}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 403900893}
   - {fileID: 1099996698}
@@ -24684,7 +24864,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.8565674, y: -6.19239, z: 5.4760027}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1201187129}
   - {fileID: 1486679181}
@@ -24745,7 +24924,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.646566, y: 7.5, z: 4.6539974}
   m_LocalScale: {x: 0.5, y: 6, z: 18}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 15
@@ -24774,7 +24952,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25149,7 +25326,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.678}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 716598800}
   m_RootOrder: 0
@@ -25257,6 +25433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -25344,6 +25524,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -25464,7 +25648,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.107, y: 0, z: -0.483}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 848713480}
   m_RootOrder: 0
@@ -25657,7 +25840,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.4572487, y: -32.4553, z: -6.609379}
   m_LocalScale: {x: 2.5, y: 0.5, z: 9}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 12
@@ -25686,7 +25868,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25746,6 +25927,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -25834,6 +26019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1415726365 stripped
@@ -25871,7 +26060,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.61, y: -1.367271, z: 8.56}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 1
@@ -25900,7 +26088,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25965,6 +26152,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -26053,6 +26244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1420404884 stripped
@@ -26086,7 +26281,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.8785677, y: 1.5263913, z: -0.45206916}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2081595625}
   - {fileID: 978961063}
@@ -26180,6 +26374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -26268,6 +26466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1424689352 stripped
@@ -26330,7 +26532,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.158, y: 0.415, z: -0.232}
   m_LocalScale: {x: 2.95, y: 0.2, z: 4.66}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1558191939}
   m_Father: {fileID: 1639822437}
@@ -26405,6 +26606,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -26492,6 +26697,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -26662,7 +26871,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.55, y: 9.809119, z: 18.48}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 25
@@ -26691,7 +26899,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26844,7 +27051,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -20.056566, y: 7.5, z: 4.513998}
   m_LocalScale: {x: 9, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 17
@@ -26873,7 +27079,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27018,7 +27223,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.778763, y: 15.7, z: 9.194593}
   m_LocalScale: {x: 5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 4
@@ -27047,7 +27251,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27107,6 +27310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -27195,6 +27402,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1469942276 stripped
@@ -27228,6 +27439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -27315,6 +27530,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -27423,7 +27642,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.936567, y: 7.5, z: -4.246002}
   m_LocalScale: {x: 6, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 1
@@ -27452,7 +27670,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27630,7 +27847,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27679,7 +27895,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.1, y: -3.54, z: -4}
   m_LocalScale: {x: 0.5, y: 6, z: 7.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 5
@@ -27705,6 +27920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -27793,6 +28012,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1513881917 stripped
@@ -27827,7 +28050,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.0059394836, y: -0.24200034, z: -0.0172682}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 822668448}
   m_RootOrder: 0
@@ -27924,7 +28146,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.417957, y: 13.5, z: 4.97}
   m_LocalScale: {x: 3.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 0
@@ -27953,7 +28174,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28168,7 +28388,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3737793, y: -32.4553, z: -26.779379}
   m_LocalScale: {x: 10, y: 0.5, z: 10}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 2
@@ -28197,7 +28416,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28257,6 +28475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -28345,6 +28567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1542536307 stripped
@@ -28382,7 +28608,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.61, y: -1.367271, z: 8.56}
   m_LocalScale: {x: 6, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 12
@@ -28411,7 +28636,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28494,7 +28718,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6285744, y: -32.4553, z: -35.753727}
   m_LocalScale: {x: 2.5, y: 0.5, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 8
@@ -28523,7 +28746,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28691,7 +28913,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28740,7 +28961,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.423783, y: -4.464296, z: -20.20697}
   m_LocalScale: {x: 2, y: 5, z: 4.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 1
@@ -28785,6 +29005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -28872,6 +29096,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -28972,7 +29200,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.363434, y: 7.5, z: 0.56399727}
   m_LocalScale: {x: 0.5, y: 6, z: 16}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 4
@@ -29001,7 +29228,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29080,7 +29306,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.5396657, y: 2.864562, z: 0.3867886}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 665718858}
   - {fileID: 822668448}
@@ -29102,6 +29327,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300002, guid: 6a1cbdbcd9f735f45beaa6e43bf6255e, type: 3}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2818116
+      objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.7071068
@@ -29152,7 +29381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.139
+      value: 67.276
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29216,8 +29445,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: It_Close
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Open_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a7cdfaf315c1be46a068c16f14bf535, type: 3}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Close_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b037e8430baafb643a5b51825e4b52bb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
 --- !u!1 &1616197198 stripped
@@ -29265,7 +29502,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.959789, y: -20.111496, z: -24.410244}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 531412099}
   - {fileID: 127885194}
@@ -29292,6 +29528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -29379,6 +29619,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -29475,7 +29719,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 9.51, y: 0.37714005, z: -58}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 561797395}
   - {fileID: 1248885938}
@@ -29511,7 +29754,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -45.652752, y: 37.81, z: 26.779379}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 536835424}
   - {fileID: 873771919}
@@ -29562,7 +29804,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1426193360}
   - {fileID: 848713480}
@@ -29711,6 +29952,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -29799,6 +30044,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1650351707 stripped
@@ -29836,7 +30085,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4812355, y: 15.7, z: 5.424594}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 7
@@ -29865,7 +30113,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29925,6 +30172,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -30013,6 +30264,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1665106654 stripped
@@ -30089,6 +30344,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -30177,6 +30436,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1675708899 stripped
@@ -30214,7 +30477,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -36.66857, y: 7.5, z: 0.24399757}
   m_LocalScale: {x: 3.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 9
@@ -30243,7 +30505,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30454,7 +30715,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.347248, y: -32.4553, z: -2.9293804}
   m_LocalScale: {x: 2.5, y: 0.5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 17
@@ -30483,7 +30743,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30548,16 +30807,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4300002, guid: 6a1cbdbcd9f735f45beaa6e43bf6255e, type: 3}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7679242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -30565,7 +30832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194972, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Enabled
@@ -30597,7 +30864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.95
+      value: 43.093
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30633,19 +30900,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.x
-      value: 0.586223
+      value: 3.1546793
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.z
-      value: -2.2
+      value: 0.32432806
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.x
-      value: -0.058207516
+      value: -1.3424361
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.z
-      value: 1.1
+      value: 0.028669346
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_IsTrigger
@@ -30757,7 +31024,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.19, y: -7.099579, z: -9.985651}
   m_LocalScale: {x: 10, y: 0.5, z: 10}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1902972205}
   m_RootOrder: 0
@@ -30786,7 +31052,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30846,6 +31111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -30934,6 +31203,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1708626339 stripped
@@ -30994,7 +31267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.75
+      value: -20.725
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31006,7 +31279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -31014,7 +31287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -31026,7 +31299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -31139,6 +31412,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -31227,6 +31504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1727622331 stripped
@@ -31264,7 +31545,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.35, y: -3.759, z: -8.370905}
   m_LocalScale: {x: 2.5, y: 0.5, z: 12.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 417166189}
   m_RootOrder: 1
@@ -31293,7 +31573,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31353,6 +31632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -31441,6 +31724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1730803688 stripped
@@ -31474,6 +31761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -31562,6 +31853,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1741556555 stripped
@@ -31595,7 +31890,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.916174, y: 14.191644, z: -66.15734}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 512386072}
   - {fileID: 1196532556}
@@ -31646,7 +31940,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.733776, y: -32.46572, z: -19.393728}
   m_LocalScale: {x: 2.5, y: 0.5, z: 12}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 11
@@ -31675,7 +31968,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31831,7 +32123,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.193228, y: -9.657113, z: -16.608654}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 243225426}
   - {fileID: 46683708}
@@ -31848,6 +32139,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -31936,6 +32231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1775626787 stripped
@@ -31950,6 +32249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -32037,6 +32340,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -32395,7 +32702,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.65, y: 15.7, z: 22.08}
   m_LocalScale: {x: 0.5, y: 6, z: 11.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 9
@@ -32424,7 +32730,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32507,7 +32812,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -31.546, y: -3.54, z: -7.507}
   m_LocalScale: {x: 2.1, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 8
@@ -32536,7 +32840,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32695,7 +32998,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32744,7 +33046,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.66336, y: -4.370352, z: 3.553029}
   m_LocalScale: {x: 2, y: 5, z: 7}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017486697}
   m_RootOrder: 1
@@ -32855,7 +33156,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.463434, y: 7.5, z: 8.303997}
   m_LocalScale: {x: 18, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 1
@@ -32884,7 +33184,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32963,7 +33262,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.15940475, y: 28.705791, z: -4.938192}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1720240224}
   - {fileID: 2036698987}
@@ -32995,6 +33293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -33083,6 +33385,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1815814715 stripped
@@ -33120,7 +33426,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -33.72, y: -1.367271, z: 8.98}
   m_LocalScale: {x: 2.5, y: 0.5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 6
@@ -33149,7 +33454,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33356,7 +33660,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 10.148762, y: 17.980917, z: 16.164593}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 10
@@ -33385,7 +33688,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33468,7 +33770,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.0127525, y: -32.4553, z: -3.369379}
   m_LocalScale: {x: 2.58, y: 0.5, z: 20}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 3
@@ -33497,7 +33798,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33832,7 +34132,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.606565, y: 7.5, z: -1.2560024}
   m_LocalScale: {x: 0.5, y: 6, z: 10.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 6
@@ -33861,7 +34160,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34007,7 +34305,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.895746, y: -2.5575342, z: -6.623003}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1707238070}
   - {fileID: 386473313}
@@ -34306,7 +34603,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14, y: -1.37, z: 23.95}
   m_LocalScale: {x: 25, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 7
@@ -34335,7 +34631,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34461,6 +34756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -34549,6 +34848,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1918260779 stripped
@@ -34563,6 +34866,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -34651,6 +34958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1921074544 stripped
@@ -34688,7 +34999,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.228958, y: 13.5, z: -10.470816}
   m_LocalScale: {x: 18.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 291816482}
   m_RootOrder: 2
@@ -34717,7 +35027,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34819,7 +35128,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34868,7 +35176,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.614542, y: -3.54, z: -14.50401}
   m_LocalScale: {x: 0.5, y: 6, z: 8}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 1
@@ -34917,7 +35224,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.8034325, y: 7.5, z: 1.9839973}
   m_LocalScale: {x: 0.5, y: 6, z: 13}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279930941}
   m_RootOrder: 3
@@ -34946,7 +35252,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35006,6 +35311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -35094,6 +35403,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1926495134 stripped
@@ -35145,7 +35458,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35194,7 +35506,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.123782, y: -4.464296, z: -10.109}
   m_LocalScale: {x: 3, y: 5, z: 6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2112212498}
   m_RootOrder: 4
@@ -35243,7 +35554,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25.56, y: -3.54, z: -7.52}
   m_LocalScale: {x: 5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 6
@@ -35272,7 +35582,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35417,7 +35726,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.94176483, y: 17.925917, z: 1.6785927}
   m_LocalScale: {x: 0.5, y: 1.5, z: 2.5999997}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 13
@@ -35446,7 +35754,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35506,6 +35813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -35594,6 +35905,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1950110540 stripped
@@ -35645,7 +35960,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35694,7 +36008,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.88, y: -5.3739443, z: -13.017229}
   m_LocalScale: {x: 17, y: 0.5, z: 15}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 841915497}
   m_RootOrder: 0
@@ -35844,6 +36157,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -35932,6 +36249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1978380237 stripped
@@ -35965,6 +36286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -36053,6 +36378,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1983191862 stripped
@@ -36090,7 +36419,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.186567, y: 7.5, z: 13.343996}
   m_LocalScale: {x: 3.5, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 18
@@ -36119,7 +36447,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -36221,7 +36548,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23.1, y: -1.5556712, z: -8.978}
   m_LocalScale: {x: 0.5, y: 2, z: 2.6}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 12
@@ -36250,7 +36576,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -36337,7 +36662,7 @@ BoxCollider:
   m_Center: {x: 0, y: 9.806503, z: 0}
 --- !u!95 &1994114027
 Animator:
-  serializedVersion: 4
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -36350,7 +36675,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -36377,7 +36701,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -39.6, y: 0.329, z: 14.72}
   m_LocalScale: {x: 3.54, y: 0.2, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 170552880}
   m_Father: {fileID: 1639822437}
@@ -36390,6 +36713,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -36478,6 +36805,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &1997051542 stripped
@@ -36515,7 +36846,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.83, y: -7.11, z: -2.6}
   m_LocalScale: {x: 2.5, y: 0.5, z: 12}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1902972205}
   m_RootOrder: 2
@@ -36544,7 +36874,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -36627,7 +36956,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -31.58, y: -3.54, z: -7.47}
   m_LocalScale: {x: 2, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 601862062}
   m_RootOrder: 7
@@ -36656,7 +36984,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -36716,6 +37043,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -36803,6 +37134,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -36900,7 +37235,6 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.039000034, y: -0.22043799, z: -0.19600002}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 524725073}
   m_RootOrder: 0
@@ -36935,7 +37269,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.8, y: 0, z: 0}
   m_LocalScale: {x: 7.5, y: 0.5, z: 7.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 866917332}
   m_RootOrder: 0
@@ -36964,7 +37297,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -37062,6 +37394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -37150,6 +37486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &2029834573 stripped
@@ -37226,6 +37566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -37313,6 +37657,10 @@ PrefabInstance:
     - target: {fileID: 2330800804778216413, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
@@ -37413,7 +37761,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.803776, y: -32.4553, z: -12.1537285}
   m_LocalScale: {x: 15, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 13
@@ -37442,7 +37789,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -37507,16 +37853,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4300002, guid: 6a1cbdbcd9f735f45beaa6e43bf6255e, type: 3}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7648467
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -37524,7 +37882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664599082, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194972, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Enabled
@@ -37560,7 +37918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -37568,11 +37926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -37580,7 +37938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787194973, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -37592,19 +37950,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.x
-      value: 0.586223
+      value: 3.1073792
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Size.z
-      value: -2.2
+      value: 0.20130625
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.x
-      value: -0.058207516
+      value: -1.318786
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_Center.z
-      value: 1.1
+      value: -0.08753163
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195808, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: m_IsTrigger
@@ -37620,8 +37978,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
       propertyPath: It_Close
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Open_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a7cdfaf315c1be46a068c16f14bf535, type: 3}
+    - target: {fileID: 5883750478787195811, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
+      propertyPath: Door_Close_Sound_Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b037e8430baafb643a5b51825e4b52bb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19f8f57e11222a34ca24d4f799d076b4, type: 3}
 --- !u!4 &2051766780 stripped
@@ -37744,7 +38110,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.81, y: -1.37, z: 11.78}
   m_LocalScale: {x: 2.5, y: 0.5, z: 22}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 18
@@ -37773,7 +38138,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -37838,6 +38202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -37926,6 +38294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &2076553254 stripped
@@ -37963,7 +38335,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -24.206568, y: 7.5, z: 0.3}
   m_LocalScale: {x: 0.5, y: 6, z: 9}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1334927103}
   m_RootOrder: 14
@@ -37992,7 +38363,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -38052,6 +38422,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -38140,6 +38514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &2080636120 stripped
@@ -38154,6 +38532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1422710506}
     m_Modifications:
+    - target: {fileID: -4016530585857496523, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1539051050037727075, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
       propertyPath: m_Name
       value: Rock_004
@@ -38242,6 +38624,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6693044000933005651, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
+      propertyPath: Is_Map
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9654418fb26224c8f4b41e11cb422a, type: 3}
 --- !u!224 &2081595625 stripped
@@ -38279,7 +38665,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.37275314, y: -32.458027, z: 12.040621}
   m_LocalScale: {x: 25, y: 0.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1639322310}
   m_RootOrder: 18
@@ -38308,7 +38693,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -38391,7 +38775,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.7412376, y: 15.7, z: 9.194593}
   m_LocalScale: {x: 3, y: 6, z: 0.5}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1619840300}
   m_RootOrder: 5
@@ -38420,7 +38803,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -38503,7 +38885,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.81, y: -1.37, z: 11.78}
   m_LocalScale: {x: 2.5, y: 0.5, z: 22}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90175048}
   m_RootOrder: 8
@@ -38532,7 +38913,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -38739,7 +39119,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.196218, y: 7.0842957, z: 13.366971}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1014026565}
   - {fileID: 1559613133}
@@ -38778,7 +39157,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -18.985283, y: 15.343658, z: 26.65396}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 99594265}
   - {fileID: 974524531}
@@ -38867,6 +39245,125 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4781314695899104, guid: 853ccd37519f26949b14b1767fb5c319, type: 3}
   m_PrefabInstance: {fileID: 2117179784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2125203605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1679347066862348, guid: e10681668e69faf44abb588101ae0d74, type: 3}
+  m_PrefabInstance: {fileID: 331399990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2125203609
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125203605}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 19aae3524652eff4fb1e6ad4d1e9d694, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 5
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.2
+      value: 1
+      inSlope: -5.0019917
+      outSlope: -5.0019917
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.4
+      value: 0.5
+      inSlope: -1.2504979
+      outSlope: -1.2504979
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8
+      value: 0.25
+      inSlope: -0.31262448
+      outSlope: -0.31262448
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.20007975
+      outSlope: -0.20007975
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2140021943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39035,7 +39532,6 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 37.43026, y: 38.60672, z: -5.2909884}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274682046}
   m_RootOrder: 12
@@ -39051,7 +39547,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
