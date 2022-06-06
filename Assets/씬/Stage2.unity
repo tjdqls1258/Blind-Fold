@@ -4876,7 +4876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &290229527
 Transform:
   m_ObjectHideFlags: 0
@@ -33790,16 +33790,14 @@ PrefabInstance:
     - target: {fileID: 272131669578485834, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 64cf103a92f6e7f4caadfaf79a7280d6, type: 2}
+      objectReference: {fileID: 2100000, guid: d5e96f806855eb2409a3d8fe53b92e44, type: 2}
     - target: {fileID: 272131669578485835, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+      objectReference: {fileID: 12800000, guid: 7ff194cb43c9688469ee6afb24c0fbdd, type: 3}
     - target: {fileID: 272131669578485835, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Text
-      value: '0
-
-'
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 272131669578485844, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: renderer
@@ -33808,7 +33806,11 @@ PrefabInstance:
     - target: {fileID: 272131669627462104, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+      objectReference: {fileID: 12800000, guid: 7ff194cb43c9688469ee6afb24c0fbdd, type: 3}
+    - target: {fileID: 272131669627462104, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 272131669627462107, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.47
@@ -33844,7 +33846,7 @@ PrefabInstance:
     - target: {fileID: 272131669627462111, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 64cf103a92f6e7f4caadfaf79a7280d6, type: 2}
+      objectReference: {fileID: 2100000, guid: d5e96f806855eb2409a3d8fe53b92e44, type: 2}
     - target: {fileID: 272131670079368353, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.368
@@ -33860,11 +33862,15 @@ PrefabInstance:
     - target: {fileID: 272131670079368357, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 64cf103a92f6e7f4caadfaf79a7280d6, type: 2}
+      objectReference: {fileID: 2100000, guid: d5e96f806855eb2409a3d8fe53b92e44, type: 2}
     - target: {fileID: 272131670079368358, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+      objectReference: {fileID: 12800000, guid: 7ff194cb43c9688469ee6afb24c0fbdd, type: 3}
+    - target: {fileID: 272131670079368358, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 272131670371228424, guid: 923a349f95b7e1c4798506f9fbeb04f4, type: 3}
       propertyPath: m_RootOrder
       value: 4
