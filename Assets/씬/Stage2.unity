@@ -5394,7 +5394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &290229527
 Transform:
   m_ObjectHideFlags: 0
@@ -8084,6 +8084,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7522819403064600425, guid: 65357b51b8e40174a8d5317ef63c93ae, type: 3}
   m_PrefabInstance: {fileID: 491712416}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &413316723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413316718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba867cc245d8ba46befb72e4a402714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Is_Emission: 0
 --- !u!1001 &415811326
 PrefabInstance:
   m_ObjectHideFlags: 0
