@@ -44,8 +44,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 62
+  m_Range: 2
+  m_SpotAngle: 127.3
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -219,7 +219,7 @@ MonoBehaviour:
   Stamina_Image: {fileID: 4786223111275222351}
   Stamina2: {fileID: 4231278339761321421}
   Hard_Run: {fileID: 8300000, guid: 41b885dcac20cfb40b001ecd9f228f6d, type: 3}
-  collect_key: 99
+  collect_key: 0
   stamina_pause: 0
 --- !u!54 &3328462873740829156
 Rigidbody:
@@ -255,7 +255,7 @@ MonoBehaviour:
   Bullte_Image: {fileID: 4786223112593540793}
   fir_Pos: {fileID: 3328462872937666770}
   Count_Bullte: 0
-  Max_Count_Bullte: 2
+  Max_Count_Bullte: 1
   Delay: 1
   Throw_Power: 0
   Min_Throw_Power: 1
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map_parent: {fileID: 0}
   Echo_Power: 15
-  Echo_Hear_Distance_Power: 100
+  Echo_Hear_Distance_Power: 75
   Count_Cycle: 3
   stamina_percent: 0
   echocool: 1
@@ -1080,6 +1080,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4786223110922180517, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4786223110942003768, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1498,7 +1502,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a43acad77794ca442a14c82b1983ee01, type: 3}
     - target: {fileID: 4786223112020795366, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_Color.a
-      value: 0.5176471
+      value: 0.5882353
       objectReference: {fileID: 0}
     - target: {fileID: 4786223112020795366, guid: 193848c119806314dbc0fe9f2ec0037d, type: 3}
       propertyPath: m_Color.b

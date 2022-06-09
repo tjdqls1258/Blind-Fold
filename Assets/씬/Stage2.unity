@@ -36290,37 +36290,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1702699274, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_Range
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702699274, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702699274, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_SpotAngle
-      value: 127.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702699274, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_BounceIntensity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: map_parent
       value: 
       objectReference: {fileID: 473358737}
-    - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: Echo_Hear_Distance_Power
-      value: 75
-      objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3328462873740829154, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: collect_key
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_RootOrder
@@ -36364,10 +36340,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786223111855661608, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4786223111855661610, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
