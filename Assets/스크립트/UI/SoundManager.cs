@@ -58,38 +58,4 @@ public class SoundManager : MonoBehaviour
         PlayerPrefs.SetFloat("M_vol_base", M_vol_base);
         PlayerPrefs.SetFloat("E_vol_base", E_vol_base);
     }
-
-    public void musictoggle()
-    {
-        if (m_toggle)
-        {
-            tempmusicvol = MusicVolume.value;
-            audio.SetFloat("musicVolume", -80.0f);
-            MusicVolume.value = 0;
-            m_toggle = false;
-        }
-        else
-        {
-            MusicVolume.value = tempmusicvol;
-            audio.SetFloat("musicVolume", (tempmusicvol * 100.0f) - 40.0f);
-            m_toggle = true;
-        }
-    }
-
-    public void effecttoggle()
-    {
-        if (e_toggle)
-        {
-            tempeffectvol = EffectVolume.value;
-            audio.SetFloat("sfxVolume", -80.0f);
-            EffectVolume.value = 0;
-            e_toggle = false;
-        }
-        else
-        {
-            EffectVolume.value = tempeffectvol;
-            audio.SetFloat("sfxVolume", (tempeffectvol * 100.0f) - 40.0f);
-            e_toggle = true;
-        }
-    }
 }
