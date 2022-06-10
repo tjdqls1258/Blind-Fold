@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Slider MusicVolume;
     [SerializeField] Slider EffectVolume;
     [SerializeField] AudioSource MusicAudio;
-    [SerializeField] AudioSource[] EffectAudio;
+    [SerializeField] List<AudioSource> EffectAudio;
 
     private float M_vol_base = 1.0f;
     private float E_vol_base = 1.0f;
@@ -26,19 +26,26 @@ public class SoundManager : MonoBehaviour
 
         MusicVolume.value = M_vol_base;
         EffectVolume.value = E_vol_base;
-
+        AudioSource[] audioObject = FindObjectsOfType<AudioSource>();
         //MusicAudio.volume = MusicVolume.value;
-        for (int i = 0; i < EffectAudio.Length; i++)
+        for (int i = 0; i < audioObject.Length; i++)
         {
+            EffectAudio.Add(audioObject[i]);
             EffectAudio[i].volume = EffectVolume.value;
+        }
+        if(MusicAudio)
+        {
+            EffectAudio.Remove(MusicAudio);
         }
     }
 
     public void SoundSetting()
     {
+        AudioSource[] audioObject = FindObjectsOfType<AudioSource>();
         //MusicAudio.volume = MusicVolume.value;
-        for (int i = 0; i < EffectAudio.Length; i++)
+        for (int i = 0; i < audioObject.Length; i++)
         {
+            EffectAudio.Add(audioObject[i]);
             EffectAudio[i].volume = EffectVolume.value;
         }
 
