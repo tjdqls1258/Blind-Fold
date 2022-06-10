@@ -137,7 +137,7 @@ AudioSource:
   m_GameObject: {fileID: 5883750478787194975}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5b84db49d40ea449aa4f3e3bd229ab5b, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5c88441d50e2cc74287130820c0cac61, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -234,6 +234,10 @@ PrefabInstance:
     - target: {fileID: 144868, guid: 1c25ef6b060067847bed35e736f9aa4e, type: 3}
       propertyPath: m_Name
       value: Villa1_Door_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 144868, guid: 1c25ef6b060067847bed35e736f9aa4e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 445044, guid: 1c25ef6b060067847bed35e736f9aa4e, type: 3}
       propertyPath: m_RootOrder

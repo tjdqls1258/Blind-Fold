@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider MusicVolume;
     [SerializeField] Slider EffectVolume;
-    [SerializeField] AudioSource MusicAudio;
-    [SerializeField] List<AudioSource> EffectAudio;
+    [SerializeField] AudioMixer audio;
 
     private float M_vol_base = 1.0f;
     private float E_vol_base = 1.0f;
 
     private float tempmusicvol;
     private float tempeffectvol;
+
     private bool m_toggle = true;
     private bool e_toggle = true;
 
@@ -26,31 +27,33 @@ public class SoundManager : MonoBehaviour
 
         MusicVolume.value = M_vol_base;
         EffectVolume.value = E_vol_base;
-        AudioSource[] audioObject = FindObjectsOfType<AudioSource>();
-        //MusicAudio.volume = MusicVolume.value;
-        for (int i = 0; i < audioObject.Length; i++)
-        {
-            EffectAudio.Add(audioObject[i]);
-            EffectAudio[i].volume = EffectVolume.value;
-        }
-        if(MusicAudio)
-        {
-            EffectAudio.Remove(MusicAudio);
-        }
+
+        audio.SetFloat("musicVolume", (M_vol_base * 100.0f) - 80.0f);
+        audio.SetFloat("sfxVolume", (E_vol_base * 100.0f) - 80.0f);
     }
 
     public void SoundSetting()
     {
-        AudioSource[] audioObject = FindObjectsOfType<AudioSource>();
-        //MusicAudio.volume = MusicVolume.value;
-        for (int i = 0; i < audioObject.Length; i++)
-        {
-            EffectAudio.Add(audioObject[i]);
-            EffectAudio[i].volume = EffectVolume.value;
-        }
-
         M_vol_base = MusicVolume.value;
         E_vol_base = EffectVolume.value;
+
+        if (M_vol_base <= 0.01f)
+        {
+            audio.SetFloat("musicVolume", (M_vol_base * 60.0f) - 80.0f);
+        }
+        else
+        {
+            audio.SetFloat("musicVolume", (M_vol_base * 60.0f) - 40.0f);
+        }
+
+        if (E_vol_base <= 0.01f)
+        {
+            audio.SetFloat("sfxVolume", (E_vol_base * 60.0f) - 80.0f);
+        }
+        else
+        {
+            audio.SetFloat("sfxVolume", (E_vol_base * 60.0f) - 40.0f);
+        }
 
         PlayerPrefs.SetFloat("M_vol_base", M_vol_base);
         PlayerPrefs.SetFloat("E_vol_base", E_vol_base);
@@ -61,12 +64,14 @@ public class SoundManager : MonoBehaviour
         if (m_toggle)
         {
             tempmusicvol = MusicVolume.value;
-            MusicVolume.value = 0.0f;
+            audio.SetFloat("musicVolume", -80.0f);
+            MusicVolume.value = 0;
             m_toggle = false;
         }
         else
         {
             MusicVolume.value = tempmusicvol;
+            audio.SetFloat("musicVolume", (tempmusicvol * 100.0f) - 40.0f);
             m_toggle = true;
         }
     }
@@ -76,12 +81,14 @@ public class SoundManager : MonoBehaviour
         if (e_toggle)
         {
             tempeffectvol = EffectVolume.value;
-            EffectVolume.value = 0.0f;
+            audio.SetFloat("sfxVolume", -80.0f);
+            EffectVolume.value = 0;
             e_toggle = false;
         }
         else
         {
             EffectVolume.value = tempeffectvol;
+            audio.SetFloat("sfxVolume", (tempeffectvol * 100.0f) - 40.0f);
             e_toggle = true;
         }
     }
