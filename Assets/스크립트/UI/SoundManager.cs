@@ -28,8 +28,8 @@ public class SoundManager : MonoBehaviour
         MusicVolume.value = M_vol_base;
         EffectVolume.value = E_vol_base;
 
-        audio.SetFloat("musicVolume", (M_vol_base * 100.0f) - 80.0f);
-        audio.SetFloat("sfxVolume", (E_vol_base * 100.0f) - 80.0f);
+        audio.SetFloat("musicVolume", (M_vol_base * 60.0f) - 40.0f);
+        audio.SetFloat("sfxVolume", (E_vol_base * 60.0f) - 40.0f);
     }
 
     public void SoundSetting()
@@ -57,5 +57,7 @@ public class SoundManager : MonoBehaviour
 
         PlayerPrefs.SetFloat("M_vol_base", M_vol_base);
         PlayerPrefs.SetFloat("E_vol_base", E_vol_base);
+        Debug.Log(M_vol_base);
+        Debug.Log(E_vol_base);
     }
 }
