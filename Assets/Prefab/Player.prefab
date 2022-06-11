@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Run_Speed: 1.3
-  Move_Speed: 20
+  Move_Speed: 5
   Max_Stamina_Gage: 5
   Min_Stamina_Gage: 3
   Stamina_Gage: 5
@@ -477,6 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3328462873740829153}
   D_Light: {fileID: 7954259965631146813}
+  Teleport: {fileID: 0}
 --- !u!1 &3328462874641346357
 GameObject:
   m_ObjectHideFlags: 0
