@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cheter : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
     [SerializeField] private Light D_Light;
+
+    [SerializeField] GameObject Teleport;
     
     private GameObject[] AI;
     // Start is called before the first frame update
@@ -28,6 +31,10 @@ public class Cheter : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha3))
         {
             ∫˚¿Ã_¿÷¿∏∂Û();
+        }
+        if(Input.GetKey(KeyCode.Alpha4))
+        {
+            telnext();
         }
     }
 
@@ -52,5 +59,13 @@ public class Cheter : MonoBehaviour
     private void Staminer_Infinete()
     {
         Player.GetComponent<Player_Move>().Stamina_Gage = 99999.0f;
+    }
+
+    private void telnext()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        Player.transform.position = new Vector3(Teleport.transform.position.x, Teleport.transform.position.y, Teleport.transform.position.z);
+        Player.transform.rotation = Teleport.transform.rotation;
     }
 }
