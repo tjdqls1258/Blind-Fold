@@ -53,7 +53,14 @@ public class Cheter : MonoBehaviour
 
     private void 빛이_있으라()
     {
-        D_Light.intensity = 1.0f;
+        if (D_Light.intensity == 0.0f)
+        {
+            D_Light.intensity = 1.0f;
+        }
+        else if(D_Light.intensity == 1.0f)
+        {
+            D_Light.intensity = 0.0f;
+        }
     }
 
     private void Staminer_Infinete()
