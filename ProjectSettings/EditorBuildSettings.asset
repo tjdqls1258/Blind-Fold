@@ -13,16 +13,16 @@ EditorBuildSettings:
     guid: 9d32b347a8a6c4746b24c877a7571267
   - enabled: 1
     path: "Assets/\uC52C/Stage1.unity"
-    guid: ae84c4e48e8502d4e8bbb260660558a3
+    guid: 66a616047545a6747a32a17bdce9976a
   - enabled: 1
     path: "Assets/\uC52C/Stage2.unity"
     guid: 7ca44e3201cd7984e8ec703d3c896dae
   - enabled: 1
-    path: "Assets/\uC52C/Stage3.unity"
-    guid: 89227168e62c00949b52b3a306dddbe1
-  - enabled: 1
     path: "Assets/\uC52C/Stage4.unity"
     guid: 74220217e1ee47541841168cc0d6f795
+  - enabled: 1
+    path: "Assets/\uC52C/Stage3.unity"
+    guid: 89227168e62c00949b52b3a306dddbe1
   - enabled: 1
     path: "Assets/\uC52C/ending.unity"
     guid: 86cde4ec18fc3a7418169cbc49f37353
