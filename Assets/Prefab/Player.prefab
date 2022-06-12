@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f6bb3a31c1fb344837fefd6d978c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotspeed: 110
+  rotspeed: 90
   parent: {fileID: 3328462873740829153}
 --- !u!82 &55907730
 AudioSource:

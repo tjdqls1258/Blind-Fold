@@ -7142,7 +7142,7 @@ PrefabInstance:
       objectReference: {fileID: 223784306}
     - target: {fileID: 4084821658243828549, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}
       propertyPath: Animation_Speed
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4084821658243828553, guid: 78265d5fd67fc7045a3b98ccbeab19a9, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -19561,7 +19561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f57b76e23ddf489a78282c302590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
 --- !u!4 &1008352610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2181904968076125920, guid: 6c96f9e5dd521d94091921f4399acfb5, type: 3}
@@ -29484,10 +29483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 55907737, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: _verticalJump
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3198611507755258781, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: map_parent
       value: 
@@ -29495,10 +29490,6 @@ PrefabInstance:
     - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3328462873740829153, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3328462873740829155, guid: 8a1427b00d30bbc4b922c0df68015215, type: 3}
       propertyPath: m_RootOrder
@@ -40426,7 +40417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f57b76e23ddf489a78282c302590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
 --- !u!1 &1953123490
 GameObject:
   m_ObjectHideFlags: 0
@@ -41187,7 +41177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f57b76e23ddf489a78282c302590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
 --- !u!43 &1987217270
 Mesh:
   m_ObjectHideFlags: 0
@@ -42946,7 +42935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f57b76e23ddf489a78282c302590e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
 --- !u!114 &2085195614
 MonoBehaviour:
   m_ObjectHideFlags: 0
