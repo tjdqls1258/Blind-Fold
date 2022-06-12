@@ -6779,6 +6779,7 @@ GameObject:
   - component: {fileID: 860331860}
   - component: {fileID: 860331863}
   - component: {fileID: 860331864}
+  - component: {fileID: 860331861}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -6877,6 +6878,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &860331861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860331856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff7a16889f2b1e4c8268804ecf57dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animation_Speed: 3
+  Is_Cusor_Off: 1
 --- !u!320 &860331863
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -9538,7 +9553,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh80990
+  m_Name: pb_Mesh333494
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10224,7 +10239,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh81166
+  m_Name: pb_Mesh333670
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
