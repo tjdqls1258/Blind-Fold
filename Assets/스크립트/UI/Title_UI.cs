@@ -12,6 +12,10 @@ public class Title_UI : MonoBehaviour
     public Button Loadgame;
     public Text Load_text;
 
+    public GameObject LoadUI, StageManager;
+
+    public Button[] Stage;
+
     //loadgame을 위해 저장된 스테이지 stagenum을 받아와야함.
 
     private void Awake()
@@ -19,7 +23,6 @@ public class Title_UI : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         loadstage_num = GameObject.Find("StageManger").GetComponent<Save_Data>().LoadStage_Num();
-        Debug.Log(loadstage_num);
         if (loadstage_num > 1)
         {
             Loadgame.GetComponent<Button>().interactable = true;
@@ -29,7 +32,10 @@ public class Title_UI : MonoBehaviour
         {
             Loadgame.GetComponent<Button>().interactable = false;
             Load_text.color = new Color(255, 255, 255, 0.3f);
-            Debug.Log("RGB");
+        }
+        for(int i = 0; i < StageManager.GetComponent<Save_Data>().LoadStage_Num() - 1; i++)
+        {
+            Stage[i].interactable = true;
         }
     }
 
@@ -41,8 +47,15 @@ public class Title_UI : MonoBehaviour
 
     public void LoadgameEnter()
     {
-        //Loadgame버튼 누를 시 최근 플레이 stage로 이동
-        GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData();
+        //Loadgame버튼 누를 시 스테이지 리스트로 
+        //GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData();
+        LoadUI.SetActive(true);
+    }
+    public void LoadStageEnter(int stage)
+    {
+        //Loadgame버튼 누를 시 해당 스테이지로 이동
+        //GameObject.Find("StageManger").GetComponent<Save_Data>().LoadData();
+        SceneManager.LoadScene(stage);
     }
 
     public void SettingEnter()

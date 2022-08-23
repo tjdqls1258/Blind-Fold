@@ -19,6 +19,7 @@ public class Save_Data : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        Application.targetFrameRate = 60;
         DontDestroyOnLoad(gameObject);
     }
     void Start()
@@ -46,8 +47,6 @@ public class Save_Data : MonoBehaviour
         string json = JsonUtility.ToJson(saveData);
 
         File.WriteAllText(SAVE_DATA_DIRECTORY, json);
-
-        Debug.Log("저장완료 : ");
     }
 
     public void LoadData()
@@ -61,7 +60,7 @@ public class Save_Data : MonoBehaviour
 
         saveData = JsonUtility.FromJson<Save_Data_Class>(loadJson);
 
-        SceneManager.LoadScene(saveData.Stage_num);
+       
     }
 
     public int LoadStage_Num()
